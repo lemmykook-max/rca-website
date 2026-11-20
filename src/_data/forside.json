@@ -3,10 +3,10 @@
   "overskrift": "Et fælles ressourcecenter for",
   "overskrift_fremhaevet": "adopterede",
   "intro": "RCA er en ny, uafhængig forening, der samler viden, erfaringer og fællesskab om adoption i Danmark.",
-  "knap1_tekst": "Læs referatet fra generalforsamlingen",
-  "knap1_link": "/referat-stiftende-generalforsamling",
-  "knap2_tekst": "Læs om RCA",
-  "knap2_link": "/om-rca",
+  "knap1_tekst": "Giv dit høringssvar til vedtægterne",
+  "knap1_link": "/ekstraordinaer-generalforsamling#hoering",
+  "knap2_tekst": "Læs referatet",
+  "knap2_link": "/referat-stiftende-generalforsamling",
   "boks_overskrift": "Seneste nyt",
   "boks_punkter": [
     {
@@ -22,7 +22,7 @@
     {
       "ikon": "file",
       "titel": "Vedtægterne i høring",
-      "tekst": "Endelig godkendelse på en ekstraordinær generalforsamling"
+      "tekst": "Høringsfrist 7. december. Ekstraordinær generalforsamling 9. januar 2027 (foreløbig dato)"
     }
   ],
   "soejler_eyebrow": "Det arbejder vi for",
@@ -52,9 +52,9 @@
     "eyebrow": "Generalforsamling",
     "overskrift": "RCA er stiftet",
     "tekst_venstre": "Søndag den 15. november 2026 stiftede vi foreningen, godkendte vedtægterne foreløbigt og valgte den første bestyrelse. Tak til alle, der deltog i lokalet og online.",
-    "tekst_hoejre": "Vedtægterne bliver nu tilrettet efter input fra mødet og sendt i høring hos medlemmerne. Derefter indkalder vi til en ekstraordinær generalforsamling.",
-    "knap_tekst": "Læs referatet",
-    "knap_link": "/referat-stiftende-generalforsamling"
+    "tekst_hoejre": "Vedtægterne er nu tilrettet efter input fra mødet og sendt i høring hos medlemmerne. Derefter indkalder vi til en ekstraordinær generalforsamling.",
+    "knap_tekst": "Se høring og køreplan",
+    "knap_link": "/ekstraordinaer-generalforsamling"
   },
   "vis_nyheder": true,
   "nyheder_overskrift": "Nyt fra RCA",

@@ -259,3 +259,18 @@
   .news-card:hover{transform:translateY(-2px);color:var(--ink)}
   .news-card h3{margin:.3em 0 .4em}
   .news-card p{margin:0;color:var(--muted)}
+
+  /* Ekstraordinær generalforsamling */
+  .roadmap li.st-faerdig{opacity:.7}
+  .roadmap li.st-faerdig .when{color:var(--muted)}
+  .roadmap li.st-nu{box-shadow:0 0 0 2px var(--terra)}
+  .now-tag{display:inline-block;background:var(--terra);color:#fff;font-size:.78rem;font-weight:700;padding:2px 9px;border-radius:999px;margin-left:6px;vertical-align:2px}
+  .done-tag{display:inline-block;color:var(--muted);font-size:.85rem;font-weight:600;margin-left:6px}
+  .rca-form .rf{display:block;margin:0 0 14px}
+  .rca-form .rf span{display:block;font-size:.95rem;font-weight:600;margin-bottom:5px}
+  .rca-form input,.rca-form select,.rca-form textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #c9d6d3;border-radius:8px;padding:10px 12px}
+  .rca-form textarea{resize:vertical}
+  .rca-form input:focus,.rca-form select:focus,.rca-form textarea:focus{outline:3px solid var(--terra);outline-offset:1px;border-color:transparent}
+  .rca-form .check-line{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;margin:4px 0 18px;line-height:1.45}
+  .rca-form .check-line input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--ink-2)}
+  .rca-form .hp{position:absolute;left:-9999px}

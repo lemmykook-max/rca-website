@@ -112,6 +112,58 @@ collections:
               - { label: "Knap 1 – link", name: "knap1_link", widget: "string" }
               - { label: "Knap 2 – tekst (åbner mail)", name: "knap2_tekst", widget: "string" }
 
+      - label: "Ekstraordinær generalforsamling"
+        name: "ekstraordinaer"
+        file: "src/_data/ekstraordinaer.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - { label: "Dato", name: "dato", widget: "string" }
+          - { label: "Tidspunkt", name: "tid", widget: "string" }
+          - { label: "Sted", name: "sted", widget: "string" }
+          - { label: "Køreplan – overskrift", name: "koreplan_overskrift", widget: "string" }
+          - label: "Køreplan"
+            name: "koreplan"
+            widget: "list"
+            summary: "{{fields.dato}} – {{fields.status}}"
+            fields:
+              - { label: "Hvornår", name: "dato", widget: "string" }
+              - { label: "Hvad", name: "tekst", widget: "text" }
+              - { label: "Status", name: "status", widget: "select", options: [{ label: "Gennemført", value: "faerdig" }, { label: "Nu", value: "nu" }, { label: "Kommende", value: "kommende" }], default: "kommende" }
+          - label: "Høring"
+            name: "hoering"
+            widget: "object"
+            fields:
+              - { label: "Høringen er åben (viser formularen)", name: "aaben", widget: "boolean", default: true }
+              - { label: "Overskrift", name: "overskrift", widget: "string" }
+              - { label: "Høringsfrist", name: "frist", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+              - label: "Dokumenter til høringen"
+                name: "dokumenter"
+                widget: "list"
+                summary: "{{fields.titel}}"
+                fields:
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "PDF eller link", name: "fil", widget: "file", required: false, hint: "Upload en PDF – eller skriv en adresse på siden, fx /referat-stiftende-generalforsamling" }
+                  - { label: "Tekst, hvis der ikke er fil endnu", name: "status", widget: "string", required: false }
+              - { label: "Tekst, når høringen er lukket", name: "lukket_tekst", widget: "text" }
+          - label: "Tilmelding"
+            name: "tilmelding"
+            widget: "object"
+            fields:
+              - { label: "Tilmeldingen er åben (viser knappen)", name: "aaben", widget: "boolean", default: false }
+              - { label: "Overskrift", name: "overskrift", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+              - { label: "Link til tilmeldingsformular", name: "link", widget: "string" }
+              - { label: "Knaptekst", name: "knap_tekst", widget: "string" }
+              - { label: "Tilmeldingsfrist", name: "frist", widget: "string" }
+              - { label: "Tekst, når tilmeldingen ikke er åben", name: "lukket_tekst", widget: "text" }
+          - { label: "Online-deltagelse – overskrift", name: "digital_overskrift", widget: "string" }
+          - { label: "Online-deltagelse – punkter", name: "digital", widget: "list", field: { label: "Punkt", name: "punkt", widget: "text" } }
+          - { label: "Regler – overskrift", name: "regler_overskrift", widget: "string" }
+          - { label: "Regler – punkter", name: "regler", widget: "list", field: { label: "Punkt", name: "punkt", widget: "text" } }
+
       - label: "Om RCA"
         name: "om"
         file: "src/_data/om.json"

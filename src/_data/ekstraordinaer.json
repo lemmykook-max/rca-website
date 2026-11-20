@@ -1,0 +1,92 @@
+{
+  "eyebrow": "Ekstraordinær generalforsamling",
+  "overskrift": "Vedtægterne i høring og ekstraordinær generalforsamling",
+  "intro": "På den stiftende generalforsamling blev vedtægterne godkendt foreløbigt. Nu kan alle medlemmer kommentere de reviderede vedtægter, før de vedtages endeligt på en ekstraordinær generalforsamling.",
+  "dato": "Lørdag den 9. januar 2027 (foreløbig dato)",
+  "tid": "Tidspunkt følger",
+  "sted": "Sted følger · og online via Google Meet",
+  "koreplan_overskrift": "Køreplan",
+  "koreplan": [
+    {
+      "dato": "20. november",
+      "tekst": "Bestyrelsen godkender de reviderede vedtægter og fastsætter dato for den ekstraordinære generalforsamling.",
+      "status": "faerdig"
+    },
+    {
+      "dato": "Senest 23. november",
+      "tekst": "Vedtægterne sendes i høring med en oversigt over ændringerne (gammel og ny tekst).",
+      "status": "nu"
+    },
+    {
+      "dato": "7. december",
+      "tekst": "Frist for høringssvar.",
+      "status": "kommende"
+    },
+    {
+      "dato": "7.–11. december",
+      "tekst": "Bestyrelsen gennemgår høringssvarene og laver det endelige forslag.",
+      "status": "kommende"
+    },
+    {
+      "dato": "Senest 18. december",
+      "tekst": "Indkaldelse sendes pr. e-mail med dagsorden, endelige vedtægter, regler for digital deltagelse og afstemning samt link til tilmelding.",
+      "status": "kommende"
+    },
+    {
+      "dato": "9. januar 2027",
+      "tekst": "Ekstraordinær generalforsamling (foreløbig dato).",
+      "status": "kommende"
+    },
+    {
+      "dato": "Uge 3, 2027",
+      "tekst": "Referatet underskrives af dirigenten og sendes ud. De vedtagne vedtægter lægges på hjemmesiden.",
+      "status": "kommende"
+    }
+  ],
+  "hoering": {
+    "aaben": true,
+    "overskrift": "Giv dit høringssvar",
+    "frist": "7. december 2026",
+    "tekst": "Læs de reviderede vedtægter og oversigten over ændringerne. Skriv derefter, hvad du er enig eller uenig i, eller hvad du savner. Du kan sende flere svar.",
+    "dokumenter": [
+      {
+        "titel": "Reviderede vedtægter",
+        "fil": "",
+        "status": "Kommer senest 23. november"
+      },
+      {
+        "titel": "Oversigt over ændringer (gammel og ny tekst)",
+        "fil": "",
+        "status": "Kommer senest 23. november"
+      },
+      {
+        "titel": "Referat fra den stiftende generalforsamling",
+        "fil": "/referat-stiftende-generalforsamling",
+        "status": ""
+      }
+    ],
+    "lukket_tekst": "Høringen er lukket. Tak for alle svar – bestyrelsen arbejder nu på det endelige forslag."
+  },
+  "tilmelding": {
+    "aaben": false,
+    "overskrift": "Tilmelding",
+    "tekst": "Tilmeld dig, så vi ved, hvem der kommer i lokalet og online, og så vi har styr på stemmeretten på dagen.",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLScY3Yb8Wiuf2JNe96O9EvGTHG1Ha6-wtRCFZZ13zVDe8RCU1A/viewform",
+    "knap_tekst": "Tilmeld dig generalforsamlingen",
+    "frist": "3 dage før generalforsamlingen",
+    "lukket_tekst": "Tilmeldingen åbner, når indkaldelsen sendes ud – senest 18. december."
+  },
+  "digital_overskrift": "Sådan deltager du online",
+  "digital": [
+    "Online-deltagere registreres med navn.",
+    "Du skal have kameraet tændt, så vi kan se, at du er den, der er tilmeldt.",
+    "Du får link til Google Meet og en kort vejledning til afstemningen, når du har tilmeldt dig.",
+    "Afstemningerne er ikke anonyme."
+  ],
+  "regler_overskrift": "Hvad kræver vedtægterne?",
+  "regler": [
+    "Der skal indkaldes med mindst 2 ugers varsel (§ 6).",
+    "Vedtægtsændringerne skal stå på dagsordenen i indkaldelsen (§ 13).",
+    "Mindst 2/3 af de fremmødte med stemmeret skal stemme for (§ 13)."
+  ]
+}

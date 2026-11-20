@@ -1,0 +1,114 @@
+---
+layout: base.njk
+permalink: /ekstraordinaer-generalforsamling/
+title: Ekstraordinær generalforsamling
+description: Høring over RCA's reviderede vedtægter og tilmelding til den ekstraordinære generalforsamling.
+---
+{% set e = ekstraordinaer %}
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">{{ e.eyebrow }}</p>
+        <h1>{{ e.overskrift }}</h1>
+        <p class="lead">{{ e.intro }}</p>
+        <div class="btns">
+          {% if e.hoering.aaben %}<a class="btn terra" href="#hoering">Giv dit høringssvar</a>{% endif %}
+          {% if e.tilmelding.aaben %}<a class="btn{% if e.hoering.aaben %} ghost{% else %} terra{% endif %}" href="#tilmelding">Tilmeld dig</a>{% endif %}
+        </div>
+      </div>
+      <aside class="facts" aria-label="Praktiske oplysninger">
+        <div class="fact"><svg><use href="#i-cal"/></svg><div><strong>{{ e.dato }}</strong></div></div>
+        <div class="fact"><svg><use href="#i-clock"/></svg><div><strong>{{ e.tid }}</strong></div></div>
+        <div class="fact"><svg><use href="#i-pin"/></svg><div><strong>{{ e.sted }}</strong></div></div>
+        {% if e.hoering.aaben %}<div class="fact"><svg><use href="#i-file"/></svg><div><strong>Høringsfrist {{ e.hoering.frist }}</strong></div></div>{% endif %}
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Plan</p>
+      <h2>{{ e.koreplan_overskrift }}</h2>
+      <ol class="timeline roadmap">
+        {% for k in e.koreplan %}<li class="st-{{ k.status }}"><span class="when">{{ k.dato }}</span><span>{{ k.tekst }}{% if k.status == "nu" %} <span class="now-tag">Nu</span>{% elif k.status == "faerdig" %} <span class="done-tag">✓ Gennemført</span>{% endif %}</span></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section id="hoering">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="eyebrow">Høring</p>
+        <h2>{{ e.hoering.overskrift }}</h2>
+        {% if e.hoering.aaben %}
+        <p>{{ e.hoering.tekst }}</p>
+        <p><strong>Frist: {{ e.hoering.frist }}</strong></p>
+        <div class="grid" style="gap:12px;margin-top:20px">
+          {% for x in e.hoering.dokumenter %}<div class="card doc" style="padding:16px 18px"><div class="icon"><svg><use href="#i-file"/></svg></div><div><strong>{{ x.titel }}</strong></div>{% if x.fil %}<a class="btn ghost" href="{{ x.fil }}"{% if x.fil.endsWith(".pdf") %} download{% endif %}>{% if x.fil.endsWith(".pdf") %}Hent PDF{% else %}Læs{% endif %}</a>{% else %}<span class="soon">{{ x.status or "Kommer snart" }}</span>{% endif %}</div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p>{{ e.hoering.lukket_tekst }}</p>
+        {% endif %}
+      </div>
+      {% if e.hoering.aaben %}
+      <form class="card rca-form" name="hoeringssvar" method="POST" action="/tak-for-dit-hoeringssvar/" data-netlify="true" netlify-honeypot="bot-felt">
+        <input type="hidden" name="form-name" value="hoeringssvar">
+        <p class="hp"><label>Udfyld ikke dette felt: <input name="bot-felt"></label></p>
+        <label class="rf"><span>Navn *</span><input name="navn" required autocomplete="name"></label>
+        <label class="rf"><span>E-mail *</span><input name="email" type="email" required autocomplete="email"></label>
+        <label class="rf"><span>Er du medlem? *</span>
+          <select name="medlem" required>
+            <option value="">Vælg …</option>
+            <option>Ja</option>
+            <option>Nej, men jeg vil gerne melde mig ind</option>
+            <option>Nej</option>
+          </select></label>
+        <label class="rf"><span>Hvilken paragraf handler dit svar om?</span>
+          <select name="paragraf">
+            <option>Generelt / flere paragraffer</option>
+            {% for n in range(1, 16) %}<option>§ {{ n }}</option>{% endfor %}
+          </select></label>
+        <label class="rf"><span>Dit høringssvar *</span><textarea name="svar" rows="7" required placeholder="Hvad er du enig eller uenig i? Har du forslag til en anden formulering?"></textarea></label>
+        <label class="check-line"><input type="checkbox" name="samtykke" value="Ja" required> <span>Jeg accepterer, at RCA's bestyrelse bruger mine oplysninger til at behandle mit høringssvar. Svarene opbevares hos vores webhost (Netlify) og slettes efter den ekstraordinære generalforsamling. *</span></label>
+        <button class="btn terra" type="submit">Send høringssvar</button>
+      </form>
+      {% endif %}
+    </div>
+  </section>
+
+  <section id="tilmelding">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="eyebrow">Tilmelding</p>
+        <h2>{{ e.tilmelding.overskrift }}</h2>
+        {% if e.tilmelding.aaben %}
+        <p>{{ e.tilmelding.tekst }}</p>
+        <p><strong>Tilmeldingsfrist: {{ e.tilmelding.frist }}</strong></p>
+        <div class="btns"><a class="btn terra" href="{{ e.tilmelding.link }}" target="_blank" rel="noopener">{{ e.tilmelding.knap_tekst }}</a></div>
+        <p class="muted" style="margin-top:14px">Er du ikke medlem endnu? <a href="/bliv-medlem">Meld dig ind her</a>.</p>
+        {% else %}
+        <p>{{ e.tilmelding.lukket_tekst }}</p>
+        <p class="muted">Er du ikke medlem endnu? <a href="/bliv-medlem">Meld dig ind her</a>, så får du også indkaldelsen.</p>
+        {% endif %}
+      </div>
+      <div class="grid" style="gap:20px">
+        <div class="card">
+          <div class="icon"><svg><use href="#i-video"/></svg></div>
+          <h3>{{ e.digital_overskrift }}</h3>
+          <ul class="check">{% for r in e.digital %}<li>{{ r }}</li>{% endfor %}</ul>
+        </div>
+        <div class="card tinted">
+          <h3>{{ e.regler_overskrift }}</h3>
+          <ul class="check">{% for r in e.regler %}<li>{{ r }}</li>{% endfor %}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="muted">Den stiftende generalforsamling: <a href="/generalforsamling">dagsorden og materiale</a> · <a href="/referat-stiftende-generalforsamling">referat</a></p>
+    </div>
+  </section>
