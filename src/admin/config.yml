@@ -1,8 +1,7 @@
 # Opsætning af redigeringsværktøjet (Decap CMS) for RCA's hjemmeside.
-# Udfyld GITHUB-BRUGERNAVN herunder, når repository'et er oprettet.
 backend:
   name: github
-  repo: GITHUB-BRUGERNAVN/rca-website
+  repo: lemmykook-max/rca-website
   branch: main
   commit_messages:
     create: "Opret {{collection}} “{{slug}}”"

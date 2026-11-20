@@ -6,11 +6,11 @@ Tekster og dokumenter redigeres på **https://rca-website.netlify.app/admin**.
 ## Opsætning (gøres én gang)
 
 1. **GitHub-repository**
-   - Opret et nyt repository på GitHub med navnet `rca-website`. Gør det **offentligt (Public)**.
+   - Opret et nyt repository på GitHub-kontoen `lemmykook-max` med navnet `rca-website`. Gør det **offentligt (Public)**.
      Indholdet er alligevel offentligt på hjemmesiden, og så bygger Netlify også Lenas ændringer uden ekstra medlemskab.
    - Vælg "uploading an existing file" og træk alle filer og mapper fra denne mappe ind. Tryk "Commit changes".
-2. **Ret én linje**
-   - Åbn `src/admin/config.yml` på GitHub, tryk på blyanten, og erstat `GITHUB-BRUGERNAVN` med jeres GitHub-brugernavn eller organisation. Gem.
+2. **Brugernavn**
+   - `src/admin/config.yml` peger allerede på `lemmykook-max/rca-website`. Hvis repository'et får et andet navn, skal linjen `repo:` rettes.
 3. **Forbind Netlify til GitHub**
    - I Netlify: åbn projektet `rca-website` → projektets konfiguration → Build & deploy → **Link repository** → GitHub → vælg `rca-website`.
    - Byggeindstillingerne læses fra `netlify.toml`, så I skal ikke udfylde noget.
