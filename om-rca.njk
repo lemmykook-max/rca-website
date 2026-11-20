@@ -1,0 +1,49 @@
+---
+layout: base.njk
+permalink: /om-rca/
+title: Om RCA
+---
+{% from "ikon.njk" import ikon %}
+{% set o = om %}
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">{{ o.eyebrow }}</p>
+    <h1>{{ o.overskrift }}</h1>
+    <p class="lead" style="max-width:780px">{{ o.intro }}</p>
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">{{ o.fokus_eyebrow }}</p>
+      <h2>{{ o.fokus_overskrift }}</h2>
+      <div class="grid g3" style="margin-top:24px">
+        {% for s in o.fokus %}<div class="card">{{ ikon(s.ikon, s.farve) }}<h3>{{ s.titel }}</h3><p>{{ s.tekst }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="eyebrow">{{ o.vaerdier_eyebrow }}</p>
+        <h2>{{ o.vaerdier_overskrift }}</h2>
+        <p>{{ o.vaerdier_intro }}</p>
+      </div>
+      <ul class="values">
+        {% for v in o.vaerdier %}<li><b>{{ v.titel }}</b>{{ v.tekst }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">{{ o.org_eyebrow }}</p>
+      <h2>{{ o.org_overskrift }}</h2>
+      <div class="grid g3" style="margin-top:24px">
+        {% for s in o.org %}<div class="card">{{ ikon(s.ikon, s.farve) }}<h3>{{ s.titel }}</h3><p>{{ s.tekst }}</p></div>
+        {% endfor %}
+      </div>
+      {% if o.link_tekst %}<p style="margin-top:24px"><a href="{{ o.link }}">{{ o.link_tekst }}</a></p>{% endif %}
+    </div>
+  </section>

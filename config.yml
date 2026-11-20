@@ -1,0 +1,241 @@
+# Opsætning af redigeringsværktøjet (Decap CMS) for RCA's hjemmeside.
+# Udfyld GITHUB-BRUGERNAVN herunder, når repository'et er oprettet.
+backend:
+  name: github
+  repo: GITHUB-BRUGERNAVN/rca-website
+  branch: main
+  commit_messages:
+    create: "Opret {{collection}} “{{slug}}”"
+    update: "Opdatér {{collection}} “{{slug}}”"
+    delete: "Slet {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}”"
+    deleteMedia: "Slet “{{path}}”"
+
+locale: "da"
+site_url: "https://rca-website.netlify.app"
+display_url: "https://rca-website.netlify.app"
+media_folder: "src/files"
+public_folder: "/files"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "nyheder"
+    label: "Nyheder"
+    label_singular: "nyhed"
+    description: "Nyheder vises på forsiden (de 3 nyeste) og på siden Nyheder."
+    folder: "src/nyheder"
+    extension: "md"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Overskrift", name: "title", widget: "string" }
+      - { label: "Dato", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "D. MMMM YYYY", time_format: false, picker_utc: true }
+      - { label: "Kort resumé (vises i oversigten)", name: "summary", widget: "text" }
+      - { label: "Tekst", name: "body", widget: "markdown" }
+
+  - name: "sider"
+    label: "Tekstsider"
+    label_singular: "tekstside"
+    description: "Sider med fri tekst, fx referater. Adressen (fx /referat-stiftende-generalforsamling/) skal starte og slutte med /."
+    folder: "src/sider"
+    extension: "md"
+    create: true
+    fields:
+      - { label: "Overskrift", name: "title", widget: "string" }
+      - { label: "Lille overskrift over titlen", name: "eyebrow", widget: "string", required: false }
+      - { label: "Indledning", name: "intro", widget: "text", required: false }
+      - { label: "Beskrivelse til Google", name: "description", widget: "string", required: false }
+      - { label: "Adresse", name: "permalink", widget: "string", hint: "Fx /ny-side/ – må ikke ændres på sider, der allerede er delt" }
+      - { label: "PDF til download", name: "pdf", widget: "file", required: false }
+      - { label: "Tekst på PDF-knappen", name: "pdf_tekst", widget: "string", required: false }
+      - { label: "Tekst", name: "body", widget: "markdown", hint: "Tip: Start et afsnit med > for at vise det som en fremhævet beslutning." }
+
+  - name: "indhold"
+    label: "Sider på hjemmesiden"
+    editor: { preview: false }
+    files:
+      - label: "Forside"
+        name: "forside"
+        file: "src/_data/forside.json"
+        fields:
+          - { label: "Lille mærkat øverst", name: "tag", widget: "string", required: false }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Fremhævet ord i overskriften", name: "overskrift_fremhaevet", widget: "string", required: false }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - { label: "Knap 1 – tekst", name: "knap1_tekst", widget: "string", required: false }
+          - { label: "Knap 1 – link", name: "knap1_link", widget: "string", required: false }
+          - { label: "Knap 2 – tekst", name: "knap2_tekst", widget: "string", required: false }
+          - { label: "Knap 2 – link", name: "knap2_link", widget: "string", required: false }
+          - { label: "Boks til højre – overskrift", name: "boks_overskrift", widget: "string" }
+          - label: "Boks til højre – punkter"
+            name: "boks_punkter"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "string" }
+          - { label: "Søjler – lille overskrift", name: "soejler_eyebrow", widget: "string" }
+          - { label: "Søjler – overskrift", name: "soejler_overskrift", widget: "string" }
+          - label: "Søjler"
+            name: "soejler"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+          - label: "Mørk boks"
+            name: "panel"
+            widget: "object"
+            fields:
+              - { label: "Vis boksen", name: "vis", widget: "boolean", default: true }
+              - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+              - { label: "Overskrift", name: "overskrift", widget: "string" }
+              - { label: "Tekst til venstre", name: "tekst_venstre", widget: "text" }
+              - { label: "Tekst til højre", name: "tekst_hoejre", widget: "text" }
+              - { label: "Knap – tekst", name: "knap_tekst", widget: "string", required: false }
+              - { label: "Knap – link", name: "knap_link", widget: "string", required: false }
+          - { label: "Vis de nyeste nyheder", name: "vis_nyheder", widget: "boolean", default: true }
+          - { label: "Overskrift over nyheder", name: "nyheder_overskrift", widget: "string" }
+          - label: "Medlemskab nederst"
+            name: "medlem"
+            widget: "object"
+            fields:
+              - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+              - { label: "Overskrift", name: "overskrift", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+              - { label: "Knap 1 – tekst", name: "knap1_tekst", widget: "string" }
+              - { label: "Knap 1 – link", name: "knap1_link", widget: "string" }
+              - { label: "Knap 2 – tekst (åbner mail)", name: "knap2_tekst", widget: "string" }
+
+      - label: "Om RCA"
+        name: "om"
+        file: "src/_data/om.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - { label: "Fokusområder – lille overskrift", name: "fokus_eyebrow", widget: "string" }
+          - { label: "Fokusområder – overskrift", name: "fokus_overskrift", widget: "string" }
+          - label: "Fokusområder"
+            name: "fokus"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+          - { label: "Værdier – lille overskrift", name: "vaerdier_eyebrow", widget: "string" }
+          - { label: "Værdier – overskrift", name: "vaerdier_overskrift", widget: "string" }
+          - { label: "Værdier – indledning", name: "vaerdier_intro", widget: "text" }
+          - label: "Værdier"
+            name: "vaerdier"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+          - { label: "Organisering – lille overskrift", name: "org_eyebrow", widget: "string" }
+          - { label: "Organisering – overskrift", name: "org_overskrift", widget: "string" }
+          - label: "Organisering"
+            name: "org"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+          - { label: "Link nederst – tekst", name: "link_tekst", widget: "string", required: false }
+          - { label: "Link nederst – adresse", name: "link", widget: "string", required: false }
+
+      - label: "Bliv medlem"
+        name: "medlemskab"
+        file: "src/_data/medlemskab.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - label: "Medlemstyper"
+            name: "typer"
+            widget: "list"
+            summary: "{{fields.navn}} – {{fields.pris}}"
+            fields:
+              - { label: "Navn", name: "navn", widget: "string" }
+              - { label: "Pris", name: "pris", widget: "string", hint: "Fx 0 kr. eller 250 kr." }
+              - { label: "Periode", name: "periode", widget: "string", hint: "Fx pr. år" }
+              - { label: "Beskrivelse", name: "tekst", widget: "text" }
+              - { label: "Tekst om stemmeret", name: "stemmeret", widget: "string" }
+              - { label: "Har stemmeret", name: "har_stemmeret", widget: "boolean", default: true }
+              - { label: "Støttemedlemskab (prisen vises i terracotta)", name: "stoette", widget: "boolean", default: false }
+          - { label: "Note under medlemstyperne", name: "note", widget: "text", required: false }
+          - { label: "Sådan gør du – lille overskrift", name: "saadan_eyebrow", widget: "string" }
+          - { label: "Sådan gør du – overskrift", name: "saadan_overskrift", widget: "string" }
+          - { label: "Sådan gør du – tekst", name: "saadan_tekst", widget: "text" }
+          - { label: "Godt at vide – overskrift", name: "godt_overskrift", widget: "string" }
+          - { label: "Godt at vide – punkter", name: "godt_at_vide", widget: "list", field: { label: "Punkt", name: "punkt", widget: "text" } }
+
+      - label: "Dokumenter"
+        name: "dokumenter"
+        file: "src/_data/dokumenter.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - label: "Dokumenter"
+            name: "dokumenter"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Beskrivelse", name: "beskrivelse", widget: "text" }
+              - { label: "PDF-fil", name: "fil", widget: "file", required: false, hint: "Upload en PDF eller vælg en, der allerede ligger på siden" }
+              - { label: "Link til side på hjemmesiden", name: "side", widget: "string", required: false, hint: "Fx /referat-stiftende-generalforsamling" }
+              - { label: "Tekst, hvis der hverken er fil eller link", name: "status", widget: "string", required: false, default: "Kommer snart" }
+              - { label: "Fremhæv med terracotta-ikon", name: "fremhaev", widget: "boolean", default: false }
+          - { label: "Note nederst", name: "note", widget: "text", required: false }
+
+      - label: "Kontakt"
+        name: "kontakt"
+        file: "src/_data/kontakt.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - label: "Kontaktkort"
+            name: "kort"
+            widget: "list"
+            summary: "{{fields.overskrift}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Overskrift", name: "overskrift", widget: "string" }
+              - { label: "E-mail", name: "email", widget: "string", required: false }
+              - { label: "Tekst", name: "tekst", widget: "text", required: false }
+              - { label: "Knaptekst (åbner mail)", name: "knap_tekst", widget: "string", required: false }
+
+      - label: "Fælles: menu, sidefod og kontaktmail"
+        name: "site"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Foreningens navn", name: "navn", widget: "string" }
+          - { label: "Kort navn (logo)", name: "kort_navn", widget: "string" }
+          - { label: "Undertitel ved logo", name: "undertitel", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Tekst i sidefoden", name: "footer_tekst", widget: "text" }
+          - { label: "Kontaktmail", name: "email", widget: "string" }
+          - { label: "Knap øverst til højre – tekst", name: "knap_tekst", widget: "string", required: false }
+          - { label: "Knap øverst til højre – link", name: "knap_link", widget: "string", required: false }
+          - label: "Menu"
+            name: "menu"
+            widget: "list"
+            summary: "{{fields.tekst}} → {{fields.link}}"
+            fields:
+              - { label: "Tekst", name: "tekst", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }

@@ -1,0 +1,24 @@
+---
+layout: base.njk
+permalink: /kontakt/
+title: Kontakt
+---
+{% from "ikon.njk" import ikon %}
+{% set k = kontakt %}
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">{{ k.eyebrow }}</p>
+    <h1>{{ k.overskrift }}</h1>
+    <p class="lead" style="max-width:780px">{{ k.intro }}</p>
+  </div></div>
+  <section>
+    <div class="wrap grid g2">
+      {% for c in k.kort %}<div class="card">
+        {{ ikon(c.ikon, c.farve) }}
+        <h3>{{ c.overskrift }}</h3>
+        {% if c.email %}<p><a class="contact-mail" href="mailto:{{ c.email }}">{{ c.email }}</a></p>{% endif %}
+        {% if c.tekst %}<p class="muted">{{ c.tekst }}</p>{% endif %}
+        {% if c.knap_tekst %}<div class="btns" style="margin-top:8px"><a class="btn ghost" href="mailto:{{ c.email }}?subject=Medlemskab%20af%20RCA">{{ c.knap_tekst }}</a></div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>

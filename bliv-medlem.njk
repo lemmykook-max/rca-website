@@ -1,0 +1,44 @@
+---
+layout: base.njk
+permalink: /bliv-medlem/
+title: Bliv medlem
+---
+{% set m = medlemskab %}
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">{{ m.eyebrow }}</p>
+    <h1>{{ m.overskrift }}</h1>
+    <p class="lead" style="max-width:780px">{{ m.intro }}</p>
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <div class="grid g3">
+        {% for t in m.typer %}<div class="card plan{% if t.stoette %} support{% endif %}">
+          <h2 style="font-size:1.4rem">{{ t.navn }}</h2>
+          <span class="amt">{{ t.pris }}</span><span class="per">{{ t.periode }}</span>
+          <p>{{ t.tekst }}</p>
+          <span class="vote{% if not t.har_stemmeret %} no{% endif %}">{{ t.stemmeret }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      {% if m.note %}<p class="muted" style="margin-top:20px">{{ m.note }}</p>{% endif %}
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="eyebrow">{{ m.saadan_eyebrow }}</p>
+        <h2>{{ m.saadan_overskrift }}</h2>
+        <p>{{ m.saadan_tekst }}</p>
+        <div class="btns"><a class="btn terra" href="mailto:{{ site.email }}?subject=Medlemskab%20af%20RCA"><svg><use href="#i-mail"/></svg>Skriv til {{ site.email }}</a></div>
+      </div>
+      <div class="card">
+        <h3>{{ m.godt_overskrift }}</h3>
+        <ul class="check">
+          {% for g in m.godt_at_vide %}<li>{{ g }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>

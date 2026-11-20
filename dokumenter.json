@@ -1,0 +1,48 @@
+{
+  "eyebrow": "Dokumenter",
+  "overskrift": "Dokumenter",
+  "intro": "Her finder du referatet og materialet fra den stiftende generalforsamling.",
+  "dokumenter": [
+    {
+      "titel": "Referat: Stiftende generalforsamling",
+      "beskrivelse": "Referat fra mødet søndag den 15. november 2026.",
+      "side": "/referat-stiftende-generalforsamling",
+      "fil": "/files/referat-stiftende-generalforsamling-2026-11-15.pdf",
+      "status": "",
+      "fremhaev": true
+    },
+    {
+      "titel": "Vedtægter (foreløbigt godkendt 15. november 2026)",
+      "beskrivelse": "Vedtægterne, som de blev foreløbigt godkendt på den stiftende generalforsamling. De tilrettes nu og sendes i høring.",
+      "side": "",
+      "fil": "/files/vedtaegter-rca-2026-11-08.pdf",
+      "status": "",
+      "fremhaev": false
+    },
+    {
+      "titel": "Dagsorden for stiftende generalforsamling",
+      "beskrivelse": "Den fulde dagsorden for mødet søndag den 15. november 2026.",
+      "side": "",
+      "fil": "/files/dagsorden-stiftende-generalforsamling.pdf",
+      "status": "",
+      "fremhaev": false
+    },
+    {
+      "titel": "Kontingenter",
+      "beskrivelse": "Bestyrelsens forslag til kontingenter. Generalforsamlingen besluttede 0 kr. til at starte med.",
+      "side": "",
+      "fil": "/files/kontingenter-rca.pdf",
+      "status": "",
+      "fremhaev": false
+    },
+    {
+      "titel": "Stiftelsesdokument",
+      "beskrivelse": "Det officielle dokument for foreningens stiftelse.",
+      "side": "",
+      "fil": "",
+      "status": "Kommer snart",
+      "fremhaev": true
+    }
+  ],
+  "note": "Mangler du et dokument, eller har du brug for det i et andet format? Skriv til gitmosep@gmail.com."
+}

@@ -1,0 +1,69 @@
+{
+  "tag": "Ny forening · Stiftet 15. november 2026",
+  "overskrift": "Et fælles ressourcecenter for",
+  "overskrift_fremhaevet": "adopterede",
+  "intro": "RCA er en ny, uafhængig forening, der samler viden, erfaringer og fællesskab om adoption i Danmark.",
+  "knap1_tekst": "Læs referatet fra generalforsamlingen",
+  "knap1_link": "/referat-stiftende-generalforsamling",
+  "knap2_tekst": "Læs om RCA",
+  "knap2_link": "/om-rca",
+  "boks_overskrift": "Seneste nyt",
+  "boks_punkter": [
+    {
+      "ikon": "cal",
+      "titel": "RCA er stiftet",
+      "tekst": "Stiftende generalforsamling søndag den 15. november 2026"
+    },
+    {
+      "ikon": "users",
+      "titel": "Ny bestyrelse",
+      "tekst": "Annemaj Ree Bengtson, Gitte Mose, Lemmy Kook Lyngholm og Lena Lee Skibye"
+    },
+    {
+      "ikon": "file",
+      "titel": "Vedtægterne i høring",
+      "tekst": "Endelig godkendelse på en ekstraordinær generalforsamling"
+    }
+  ],
+  "soejler_eyebrow": "Det arbejder vi for",
+  "soejler_overskrift": "Tre ben, som foreningen står på",
+  "soejler": [
+    {
+      "ikon": "book",
+      "farve": "petrol",
+      "titel": "Viden og dokumentation",
+      "tekst": "Vi samler, analyserer og formidler viden, data og erfaringer om adoption."
+    },
+    {
+      "ikon": "heart",
+      "farve": "terra",
+      "titel": "Støtte og fællesskab",
+      "tekst": "Vi skaber plads til dialog, aktiviteter og fællesskab med respekt for personlige erfaringer – og med fokus på mental sundhed, identitet og livsvilkår."
+    },
+    {
+      "ikon": "voice",
+      "farve": "petrol",
+      "titel": "Stemme og rettigheder",
+      "tekst": "Vi arbejder for at styrke adopteredes stemme, rettigheder og muligheder i samfundet med afsæt i viden."
+    }
+  ],
+  "panel": {
+    "vis": true,
+    "eyebrow": "Generalforsamling",
+    "overskrift": "RCA er stiftet",
+    "tekst_venstre": "Søndag den 15. november 2026 stiftede vi foreningen, godkendte vedtægterne foreløbigt og valgte den første bestyrelse. Tak til alle, der deltog i lokalet og online.",
+    "tekst_hoejre": "Vedtægterne bliver nu tilrettet efter input fra mødet og sendt i høring hos medlemmerne. Derefter indkalder vi til en ekstraordinær generalforsamling.",
+    "knap_tekst": "Læs referatet",
+    "knap_link": "/referat-stiftende-generalforsamling"
+  },
+  "vis_nyheder": true,
+  "nyheder_overskrift": "Nyt fra RCA",
+  "medlem": {
+    "eyebrow": "Medlemskab",
+    "overskrift": "Vær med fra begyndelsen",
+    "tekst": "Bliv medlem, og vær med til at forme RCA – eller støt arbejdet som støttemedlem.",
+    "knap1_tekst": "Se medlemskaber",
+    "knap1_link": "/bliv-medlem",
+    "knap2_tekst": "Bliv medlem"
+  }
+}

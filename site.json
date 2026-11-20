@@ -1,0 +1,40 @@
+{
+  "navn": "Ressourcecenter for Adopterede (RCA)",
+  "kort_navn": "RCA",
+  "undertitel": "Ressourcecenter for Adopterede",
+  "tagline": "Viden · Fællesskab · Rettigheder",
+  "footer_tekst": "En uafhængig forening for viden, fællesskab og bedre vilkår for adopterede.",
+  "email": "gitmosep@gmail.com",
+  "knap_tekst": "Bliv medlem",
+  "knap_link": "/bliv-medlem",
+  "menu": [
+    {
+      "tekst": "Forside",
+      "link": "/"
+    },
+    {
+      "tekst": "Om RCA",
+      "link": "/om-rca"
+    },
+    {
+      "tekst": "Nyheder",
+      "link": "/nyheder"
+    },
+    {
+      "tekst": "Generalforsamling",
+      "link": "/generalforsamling"
+    },
+    {
+      "tekst": "Bliv medlem",
+      "link": "/bliv-medlem"
+    },
+    {
+      "tekst": "Dokumenter",
+      "link": "/dokumenter"
+    },
+    {
+      "tekst": "Kontakt",
+      "link": "/kontakt"
+    }
+  ]
+}

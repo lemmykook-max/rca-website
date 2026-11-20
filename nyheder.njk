@@ -1,0 +1,17 @@
+---
+layout: base.njk
+permalink: /nyheder/
+title: Nyheder
+---
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">Nyheder</p>
+    <h1>Nyt fra RCA</h1>
+  </div></div>
+  <section>
+    <div class="wrap">
+      <div class="grid">
+        {% for n in collections.nyheder %}<a class="card news-card" href="{{ n.url }}"><span class="muted">{{ n.date | dato }}</span><h3>{{ n.data.title }}</h3><p>{{ n.data.summary }}</p></a>
+        {% else %}<p>Der er ingen nyheder endnu.</p>{% endfor %}
+      </div>
+    </div>
+  </section>

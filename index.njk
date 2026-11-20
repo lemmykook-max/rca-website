@@ -1,0 +1,84 @@
+---
+layout: base.njk
+permalink: /
+---
+{% from "ikon.njk" import ikon %}
+{% set f = forside %}
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        {% if f.tag %}<span class="tag">{{ f.tag }}</span>{% endif %}
+        <h1>{{ f.overskrift }}{% if f.overskrift_fremhaevet %} <em>{{ f.overskrift_fremhaevet }}</em>{% endif %}</h1>
+        <p class="lead">{{ f.intro }}</p>
+        <div class="btns">
+          {% if f.knap1_tekst %}<a class="btn terra" href="{{ f.knap1_link }}">{{ f.knap1_tekst }}</a>{% endif %}
+          {% if f.knap2_tekst %}<a class="btn ghost" href="{{ f.knap2_link }}">{{ f.knap2_tekst }}</a>{% endif %}
+        </div>
+        <p class="tagline">{{ site.tagline }}</p>
+      </div>
+      {% if f.boks_punkter and f.boks_punkter.length %}
+      <aside class="facts" aria-label="{{ f.boks_overskrift }}">
+        <p class="eyebrow" style="margin-bottom:4px">{{ f.boks_overskrift }}</p>
+        {% for p in f.boks_punkter %}<div class="fact"><svg><use href="#i-{{ p.ikon }}"/></svg><div><strong>{{ p.titel }}</strong>{{ p.tekst }}</div></div>
+        {% endfor %}
+      </aside>
+      {% endif %}
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">{{ f.soejler_eyebrow }}</p>
+      <h2>{{ f.soejler_overskrift }}</h2>
+      <div class="grid g3" style="margin-top:24px">
+        {% for s in f.soejler %}<div class="card">{{ ikon(s.ikon, s.farve) }}<h3>{{ s.titel }}</h3><p>{{ s.tekst }}</p></div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% if f.panel.vis %}
+  <section>
+    <div class="wrap">
+      <div class="panel split">
+        <div>
+          <p class="eyebrow" style="color:#f0b49c">{{ f.panel.eyebrow }}</p>
+          <h2>{{ f.panel.overskrift }}</h2>
+          <p>{{ f.panel.tekst_venstre }}</p>
+        </div>
+        <div>
+          <p>{{ f.panel.tekst_hoejre }}</p>
+          {% if f.panel.knap_tekst %}<div class="btns" style="margin-top:12px"><a class="btn" href="{{ f.panel.knap_link }}">{{ f.panel.knap_tekst }}</a></div>{% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if f.vis_nyheder and collections.nyheder.length %}
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Nyheder</p>
+      <h2>{{ f.nyheder_overskrift }}</h2>
+      <div class="grid g3" style="margin-top:24px">
+        {% for n in collections.nyheder | head(3) %}<a class="card news-card" href="{{ n.url }}"><span class="muted">{{ n.date | dato }}</span><h3>{{ n.data.title }}</h3><p>{{ n.data.summary }}</p></a>
+        {% endfor %}
+      </div>
+      <p style="margin-top:20px"><a href="/nyheder">Alle nyheder →</a></p>
+    </div>
+  </section>
+  {% endif %}
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">{{ f.medlem.eyebrow }}</p>
+        <h2>{{ f.medlem.overskrift }}</h2>
+        <p>{{ f.medlem.tekst }}</p>
+      </div>
+      <div class="btns" style="margin-top:0">
+        <a class="btn" href="{{ f.medlem.knap1_link }}">{{ f.medlem.knap1_tekst }}</a>
+        <a class="btn ghost" href="mailto:{{ site.email }}?subject=Medlemskab%20af%20RCA"><svg><use href="#i-mail"/></svg>{{ f.medlem.knap2_tekst }}</a>
+      </div>
+    </div>
+  </section>

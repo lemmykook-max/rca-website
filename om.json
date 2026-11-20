@@ -1,0 +1,94 @@
+{
+  "eyebrow": "Om RCA",
+  "overskrift": "Om Ressourcecenter for Adopterede",
+  "intro": "RCA arbejder for at oprette og udvikle et uafhængigt videns- og dokumentationscenter om adoption. Foreningen er almennyttig, og et eventuelt overskud går kun til foreningens formål.",
+  "fokus_eyebrow": "Formål",
+  "fokus_overskrift": "Seks fokusområder",
+  "fokus": [
+    {
+      "ikon": "book",
+      "farve": "petrol",
+      "titel": "Viden om adoption",
+      "tekst": "Vi samler og analyserer viden, data og erfaringer om adoption i Danmark og internationalt."
+    },
+    {
+      "ikon": "heart",
+      "farve": "terra",
+      "titel": "Mental sundhed, trivsel og identitet",
+      "tekst": "Vi sætter fokus på adopteredes mentale sundhed, trivsel, identitet og livsvilkår – og deler viden og giver støtte."
+    },
+    {
+      "ikon": "tools",
+      "farve": "petrol",
+      "titel": "Redskaber, analyser og formidling",
+      "tekst": "Vi udvikler og formidler redskaber og analyser til adopterede, familier, forskere, fagfolk, beslutningstagere og samfundet."
+    },
+    {
+      "ikon": "chat",
+      "farve": "petrol",
+      "titel": "Dialog og samarbejde",
+      "tekst": "Vi skaber dialog og samarbejde mellem adopterede, familier, forskere, fagfolk, myndigheder og civilsamfund."
+    },
+    {
+      "ikon": "users",
+      "farve": "petrol",
+      "titel": "Sociale, kulturelle og oplysende aktiviteter",
+      "tekst": "Vi arrangerer aktiviteter, hvor man kan mødes, lære og dele erfaringer."
+    },
+    {
+      "ikon": "voice",
+      "farve": "terra",
+      "titel": "Adopteredes stemme og rettigheder",
+      "tekst": "Vi arbejder for at styrke adopteredes stemme, rettigheder og muligheder i samfundet med afsæt i viden om adoption."
+    }
+  ],
+  "vaerdier_eyebrow": "Værdier",
+  "vaerdier_overskrift": "Det står vi for",
+  "vaerdier_intro": "Adopteredes egne erfaringer og perspektiver er udgangspunktet for alt, hvad vi gør.",
+  "vaerdier": [
+    {
+      "titel": "Uafhængighed",
+      "tekst": "RCA er en selvstændig forening uden politiske eller kommercielle bindinger."
+    },
+    {
+      "titel": "Faglighed",
+      "tekst": "Arbejdet bygger på grundig viden og dokumentation."
+    },
+    {
+      "titel": "Respekt og fortrolighed",
+      "tekst": "Personlige erfaringer behandles med omhu og diskretion."
+    },
+    {
+      "titel": "Adopteredes perspektiver",
+      "tekst": "Adopteredes egne stemmer er udgangspunktet."
+    },
+    {
+      "titel": "Samarbejde",
+      "tekst": "Åbent samarbejde på tværs af sektorer."
+    }
+  ],
+  "org_eyebrow": "Organisering",
+  "org_overskrift": "Sådan er foreningen bygget op",
+  "org": [
+    {
+      "ikon": "users",
+      "farve": "petrol",
+      "titel": "Generalforsamlingen",
+      "tekst": "Foreningens øverste myndighed. Den ordinære generalforsamling holdes én gang om året inden udgangen af februar."
+    },
+    {
+      "ikon": "star",
+      "farve": "petrol",
+      "titel": "Bestyrelsen",
+      "tekst": "3–5 medlemmer: formand, kasserer og sekretær – og eventuelt næstformand og kommunikationsansvarlig. Desuden op til 2 suppleanter."
+    },
+    {
+      "ikon": "lock",
+      "farve": "terra",
+      "titel": "Fortrolighed",
+      "tekst": "Det, medlemmer fortæller om personlige forhold i foreningens fællesskaber, er fortroligt og deles ikke uden samtykke."
+    }
+  ],
+  "link_tekst": "Læs vedtægterne under Dokumenter →",
+  "link": "/dokumenter"
+}

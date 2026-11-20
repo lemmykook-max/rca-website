@@ -1,0 +1,20 @@
+---
+layout: base.njk
+permalink: /dokumenter/
+title: Dokumenter
+---
+{% set d = dokumenter %}
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">{{ d.eyebrow }}</p>
+    <h1>{{ d.overskrift }}</h1>
+    <p class="lead" style="max-width:780px">{{ d.intro }}</p>
+  </div></div>
+  <section>
+    <div class="wrap">
+      <div class="grid">
+        {% for x in d.dokumenter %}<div class="card doc"><div class="icon{% if x.fremhaev %} terra{% endif %}"><svg><use href="#i-file"/></svg></div><div><h3 style="margin-bottom:4px">{% if x.side %}<a href="{{ x.side }}">{{ x.titel }}</a>{% else %}{{ x.titel }}{% endif %}</h3><p class="muted">{{ x.beskrivelse }}</p></div>{% if x.fil %}<a class="btn ghost" href="{{ x.fil }}" download>Hent PDF</a>{% elif x.side %}<a class="btn ghost" href="{{ x.side }}">Læs</a>{% else %}<span class="soon">{{ x.status or "Kommer snart" }}</span>{% endif %}</div>
+        {% endfor %}
+      </div>
+      {% if d.note %}<p class="muted" style="margin-top:24px">{{ d.note | escape | mail_links | safe }}</p>{% endif %}
+    </div>
+  </section>

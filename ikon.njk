@@ -1,0 +1,3 @@
+{%- macro ikon(navn, farve, stor=false) -%}
+<div class="icon{% if farve == 'terra' %} terra{% endif %}"><svg><use href="#i-{{ navn }}"/></svg></div>
+{%- endmacro -%}

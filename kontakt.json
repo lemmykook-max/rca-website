@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Kontakt",
+  "overskrift": "Kontakt RCA",
+  "intro": "Har du spørgsmål til RCA eller medlemskab, er du velkommen til at kontakte os.",
+  "kort": [
+    {
+      "ikon": "mail",
+      "farve": "petrol",
+      "overskrift": "Medlemskab og generelle spørgsmål",
+      "email": "gitmosep@gmail.com",
+      "tekst": "",
+      "knap_tekst": "Bliv medlem"
+    },
+    {
+      "ikon": "file",
+      "farve": "terra",
+      "overskrift": "Bestyrelsen",
+      "email": "lemmykook@gmail.com",
+      "tekst": "Kontakt bestyrelsen, hvis du har forslag til foreningens arbejde.",
+      "knap_tekst": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "eyebrow": "Medlemskab",
+  "overskrift": "Bliv medlem af RCA",
+  "intro": "Som medlem er du med til at bygge et uafhængigt ressourcecenter om adoption – og du kan være med fra begyndelsen.",
+  "typer": [
+    {
+      "navn": "Fuldt medlemskab",
+      "pris": "0 kr.",
+      "periode": "indtil videre",
+      "tekst": "For adopterede og andre, der ønsker fulde medlemsrettigheder, herunder stemmeret på generalforsamlingen.",
+      "stemmeret": "✓ Stemmeret",
+      "har_stemmeret": true,
+      "stoette": false
+    },
+    {
+      "navn": "Studie-, pensionist- og børnemedlemskab",
+      "pris": "0 kr.",
+      "periode": "indtil videre",
+      "tekst": "For studerende på SU eller tilsvarende, pensionister og børn til og med 17 år.",
+      "stemmeret": "✓ Stemmeret fra 18 år",
+      "har_stemmeret": true,
+      "stoette": false
+    },
+    {
+      "navn": "Støttemedlemskab",
+      "pris": "0 kr.",
+      "periode": "indtil videre",
+      "tekst": "For familie, venner, fagfolk og andre, der vil støtte foreningens formål uden selv at deltage aktivt.",
+      "stemmeret": "Taleret, ikke stemmeret",
+      "har_stemmeret": false,
+      "stoette": true
+    }
+  ],
+  "note": "Den stiftende generalforsamling besluttede, at kontingentet er 0 kr. til at starte med. Frivillige donationer er velkomne, når foreningen har fået en bankkonto. Kontingentet tages op igen på en senere generalforsamling.",
+  "saadan_eyebrow": "Sådan gør du",
+  "saadan_overskrift": "Meld dig ind",
+  "saadan_tekst": "Skriv til os, og fortæl, hvilket medlemskab du ønsker. Så registrerer vi dig som medlem.",
+  "godt_overskrift": "Godt at vide",
+  "godt_at_vide": [
+    "Stemmeret kræver fuldt eller studie-/pensionistmedlemskab, at man er fyldt 18 år og har betalt kontingent.",
+    "Man kan melde sig ud ved skriftlig besked til bestyrelsen.",
+    "Vi bruger kun dine oplysninger til at administrere dit medlemskab og giver dem ikke videre uden dit samtykke."
+  ]
+}

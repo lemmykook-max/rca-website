@@ -1,0 +1,57 @@
+{%- set cur = page.url | replace(".html","") -%}
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {{ site.undertitel }}{% else %}{{ site.navn }}{% endif %}</title>
+<meta name="description" content="{{ description or site.footer_tekst }}">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2317424d'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='22' font-weight='700' fill='%23f7f3ec' text-anchor='middle'%3ERCA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+{% include "icons.html" %}
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="/"><b>{{ site.kort_navn }}</b><span>{{ site.undertitel }}</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="hovedmenu">Menu</button>
+    <nav class="main" id="hovedmenu" aria-label="Hovedmenu">
+      <ul>
+{%- for m in site.menu %}
+        {%- set active = (m.link == "/" and cur == "/") or (m.link != "/" and (cur == m.link + "/" or cur.startsWith(m.link + "/"))) %}
+        <li><a href="{{ m.link }}"{% if active %} aria-current="page"{% endif %}>{{ m.tekst }}</a></li>
+{%- endfor %}
+      </ul>
+    </nav>
+    {% if site.knap_tekst %}<a class="btn terra header-cta" href="{{ site.knap_link }}" style="padding:9px 16px;font-size:.92rem;margin-top:0">{{ site.knap_tekst }}</a>{% endif %}
+  </div>
+</header>
+
+<main id="indhold">
+{{ content | safe }}
+</main>
+{% if gf %}{% include "gf_mm.html" %}
+<script src="/generalforsamling.js" defer></script>
+<script src="/referat.js" defer></script>{% endif %}
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <p style="font-family:var(--serif);font-size:1.3rem;font-weight:700;margin-bottom:.3em">{{ site.navn }}</p>
+      <p>{{ site.footer_tekst }}</p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    </div>
+    <nav aria-label="Sidefod">
+      <ul>
+{%- for m in site.menu %}{% if m.link != "/" %}
+        <li><a href="{{ m.link }}">{{ m.tekst }}</a></li>
+{%- endif %}{% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap copy">© 2026 {{ site.navn }}</div>
+</footer>
+<script src="/main.js"></script>
+</body>
+</html>

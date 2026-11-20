@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<div class="page-head"><div class="wrap">
+  <p class="eyebrow"><a href="/nyheder" style="color:inherit;text-decoration:none">Nyheder</a> · {{ page.date | dato }}</p>
+  <h1>{{ title }}</h1>
+  {% if summary %}<p class="lead" style="max-width:780px">{{ summary }}</p>{% endif %}
+</div></div>
+<section>
+  <div class="wrap prose">
+{{ content | safe }}
+    <p style="margin-top:32px"><a href="/nyheder">← Alle nyheder</a></p>
+  </div>
+</section>
