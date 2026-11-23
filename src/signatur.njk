@@ -44,17 +44,18 @@ personer:
   <h1>Mailsignaturer</h1>
   <p class="lead">Find din signatur, kopiér den og sæt den ind i webmail.</p>
   <ol>
-    <li>Klik på <b>Kopiér signatur</b> under din egen.</li>
-    <li>Log ind på webmail.simply.com, og åbn indstillingerne for signatur.</li>
-    <li>Sæt signaturen ind med Ctrl+V (Cmd+V på Mac), og gem.</li>
+    <li>Klik på <b>Kopiér HTML</b> under din egen signatur.</li>
+    <li>Log ind på webmail.simply.com, åbn indstillingerne, vælg din RCA-adresse og find feltet Signatur.</li>
+    <li>Klik på billed-ikonet øverst i feltet, derefter på de tre prikker og til sidst på <b>&lt;&gt;</b>.</li>
+    <li>Slet det, der står i feltet, sæt koden ind med Ctrl+V (Cmd+V på Mac), og gem.</li>
   </ol>
-  <p class="muted">Viser editoren koden i stedet for signaturen, så brug <b>Kopiér HTML</b> og sæt den ind i HTML-/kildekode-feltet.</p>
+  <p class="muted">Logoet vises først, når rcfa.dk er aktivt. Det retter sig selv.</p>
 {% for p in personer %}
   <h2 style="font-size:1.3rem;margin-top:30px">{{ p.navn }}</h2>
   <div class="sig" id="sig{{ loop.index }}">{{ signatur(p) | safe }}</div>
   <div class="row">
-    <button data-sig="sig{{ loop.index }}" data-mode="rich">Kopiér signatur</button>
-    <button class="ghost" data-sig="sig{{ loop.index }}" data-mode="html">Kopiér HTML</button>
+    <button data-sig="sig{{ loop.index }}" data-mode="html">Kopiér HTML</button>
+    <button class="ghost" data-sig="sig{{ loop.index }}" data-mode="rich">Kopiér signatur</button>
     <span class="ok" aria-live="polite"></span>
   </div>
 {% endfor %}
