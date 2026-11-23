@@ -1,0 +1,87 @@
+---
+permalink: /signatur/
+eleventyExcludeFromCollections: true
+personer:
+  - navn: Lemmy Kook Lyngholm
+    rolle: Forperson
+    mail: chair@rcfa.dk
+  - navn: Gitte Mose
+    rolle: Næstforperson
+    mail: vice@rcfa.dk
+  - navn: Lena Lee Skibye
+    rolle: Kommunikationsansvarlig
+    mail: comms@rcfa.dk
+  - navn: Annemaj Ree Bengtson
+    rolle: Bestyrelsesmedlem
+    mail: annemaj@rcfa.dk
+---
+{%- macro signatur(p) -%}
+<table cellpadding="0" cellspacing="0" border="0" style="width:auto;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#17424d;font-size:13px;line-height:1.45"><tr><td width="78" style="width:78px;padding:0 14px 0 0;vertical-align:middle;border:0"><a href="https://rcfa.dk"><img src="https://rcfa.dk/files/signatur/rca-logo.png" width="64" height="64" alt="RCA" style="display:block;border:0;width:64px;height:64px"></a></td><td style="border:0;border-left:2px solid #b8603f;padding:0 0 0 14px;vertical-align:middle"><div style="font-family:Georgia,'Times New Roman',serif;font-size:16px;font-weight:bold;color:#17424d">{{ p.navn }}</div><div style="color:#2e6b73">{{ p.rolle }}, Ressourcecenter for Adopterede</div><div style="margin-top:4px"><a href="mailto:{{ p.mail }}" style="color:#17424d;text-decoration:none">{{ p.mail }}</a>&nbsp;·&nbsp;<a href="https://rcfa.dk" style="color:#b8603f;text-decoration:none;font-weight:bold">rcfa.dk</a></div><div style="margin-top:2px;font-size:11px;color:#55686b;letter-spacing:.04em">Viden · Fællesskab · Rettigheder</div></td></tr></table>
+{%- endmacro -%}
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mailsignaturer · Ressourcecenter for Adopterede</title>
+<link rel="stylesheet" href="/styles.css">
+<style>
+  main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+  .sig table{width:auto!important;margin:0}
+  .sig td{border-bottom:0!important}
+  .sig{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:0 0 14px}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
+  .row button{font:inherit;font-size:.92rem;border-radius:999px;padding:8px 16px;cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:#fff}
+  .row button.ghost{background:#fff;color:var(--ink)}
+  .row .ok{color:var(--terra);font-weight:700;align-self:center;font-size:.92rem}
+  ol li{margin-bottom:.4em}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Kun for bestyrelsen</p>
+  <h1>Mailsignaturer</h1>
+  <p class="lead">Find din signatur, kopiér den og sæt den ind i webmail.</p>
+  <ol>
+    <li>Klik på <b>Kopiér signatur</b> under din egen.</li>
+    <li>Log ind på webmail.simply.com, og åbn indstillingerne for signatur.</li>
+    <li>Sæt signaturen ind med Ctrl+V (Cmd+V på Mac), og gem.</li>
+  </ol>
+  <p class="muted">Viser editoren koden i stedet for signaturen, så brug <b>Kopiér HTML</b> og sæt den ind i HTML-/kildekode-feltet.</p>
+{% for p in personer %}
+  <h2 style="font-size:1.3rem;margin-top:30px">{{ p.navn }}</h2>
+  <div class="sig" id="sig{{ loop.index }}">{{ signatur(p) | safe }}</div>
+  <div class="row">
+    <button data-sig="sig{{ loop.index }}" data-mode="rich">Kopiér signatur</button>
+    <button class="ghost" data-sig="sig{{ loop.index }}" data-mode="html">Kopiér HTML</button>
+    <span class="ok" aria-live="polite"></span>
+  </div>
+{% endfor %}
+</main>
+<script>
+document.querySelectorAll("button[data-sig]").forEach((b) => b.addEventListener("click", async () => {
+  const el = document.getElementById(b.dataset.sig);
+  const html = el.innerHTML.trim();
+  const ok = b.parentElement.querySelector(".ok");
+  try {
+    if (b.dataset.mode === "rich" && window.ClipboardItem) {
+      await navigator.clipboard.write([new ClipboardItem({
+        "text/html": new Blob([html], { type: "text/html" }),
+        "text/plain": new Blob([el.innerText], { type: "text/plain" }),
+      })]);
+    } else if (b.dataset.mode === "rich") {
+      const r = document.createRange(); r.selectNodeContents(el);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand("copy"); s.removeAllRanges();
+    } else {
+      await navigator.clipboard.writeText(html);
+    }
+    ok.textContent = "Kopieret ✓";
+  } catch (e) {
+    ok.textContent = "Kunne ikke kopiere. Markér signaturen og kopiér den selv.";
+  }
+  setTimeout(() => (ok.textContent = ""), 4000);
+}));
+</script>
+</body>
+</html>
