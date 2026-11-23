@@ -60,9 +60,13 @@ personer:
 {% endfor %}
 </main>
 <script>
+const LOGO = "https://rcfa.dk/files/signatur/rca-logo.png";
+// Vis logoet fra dette site i forhåndsvisningen; den kopierede signatur bruger altid rcfa.dk
+document.querySelectorAll(".sig img").forEach((i) => (i.src = "/files/signatur/rca-logo.png"));
+const withLogo = (html) => html.replace(/src="[^"]*rca-logo\.png"/g, `src="${LOGO}"`);
 document.querySelectorAll("button[data-sig]").forEach((b) => b.addEventListener("click", async () => {
   const el = document.getElementById(b.dataset.sig);
-  const html = el.innerHTML.trim();
+  const html = withLogo(el.innerHTML.trim());
   const ok = b.parentElement.querySelector(".ok");
   try {
     if (b.dataset.mode === "rich" && window.ClipboardItem) {
@@ -71,8 +75,9 @@ document.querySelectorAll("button[data-sig]").forEach((b) => b.addEventListener(
         "text/plain": new Blob([el.innerText], { type: "text/plain" }),
       })]);
     } else if (b.dataset.mode === "rich") {
-      const r = document.createRange(); r.selectNodeContents(el);
-      const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand("copy"); s.removeAllRanges();
+      const tmp = document.createElement("div"); tmp.innerHTML = html; tmp.style.position = "fixed"; tmp.style.left = "-9999px"; document.body.appendChild(tmp);
+      const r = document.createRange(); r.selectNodeContents(tmp);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand("copy"); s.removeAllRanges(); tmp.remove();
     } else {
       await navigator.clipboard.writeText(html);
     }
