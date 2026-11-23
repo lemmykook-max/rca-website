@@ -13,14 +13,14 @@
       "status": "faerdig"
     },
     {
-      "dato": "Senest 23. november",
+      "dato": "23. november",
       "tekst": "Vedtægterne sendes i høring med en oversigt over ændringerne (gammel og ny tekst).",
-      "status": "nu"
+      "status": "faerdig"
     },
     {
       "dato": "7. december",
       "tekst": "Frist for høringssvar.",
-      "status": "kommende"
+      "status": "nu"
     },
     {
       "dato": "7.–11. december",
@@ -50,14 +50,14 @@
     "tekst": "Læs de reviderede vedtægter og oversigten over ændringerne. Skriv derefter, hvad du er enig eller uenig i, eller hvad du savner. Du kan sende flere svar.",
     "dokumenter": [
       {
-        "titel": "Reviderede vedtægter",
-        "fil": "",
-        "status": "Kommer senest 23. november"
+        "titel": "Reviderede vedtægter (høringsudkast)",
+        "fil": "/files/vedtaegter-rca-hoeringsudkast-2026-11-23.pdf",
+        "status": ""
       },
       {
         "titel": "Oversigt over ændringer (gammel og ny tekst)",
-        "fil": "",
-        "status": "Kommer senest 23. november"
+        "fil": "/files/vedtaegter-rca-aendringsoversigt-2026-11-23.pdf",
+        "status": ""
       },
       {
         "titel": "Referat fra den stiftende generalforsamling",

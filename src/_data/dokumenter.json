@@ -4,6 +4,22 @@
   "intro": "Her finder du referatet og materialet fra den stiftende generalforsamling.",
   "dokumenter": [
     {
+      "titel": "Vedtægter i høring (23. november 2026)",
+      "beskrivelse": "Bestyrelsens forslag til reviderede vedtægter. Høringsfrist 7. december 2026.",
+      "side": "/ekstraordinaer-generalforsamling",
+      "fil": "/files/vedtaegter-rca-hoeringsudkast-2026-11-23.pdf",
+      "status": "",
+      "fremhaev": true
+    },
+    {
+      "titel": "Oversigt over ændringer i vedtægterne",
+      "beskrivelse": "Gammel og ny tekst side om side, med begrundelse for hver ændring.",
+      "side": "",
+      "fil": "/files/vedtaegter-rca-aendringsoversigt-2026-11-23.pdf",
+      "status": "",
+      "fremhaev": false
+    },
+    {
       "titel": "Referat: Stiftende generalforsamling",
       "beskrivelse": "Referat fra mødet søndag den 15. november 2026.",
       "side": "/referat-stiftende-generalforsamling",
