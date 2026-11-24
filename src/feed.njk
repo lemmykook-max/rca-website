@@ -1,0 +1,27 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.navn }}</title>
+  <link>{{ site.url }}/nyheder/</link>
+  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Nyheder fra {{ site.navn }}. {{ site.footer_tekst }}</description>
+  <language>da</language>
+  {%- set nyeste = collections.nyheder | head(20) %}
+  {%- if nyeste.length %}
+  <lastBuildDate>{{ nyeste[0].date.toUTCString() }}</lastBuildDate>
+  {%- endif %}
+  {%- for n in nyeste %}
+  <item>
+    <title>{{ n.data.title | escape }}</title>
+    <link>{{ site.url }}{{ n.url }}</link>
+    <guid isPermaLink="true">{{ site.url }}{{ n.url }}</guid>
+    <pubDate>{{ n.date.toUTCString() }}</pubDate>
+    <description>{{ n.data.summary | escape }}</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>
