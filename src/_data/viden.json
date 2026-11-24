@@ -388,6 +388,149 @@
           ]
         }
       ]
+    },
+    {
+      "id": "biologisk-ophav",
+      "ikon": "pin",
+      "farve": "terra",
+      "titel": "At finde sit biologiske ophav",
+      "kort": "Hvor du kan søge, hvad DNA-test kan og ikke kan, og hvad forskningen siger om søgen og genforening.",
+      "klar": true,
+      "intro": "Mange adopterede vil gerne vide mere om, hvor de kommer fra. Nogle søger efter papirer, andre efter familie. Her har vi samlet, hvor man kan starte i Danmark og i afgiverlandet, hvad DNA-test kan bruges til, og hvad forskningen siger om at søge og møde sin biologiske familie.",
+      "pointer": [
+        "Som adopteret har du ret til at få oplysninger om dine biologiske forældre. Er du adopteret før 2019, søger du hos Rigsarkivet eller Ankestyrelsen.",
+        "Ankestyrelsen har overtaget DIA's opgaver og hjælper med aktindsigt i den danske adoptionssag. Der har været lang ventetid.",
+        "Papirerne kan være mangelfulde eller forkerte. Dokumenterne i afgiverlandet indeholder ofte flere oplysninger end dem, der blev sendt til Danmark.",
+        "DNA-test er blevet et vigtigt redskab, når papirerne svigter. Chancen for et match afhænger af, om familien selv er testet, og databaserne har få profiler fra Asien og Sydasien.",
+        "Søgen og genforening kan give en stærkere fornemmelse af identitet, men det er følelsesmæssigt krævende. Forskningen peger på, at støtte før, under og efter gør en forskel.",
+        "Husk, at de biologiske forældre også kan have deres egen historie og egne grunde. En kontakt kan tage tid, og ikke alle søgninger fører til et møde."
+      ],
+      "grupper": [
+        {
+          "titel": "Sådan kommer du i gang i Danmark",
+          "kilder": [
+            {
+              "titel": "Adoption – oplysninger om biologiske forældre",
+              "forfattere": "borger.dk",
+              "aar": "2026",
+              "udgiver": "Digitaliseringsstyrelsen",
+              "link": "https://www.borger.dk/familie-og-boern/adoption",
+              "resume": "Den officielle indgang. Her står, hvor du skal søge oplysninger om dine biologiske forældre afhængigt af, hvornår du blev adopteret, og hvordan du ansøger hos Rigsarkivet eller Ankestyrelsen."
+            },
+            {
+              "titel": "Flere hundrede adopterede i Danmark venter på indsigt i egen sag",
+              "forfattere": "DR Nyheder",
+              "aar": "2025",
+              "udgiver": "DR",
+              "link": "https://www.dr.dk/nyheder/indland/flere-hundrede-adopterede-i-danmark-venter-paa-indsigt-i-egen-sag",
+              "resume": "Ankestyrelsen overtog DIA's opgaver og en lang række ubesvarede anmodninger om aktindsigt. Artiklen beskriver ventetiden og baggrunden. God at kende, hvis du skal søge om din egen sag."
+            },
+            {
+              "titel": "Adopteredes ret til egen identitet (kapitel 4: Hjælp til adopterede)",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2022",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://cdn.ast.dk/ankestyrelsen/Media/639117762590995706/adopteredes-ret-til-egen-identitet.pdf",
+              "resume": "Ankestyrelsens oversigt over de muligheder, der findes i Danmark for at hjælpe adopterede med at genoprette deres identitet og få indsigt i deres baggrund."
+            }
+          ]
+        },
+        {
+          "titel": "Søgning i Sydkorea",
+          "kilder": [
+            {
+              "titel": "Korean adoptees question their past and ask how to find their families",
+              "forfattere": "Associated Press og FRONTLINE",
+              "aar": "2024",
+              "udgiver": "PBS FRONTLINE",
+              "link": "https://www.pbs.org/wgbh/frontline/article/south-korean-adoptees-question-past-how-to-find-families",
+              "resume": "En praktisk guide til koreansk adopterede. Du kan bede dit adoptionsbureau eller det statslige National Center for the Rights of the Child (NCRC) om oplysninger. Myndighederne må kun kontakte de biologiske forældre med brev og højst tre gange per søgning. De koreanske papirer indeholder ofte flere oplysninger end de oversatte papirer, der blev sendt til adoptivforældrene. Lykkes søgningen ikke, kan man registrere sit DNA hos politiet eller en koreansk ambassade."
+            },
+            {
+              "titel": "Notat om Ankestyrelsens tilsynsrejse til Sydkorea 2023",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2023",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://ast.dk/born-familie/hvad-handler-din-klage-om/adoption/tilsyn-med-de-formidlende-organisationer/notat-om-ankestyrelsens-tilsynsrejse-til-sydkorea-2023-handicaptilgaengelig.pdf/@@download/file/Notat%20om%20Ankestyrelsens%20tilsynsrejse%20til%20Sydkorea%202023,%20handicaptilg%C3%A6ngelig.pdf",
+              "resume": "Beskriver de muligheder, adopterede har i Sydkorea for at få indsigt i egne oplysninger og kontakt til biologisk familie. Hvis de biologiske forældre ikke giver samtykke, eller hvis de er døde, kan man kun få mere generelle oplysninger, fx hvilket område familien boede i."
+            },
+            {
+              "titel": "Korean adoption system misidentifies birth parents, 15 years of errors go unchecked",
+              "forfattere": "The Korea Times",
+              "aar": "2025",
+              "udgiver": "The Korea Times",
+              "link": "https://www.koreatimes.co.kr/southkorea/society/20250618/korean-adoption-system-misidentifies-birth-parents-15-years-of-errors-go-unchecked",
+              "resume": "Afslører fejl i det koreanske system, der sender breve til biologiske forældre, blandt andet fordi adresserne i gamle sager er forældede. I 2024 bad 3.374 udlandsadopterede om adgang til deres papirer i Korea, og 259 blev genforenet med familie."
+            }
+          ]
+        },
+        {
+          "titel": "DNA-test",
+          "kilder": [
+            {
+              "titel": "Gebruik internationale DNA-databanken door geadopteerden n.a.v. interlandelijke adopties",
+              "forfattere": "Dialogic for WODC",
+              "aar": "2022",
+              "udgiver": "Det hollandske justitsministeriums forskningscenter (WODC)",
+              "link": "https://dialogic.nl/en/projecten/gebruik-internationale-dna-databanken-door-geadopteerden-n-a-v-interlandelijke-adopties",
+              "resume": "Undersøger, om det hollandske videncenter for adopterede skal hjælpe med DNA-test, når adoptionspapirerne er forkerte eller mangler. Konklusionen er, at chancen for at finde et tæt nok familiemedlem statistisk set er meget lille, også i den største database, fordi få i afgiverlandene er testet."
+            },
+            {
+              "titel": "\"Tracing a Hundred Years of Secrets\": Finnish Adoptees' Search for Birth Families Through DNA Testing",
+              "forfattere": "Anna Reetta Rönkä og Joa Hiitola",
+              "aar": "2025",
+              "udgiver": "Adoption Quarterly",
+              "link": "https://trepo.tuni.fi/handle/10024/230858",
+              "resume": "Bygger på interviews med 12 finske adopterede, der har brugt kommercielle DNA-test til at søge efter deres biologiske forældre. De fleste fandt deres mor gennem de almindelige adoptionspapirer, men det krævede meget tid, besvær og penge at finde faren. Nogle brugte testen til at bekræfte oplysninger, andre fandt først familie efter lang tids forgæves søgning. Forskerne peger på, at en uventet kontakt efter mange år også kan være krævende for de biologiske forældre og deres familier."
+            },
+            {
+              "titel": "Mixed-Race Korean Adoptees Use DNA to Search For Roots",
+              "forfattere": "NBC News",
+              "aar": "2016",
+              "udgiver": "NBC News",
+              "link": "https://www.nbcnews.com/news/asian-america/mixed-race-korean-adoptees-use-dna-search-roots-n525586",
+              "resume": "Om 325Kamra, en frivillig organisation stiftet af koreansk adopterede, som giver DNA-test til adopterede og til koreanske familier, der har bortadopteret børn. Jo flere der er i databasen, jo større er chancen for at finde hinanden."
+            }
+          ]
+        },
+        {
+          "titel": "Forskning om søgen og genforening",
+          "kilder": [
+            {
+              "titel": "Adoption, search and reunion – PhD by publication",
+              "forfattere": "Julia Feast",
+              "aar": "2022",
+              "udgiver": "University of East Anglia",
+              "link": "https://ueaeprints.uea.ac.uk/89964/1/Julia%20Feast%20PhD%20Final%20Submission%20%2029th%20July%202022%20FINAL.pdf",
+              "resume": "Samler tre britiske studier fra 1997 til 2013 om adopteredes erfaringer med nysgerrighed, søgen og genforening, og om hvordan den viden siden er blevet udbygget. Et godt overblik over den britiske forskning på området."
+            },
+            {
+              "titel": "The long term outcome of reunions between adult adopted people and their birth mothers",
+              "forfattere": "Forskere ved University of East Anglia",
+              "aar": "",
+              "udgiver": "Videnskabelig artikel",
+              "link": "https://research-portal.uea.ac.uk/en/publications/the-long-term-outcome-of-reunions-between-adult-adopted-people-an/",
+              "resume": "Et af de få studier, der følger genforeninger over lang tid. Over halvdelen af de adopterede havde stadig kontakt med deres biologiske mor otte år eller mere efter genforeningen, og endnu flere havde kontakt med deres adoptivmor. Genforening erstatter altså ikke adoptivfamilien."
+            },
+            {
+              "titel": "The search for missing pieces: a grounded theory of adult adoptees' experiences of searching and re-engaging with birth families",
+              "forfattere": "Clare Hancock-Fraser",
+              "aar": "2021",
+              "udgiver": "Ph.d.-afhandling, Robert Gordon University",
+              "link": "https://rgu-repository.worktribe.com/OutputFile/1603305",
+              "resume": "Undersøger, hvordan voksne adopterede oplever at søge og genoptage kontakten med deres biologiske familie, og hvad det betyder for deres følelsesmæssige og psykiske trivsel. Forfatteren påpeger, at området er underbelyst i socialt arbejde."
+            },
+            {
+              "titel": "Historic forced adoption – scoping study: research findings",
+              "forfattere": "Den skotske regering",
+              "aar": "2023",
+              "udgiver": "gov.scot",
+              "link": "https://gov.scot/publications/scoping-study-historic-forced-adoption-research-findings/pages/2",
+              "resume": "Handler om tvangsadoption i Skotland, men pointerne gælder bredt. At finde og møde forældre og søskende kan styrke identiteten og forståelsen af ens ophav. Det kan dog også være hårdt, hvis familien ikke kan findes, er død, ikke vil mødes, eller hvis forholdet ikke udvikler sig som håbet. De adopterede efterlyser støtte i alle faser: forberedelse, søgning, første kontakt, selve mødet og den videre relation."
+            }
+          ]
+        }
+      ]
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk."
