@@ -1,10 +1,12 @@
 ---
 layout: base.njk
 ---
+{% from "vidensstatus.njk" import vidensstatus %}
 <div class="page-head"><div class="wrap">
   <p class="eyebrow">{{ eyebrow or "RCA" }}</p>
   <h1>{{ title }}</h1>
   {% if intro %}<p class="lead" style="max-width:780px">{{ intro }}</p>{% endif %}
+  {% if status %}{{ vidensstatus(status, reviewer, review_dato, page.url, title) }}{% endif %}
   {% if pdf %}<div class="btns"><a class="btn ghost" href="{{ pdf }}" download><svg><use href="#i-file"/></svg>{{ pdf_tekst or "Hent som PDF" }}</a></div>{% endif %}
 </div></div>
 <section>

@@ -1,0 +1,19 @@
+---
+layout: base.njk
+permalink: /viden/aendringslog/
+title: Ændringslog
+description: Alle væsentlige ændringer i RCA's vidensamling om adoption.
+---
+<div class="page-head"><div class="wrap">
+  <p class="eyebrow">Viden · Ændringslog</p>
+  <h1>Ændringslog</h1>
+  <p class="lead" style="max-width:780px">Her kan du se, hvad vi har ændret i vidensamlingen og hvornår. Har du fundet noget, der bør rettes, så <a href="/viden/bidrag/">fortæl os det</a>.</p>
+</div></div>
+<section>
+  <div class="wrap">
+    <ul class="logliste">
+      {% for p in aendringslog.poster %}<li><span class="when">{{ p.dato | dato }}</span><b>{{ p.side }}</b><br>{{ p.tekst }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

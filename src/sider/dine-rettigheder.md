@@ -3,6 +3,9 @@ title: "Kend dine rettigheder som adopteret"
 eyebrow: Viden · Rettigheder
 description: Overblik over adopteredes rettigheder i Danmark – aktindsigt, rådgivning, juridisk hjælp, navn, ophævelse og retssager.
 intro: Som adopteret har du en række rettigheder, men oplysningerne ligger spredt hos mange forskellige myndigheder. Her har vi samlet det vigtigste ét sted, med links til, hvor du søger.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/dine-rettigheder/
 ---
 

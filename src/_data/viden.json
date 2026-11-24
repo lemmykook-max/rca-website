@@ -28,7 +28,8 @@
               "aar": "2017",
               "udgiver": "VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd",
               "link": "https://vive.dk/da/udgivelser/at-vokse-op-som-adopteret-i-danmark-5678",
-              "resume": "Det danske hovedværk om adopterede. Rapporten samler VIVE's analyser af adopteredes opvækst, uddannelse og psykiske helbred med særligt fokus på fremmedadopterede. Et godt sted at starte."
+              "resume": "Det danske hovedværk om adopterede. Rapporten samler VIVE's analyser af adopteredes opvækst, uddannelse og psykiske helbred med særligt fokus på fremmedadopterede. Et godt sted at starte.",
+              "type": "Forskningsrapport"
             },
             {
               "titel": "Mental Health in Danish Domestic and International Adoptees as Young Adults",
@@ -36,7 +37,8 @@
               "aar": "2017",
               "udgiver": "VIVE Working Paper",
               "link": "https://www.vive.dk/da/udgivelser/mental-health-in-danish-domestic-and-international-adoptees-as-young-adults-dx3p73vb/",
-              "resume": "Følger alle 3.180 fremmedadopterede født 1989–1994 og sammenligner dem med over 418.000 jævnaldrende. Adopterede havde 2,6 gange så høj odds for at have været i kontakt med psykiatrien inden de fyldte 20 år (17,5 % mod 9,0 %). Forskellen var særlig stor for ADHD, tilknytningsforstyrrelser og stressrelaterede lidelser. Rumænsk adopterede lå markant højest. Når adoptivforældrene havde højere uddannelse og indkomst, blev risikoen mindre, men den forsvandt ikke."
+              "resume": "Følger alle 3.180 fremmedadopterede født 1989–1994 og sammenligner dem med over 418.000 jævnaldrende. Adopterede havde 2,6 gange så høj odds for at have været i kontakt med psykiatrien inden de fyldte 20 år (17,5 % mod 9,0 %). Forskellen var særlig stor for ADHD, tilknytningsforstyrrelser og stressrelaterede lidelser. Rumænsk adopterede lå markant højest. Når adoptivforældrene havde højere uddannelse og indkomst, blev risikoen mindre, men den forsvandt ikke.",
+              "type": "Registerstudie"
             },
             {
               "titel": "Full Spectrum of Psychiatric Disorders Related to Foreign Migration",
@@ -44,7 +46,8 @@
               "aar": "2013",
               "udgiver": "JAMA Psychiatry",
               "link": "https://lup.lub.lu.se/record/3979311",
-              "resume": "Studiet følger næsten 1,9 millioner personer i Danmark født 1971–2000. Udlandsadopterede havde den højeste risiko for psykiske lidelser af alle grupper med migrationsbaggrund. De havde omkring 1,65 gange så høj risiko for psykiatrisk kontakt som personer med dansk baggrund, og risikoen var forhøjet for alle de lidelser, der blev målt."
+              "resume": "Studiet følger næsten 1,9 millioner personer i Danmark født 1971–2000. Udlandsadopterede havde den højeste risiko for psykiske lidelser af alle grupper med migrationsbaggrund. De havde omkring 1,65 gange så høj risiko for psykiatrisk kontakt som personer med dansk baggrund, og risikoen var forhøjet for alle de lidelser, der blev målt.",
+              "type": "Registerstudie"
             },
             {
               "titel": "Psychiatric status among stepchildren and domestic and international adoptees in Denmark",
@@ -52,7 +55,8 @@
               "aar": "2009",
               "udgiver": "Scandinavian Journal of Public Health",
               "link": "",
-              "resume": "Det første landsdækkende danske registerstudie af adopteredes kontakt med psykiatrien. Det omfatter 13.524 adopterede af syv forskellige adoptionstyper og sammenligner dem med ikke-adopterede."
+              "resume": "Det første landsdækkende danske registerstudie af adopteredes kontakt med psykiatrien. Det omfatter 13.524 adopterede af syv forskellige adoptionstyper og sammenligner dem med ikke-adopterede.",
+              "type": "Registerstudie"
             }
           ]
         },
@@ -65,7 +69,8 @@
               "aar": "2002",
               "udgiver": "The Lancet",
               "link": "https://www.scilit.net/publications/c26ba548a3ea686cc02e58f0ea3b0ccb",
-              "resume": "Det mest citerede studie på området. Det følger svenske udlandsadopterede født i 1970'erne. Selv når der var taget højde for familiens sociale forhold, havde de unge adopterede tre til fem gange så høj risiko for selvmord, selvmordsforsøg, psykiatrisk indlæggelse og misbrug."
+              "resume": "Det mest citerede studie på området. Det følger svenske udlandsadopterede født i 1970'erne. Selv når der var taget højde for familiens sociale forhold, havde de unge adopterede tre til fem gange så høj risiko for selvmord, selvmordsforsøg, psykiatrisk indlæggelse og misbrug.",
+              "type": "Registerstudie"
             },
             {
               "titel": "Suicidal behaviour in national and international adult adoptees",
@@ -73,7 +78,8 @@
               "aar": "2006",
               "udgiver": "Social Psychiatry and Psychiatric Epidemiology",
               "link": "https://doi.org/10.1007/s00127-005-0974-2",
-              "resume": "Sammenligner udlandsadopterede med indenlandsk adopterede og ikke-adopterede født 1963–1973. Begge grupper af adopterede havde forhøjet risiko, men udlandsadopterede havde den højeste. Risikoen for selvmordsforsøg var særlig forhøjet hos kvinder."
+              "resume": "Sammenligner udlandsadopterede med indenlandsk adopterede og ikke-adopterede født 1963–1973. Begge grupper af adopterede havde forhøjet risiko, men udlandsadopterede havde den højeste. Risikoen for selvmordsforsøg var særlig forhøjet hos kvinder.",
+              "type": "Registerstudie"
             },
             {
               "titel": "Increased risk of suicidal behaviour in non-European international adoptees decreases with age: A Swedish national cohort study",
@@ -81,7 +87,8 @@
               "aar": "2020",
               "udgiver": "EClinicalMedicine",
               "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7710634/",
-              "resume": "Opfølgningen på studiet fra 2002 og den vigtigste nuancering. Selvmordsrisikoen var højest i alderen 18–22 år, faldt derefter og var på niveau med svenskfødtes fra 33 år. Risikoen for selvmordsforsøg faldt også, men var højere i alle aldersgrupper. Risikoen er faldet i senere årgange, og den er lavest for dem, der blev adopteret som spæde. Forskerne peger på identitet og tilhørsforhold i ungdommen som mulige forklaringer."
+              "resume": "Opfølgningen på studiet fra 2002 og den vigtigste nuancering. Selvmordsrisikoen var højest i alderen 18–22 år, faldt derefter og var på niveau med svenskfødtes fra 33 år. Risikoen for selvmordsforsøg faldt også, men var højere i alle aldersgrupper. Risikoen er faldet i senere årgange, og den er lavest for dem, der blev adopteret som spæde. Forskerne peger på identitet og tilhørsforhold i ungdommen som mulige forklaringer.",
+              "type": "Registerstudie"
             }
           ]
         },
@@ -94,7 +101,8 @@
               "aar": "2005",
               "udgiver": "JAMA",
               "link": "https://marinusvanijzendoorn.nl/wp-content/uploads/2024/10/JAMA-2005-JufferVanIJzendoorn.pdf",
-              "resume": "Samler resultater fra en lang række studier af udlandsadopterede i alle aldre. Konklusionen er, at langt de fleste udlandsadopterede er velfungerende, men at de oftere end ikke-adopterede bliver henvist til psykiatrien. Udlandsadopterede havde i gennemsnit færre problemer end indenlandsk adopterede."
+              "resume": "Samler resultater fra en lang række studier af udlandsadopterede i alle aldre. Konklusionen er, at langt de fleste udlandsadopterede er velfungerende, men at de oftere end ikke-adopterede bliver henvist til psykiatrien. Udlandsadopterede havde i gennemsnit færre problemer end indenlandsk adopterede.",
+              "type": "Metaanalyse"
             },
             {
               "titel": "Mental Health in Internationally Adopted Adolescents: A Meta-Analysis",
@@ -102,7 +110,8 @@
               "aar": "2017",
               "udgiver": "Journal of the American Academy of Child & Adolescent Psychiatry",
               "link": "https://pubmed.ncbi.nlm.nih.gov/28219486/",
-              "resume": "Samler 11 studier med næsten 18.000 adopterede unge og over en million ikke-adopterede. De fleste adopterede unge klarer sig godt, men som gruppe har de flere psykiske problemer. Forfatterne anbefaler, at der er relevant støtte til rådighed."
+              "resume": "Samler 11 studier med næsten 18.000 adopterede unge og over en million ikke-adopterede. De fleste adopterede unge klarer sig godt, men som gruppe har de flere psykiske problemer. Forfatterne anbefaler, at der er relevant støtte til rådighed.",
+              "type": "Metaanalyse"
             }
           ]
         },
@@ -115,7 +124,8 @@
               "aar": "2024",
               "udgiver": "Frontiers in Public Health",
               "link": "https://doi.org/10.3389/fpubh.2024.1426489",
-              "resume": "Interviews med 66 voksne udlandsadopterede i Sverige om deres møde med sundhedsvæsenet og psykiatrien. De fortæller om manglende viden om adopteredes helbred, farveblindhed og modvilje mod at tale om racisme, forventninger om taknemmelighed og høje udgifter til terapi. Forfatterne mener, at forskningen bør lære af de adopteredes egne erfaringer og ikke kun bygge på registerdata."
+              "resume": "Interviews med 66 voksne udlandsadopterede i Sverige om deres møde med sundhedsvæsenet og psykiatrien. De fortæller om manglende viden om adopteredes helbred, farveblindhed og modvilje mod at tale om racisme, forventninger om taknemmelighed og høje udgifter til terapi. Forfatterne mener, at forskningen bør lære af de adopteredes egne erfaringer og ikke kun bygge på registerdata.",
+              "type": "Interviewstudie"
             },
             {
               "titel": "Adoption with complications: Conversations with adoptees and adoptive parents on everyday racism and ethnic identity",
@@ -123,12 +133,16 @@
               "aar": "2010",
               "udgiver": "International Social Work",
               "link": "https://doi.org/10.1177/0020872809359272",
-              "resume": "Interviews med 20 voksne adopterede og otte adoptivforældre i Sverige om hverdagsracisme og etnisk identitet. Forfatterne mener, at man ikke kan forstå adopteredes psykiske helbred uden at tage racisme med i billedet."
+              "resume": "Interviews med 20 voksne adopterede og otte adoptivforældre i Sverige om hverdagsracisme og etnisk identitet. Forfatterne mener, at man ikke kan forstå adopteredes psykiske helbred uden at tage racisme med i billedet.",
+              "type": "Interviewstudie"
             }
           ]
         }
       ],
-      "stoette": "Teksterne her handler blandt andet om selvmord. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201."
+      "stoette": "Teksterne her handler blandt andet om selvmord. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201.",
+      "status": "udkast",
+      "reviewer": "",
+      "review_dato": ""
     },
     {
       "id": "identitet-racisme",
@@ -156,7 +170,8 @@
               "aar": "2009",
               "udgiver": "Ph.d.-afhandling, DPU, Aarhus Universitet",
               "link": "https://tidsskrift.dk/nu/article/download/134479/179382/288759",
-              "resume": "Danmarks første ph.d.-afhandling om adoption. Den bygger på interviews med 35 voksne koreansk adopterede født 1967–1981. Afhandlingen viser, hvordan race bliver ved med at have betydning i adopteredes liv. Samtidig bliver forskellen benægtet og forbigået i et samfund, hvor idealet er at være farveblind. Linket går til en artikel, hvor Lene Myong fremlægger afhandlingen."
+              "resume": "Danmarks første ph.d.-afhandling om adoption. Den bygger på interviews med 35 voksne koreansk adopterede født 1967–1981. Afhandlingen viser, hvordan race bliver ved med at have betydning i adopteredes liv. Samtidig bliver forskellen benægtet og forbigået i et samfund, hvor idealet er at være farveblind. Linket går til en artikel, hvor Lene Myong fremlægger afhandlingen.",
+              "type": "Ph.d.-afhandling"
             },
             {
               "titel": "At blive en ligeværdig dansk kvinde – fortællinger om race, køn og heteroseksualitet",
@@ -164,7 +179,8 @@
               "aar": "2009",
               "udgiver": "Kvinder, Køn & Forskning",
               "link": "https://doi.org/10.7146/kkf.v0i2.27986",
-              "resume": "Bygger på interviews med voksne koreansk adopterede kvinder. Artiklen viser, hvordan de møder seksualiserede forestillinger om asiatiske kvinder, som støder sammen med danske idealer om ligestilling. Kvinderne fortæller blandt andet om at blive taget for at være thailandske."
+              "resume": "Bygger på interviews med voksne koreansk adopterede kvinder. Artiklen viser, hvordan de møder seksualiserede forestillinger om asiatiske kvinder, som støder sammen med danske idealer om ligestilling. Kvinderne fortæller blandt andet om at blive taget for at være thailandske.",
+              "type": "Interviewstudie"
             }
           ]
         },
@@ -177,7 +193,8 @@
               "aar": "2005",
               "udgiver": "Ph.d.-afhandling, Stockholms universitet",
               "link": "http://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-696",
-              "resume": "Hübinette er selv adopteret fra Korea og en af pionererne i kritisk adoptionsforskning. Afhandlingen undersøger, hvordan koreansk film og musik fremstiller de adopterede, og hvad det betyder for en nation, der ser sig selv som én stor familie, at den har sendt så mange af sine børn væk."
+              "resume": "Hübinette er selv adopteret fra Korea og en af pionererne i kritisk adoptionsforskning. Afhandlingen undersøger, hvordan koreansk film og musik fremstiller de adopterede, og hvad det betyder for en nation, der ser sig selv som én stor familie, at den har sendt så mange af sine børn væk.",
+              "type": "Ph.d.-afhandling"
             },
             {
               "titel": "Between colourblindness and ethnicisation: Transnational adoptees and race in a Swedish context",
@@ -185,7 +202,8 @@
               "aar": "2012",
               "udgiver": "Adoption & Fostering",
               "link": "https://lup.lub.lu.se/record/3195619",
-              "resume": "Undersøger, hvornår og hvordan race og etnicitet dukker op i adopteredes hverdag i Sverige, hvor farveblind antiracisme er normen. Bygger på interviews med adopterede og på dokumenter fra adoptionsverdenen."
+              "resume": "Undersøger, hvornår og hvordan race og etnicitet dukker op i adopteredes hverdag i Sverige, hvor farveblind antiracisme er normen. Bygger på interviews med adopterede og på dokumenter fra adoptionsverdenen.",
+              "type": "Interviewstudie"
             },
             {
               "titel": "The Importance of Perceived Discrimination and Pre-Adoption Risk for Mental Health Problems among Young Adult Internationally Adopted Students in Norway",
@@ -193,7 +211,8 @@
               "aar": "2022",
               "udgiver": "Adoption Quarterly",
               "link": "https://fhi.brage.unit.no/fhi-xmlui/handle/11250/3037591",
-              "resume": "Bygger på svar fra 409 udlandsadopterede studerende i Norge. De adopterede havde mere psykisk mistrivsel og flere selvmordstanker end andre studerende. Oplevet diskrimination hang sammen med mere mistrivsel, tanker om selvskade og selvmordstanker. Alder ved adoptionen hang ikke sammen med nogen af udfaldene."
+              "resume": "Bygger på svar fra 409 udlandsadopterede studerende i Norge. De adopterede havde mere psykisk mistrivsel og flere selvmordstanker end andre studerende. Oplevet diskrimination hang sammen med mere mistrivsel, tanker om selvskade og selvmordstanker. Alder ved adoptionen hang ikke sammen med nogen af udfaldene.",
+              "type": "Spørgeskemaundersøgelse"
             },
             {
               "titel": "Mental Health Struggles among Norwegian International Adoptees",
@@ -201,7 +220,8 @@
               "aar": "2024",
               "udgiver": "Adoption Quarterly",
               "link": "https://doi.org/10.1080/10926755.2023.2172506",
-              "resume": "Interviews med 26 udlandsadopterede i Norge mellem 21 og 34 år. Mange havde haft alvorlige psykiske problemer, især depression, som de selv kobler til spørgsmål om identitet og tilhørsforhold. Forfatteren peger på, at støtte efter adoptionen kan forhindre, at de adopterede sidder alene med de spørgsmål."
+              "resume": "Interviews med 26 udlandsadopterede i Norge mellem 21 og 34 år. Mange havde haft alvorlige psykiske problemer, især depression, som de selv kobler til spørgsmål om identitet og tilhørsforhold. Forfatteren peger på, at støtte efter adoptionen kan forhindre, at de adopterede sidder alene med de spørgsmål.",
+              "type": "Interviewstudie"
             }
           ]
         },
@@ -214,7 +234,8 @@
               "aar": "2003",
               "udgiver": "The Counseling Psychologist",
               "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2366972/",
-              "resume": "En klassisk gennemgang, der satte ord på 'adoptionsparadokset': Adopterede er en minoritet i samfundet, men bliver opfattet og opdraget, som om de var en del af majoriteten. Artiklen er et godt overblik over, hvordan familier kan tale om kultur og race."
+              "resume": "En klassisk gennemgang, der satte ord på 'adoptionsparadokset': Adopterede er en minoritet i samfundet, men bliver opfattet og opdraget, som om de var en del af majoriteten. Artiklen er et godt overblik over, hvordan familier kan tale om kultur og race.",
+              "type": "Forskningsoversigt"
             },
             {
               "titel": "Cultural Socialization in Families with Adopted Korean Adolescents: A Mixed-Method, Multi-Informant Study",
@@ -222,7 +243,8 @@
               "aar": "2013",
               "udgiver": "Journal of Adolescent Research",
               "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3825402/",
-              "resume": "Sammenligner, hvad adoptivforældre og deres koreansk adopterede teenagere siger om, hvor meget familien beskæftiger sig med kultur og oprindelse. Forældrene mente, at de gjorde mere, end de unge oplevede. Det var de unges beskrivelse, der passede bedst med, hvad forskerne selv observerede i familiens samtaler."
+              "resume": "Sammenligner, hvad adoptivforældre og deres koreansk adopterede teenagere siger om, hvor meget familien beskæftiger sig med kultur og oprindelse. Forældrene mente, at de gjorde mere, end de unge oplevede. Det var de unges beskrivelse, der passede bedst med, hvad forskerne selv observerede i familiens samtaler.",
+              "type": "Interview- og observationsstudie"
             },
             {
               "titel": "Adoptive Parents' Racial Colorblindness and Adopted Korean Adolescents' Experiences of Discrimination",
@@ -230,11 +252,15 @@
               "aar": "2025",
               "udgiver": "Cultural Diversity & Ethnic Minority Psychology",
               "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11902873/",
-              "resume": "Følger amerikanske adoptivfamilier med koreansk adopterede børn over tid. Forældrenes farveblindhed ændrede sig ikke fra barndom til teenageår, men den diskrimination, forældrene så deres børn møde, steg. Forældre, der var farveblinde, da barnet var lille, rapporterede mere diskrimination senere."
+              "resume": "Følger amerikanske adoptivfamilier med koreansk adopterede børn over tid. Forældrenes farveblindhed ændrede sig ikke fra barndom til teenageår, men den diskrimination, forældrene så deres børn møde, steg. Forældre, der var farveblinde, da barnet var lille, rapporterede mere diskrimination senere.",
+              "type": "Spørgeskemaundersøgelse (over tid)"
             }
           ]
         }
-      ]
+      ],
+      "status": "udkast",
+      "reviewer": "",
+      "review_dato": ""
     },
     {
       "id": "danske-undersoegelser",
@@ -262,7 +288,8 @@
               "aar": "2025–2027",
               "udgiver": "VIVE i samarbejde med Juridisk Fakultet, Aalborg Universitet",
               "link": "https://www.vive.dk/da/undersoegelser-i-gang/ny-vive-undersoegelse-skal-granske-50-aars-adoption-til-danmark-1o8mr90d/",
-              "resume": "Undersøger adoptionsformidlingen til Danmark fra 1964 til 2016, hvor cirka 23.000 børn fra 70 lande blev adopteret. Den ser på dansk lovgivning, myndighedernes tilsyn, organisationernes rolle og forholdene i afgiverlandene. VIVE besøger 10 lande og interviewer blandt andet myndigheder, organisationer, forskere og mødre eller andre familiemedlemmer til de bortadopterede børn. Undersøgelsen løber fra slutningen af 2025 til slutningen af 2027."
+              "resume": "Undersøger adoptionsformidlingen til Danmark fra 1964 til 2016, hvor cirka 23.000 børn fra 70 lande blev adopteret. Den ser på dansk lovgivning, myndighedernes tilsyn, organisationernes rolle og forholdene i afgiverlandene. VIVE besøger 10 lande og interviewer blandt andet myndigheder, organisationer, forskere og mødre eller andre familiemedlemmer til de bortadopterede børn. Undersøgelsen løber fra slutningen af 2025 til slutningen af 2027.",
+              "type": "Igangværende undersøgelse"
             },
             {
               "titel": "Ny aftale om en samlet indsats på adoptionsområdet",
@@ -270,7 +297,8 @@
               "aar": "2025",
               "udgiver": "Social- og Boligministeriet",
               "link": "https://www.sm.dk/nyheder/nyhedsarkiv/2025/jun/ny-aftale-om-en-samlet-indsats-paa-adoptionsomraadet",
-              "resume": "Den politiske aftale fra juni 2025, som satte den uvildige undersøgelse i gang. Aftalen indeholder også styrket hjælp til voksne adopterede og en analyse af, hvordan et fremtidigt adoptionssystem kan se ud."
+              "resume": "Den politiske aftale fra juni 2025, som satte den uvildige undersøgelse i gang. Aftalen indeholder også styrket hjælp til voksne adopterede og en analyse af, hvordan et fremtidigt adoptionssystem kan se ud.",
+              "type": "Politisk aftale"
             },
             {
               "titel": "Staten skal anerkende adopteredes menneskerettigheder",
@@ -278,7 +306,8 @@
               "aar": "2024",
               "udgiver": "Institut for Menneskerettigheder",
               "link": "https://menneskeret.dk/nyheder/staten-anerkende-adopteredes-menneskerettigheder",
-              "resume": "Instituttet anbefaler en juridisk undersøgelse, der tager stilling til, om den danske stat har krænket adopteredes menneskerettigheder. Hvis det er tilfældet, kan staten have pligt til at give en økonomisk godtgørelse. Instituttet foreslår også ændrede forældelsesregler og et uafhængigt nævn til de historiske sager."
+              "resume": "Instituttet anbefaler en juridisk undersøgelse, der tager stilling til, om den danske stat har krænket adopteredes menneskerettigheder. Hvis det er tilfældet, kan staten have pligt til at give en økonomisk godtgørelse. Instituttet foreslår også ændrede forældelsesregler og et uafhængigt nævn til de historiske sager.",
+              "type": "Anbefaling fra myndighed"
             }
           ]
         },
@@ -291,7 +320,8 @@
               "aar": "2024",
               "udgiver": "Ankestyrelsen",
               "link": "https://www.ft.dk/samling/20231/almdel/SOU/bilag/97/2815458/index.htm",
-              "resume": "Undersøgelsen blev sat i gang efter henvendelser fra Danish Korean Rights Group. Ankestyrelsen vurderer, at formidlingen foregik i et ureguleret system med en problematisk økonomisk tilskyndelse. Koreanske organisationer kunne ændre børnenes identitet og baggrund i papirerne. De danske organisationer støttede deres koreanske partnere økonomisk og ønskede at holde antallet af adoptioner højt. De danske myndigheder kendte til flere forhold, der ikke levede op til danske krav. Det betyder ikke nødvendigvis, at adoptionerne skete mod de biologiske forældres vilje."
+              "resume": "Undersøgelsen blev sat i gang efter henvendelser fra Danish Korean Rights Group. Ankestyrelsen vurderer, at formidlingen foregik i et ureguleret system med en problematisk økonomisk tilskyndelse. Koreanske organisationer kunne ændre børnenes identitet og baggrund i papirerne. De danske organisationer støttede deres koreanske partnere økonomisk og ønskede at holde antallet af adoptioner højt. De danske myndigheder kendte til flere forhold, der ikke levede op til danske krav. Det betyder ikke nødvendigvis, at adoptionerne skete mod de biologiske forældres vilje.",
+              "type": "Myndighedsrapport"
             },
             {
               "titel": "Mistanke om ulovlige forhold i adoptioner fra Chile til Danmark 1978–1988",
@@ -299,7 +329,8 @@
               "aar": "2021",
               "udgiver": "Ankestyrelsen",
               "link": "https://ast.dk/publikationer/rapporten-201dmistanke-om-ulovlige-forhold-i-adoptioner-fra-chile-til-danmark-1978-1988201d/@@download/publication",
-              "resume": "Sat i gang efter henvendelser fra seks adopterede. Ankestyrelsen kan ikke udelukke, at der skete ulovligheder i Chile i adoptionerne gennem AC Børnehjælp. Fødselsattester mangler ofte de biologiske forældres navne, og det kan ikke fastslås, at forældrene forstod, at de gav samtykke til adoption til udlandet. De danske myndigheder kendte allerede i 1982 til børnehjemmets dårlige ry."
+              "resume": "Sat i gang efter henvendelser fra seks adopterede. Ankestyrelsen kan ikke udelukke, at der skete ulovligheder i Chile i adoptionerne gennem AC Børnehjælp. Fødselsattester mangler ofte de biologiske forældres navne, og det kan ikke fastslås, at forældrene forstod, at de gav samtykke til adoption til udlandet. De danske myndigheder kendte allerede i 1982 til børnehjemmets dårlige ry.",
+              "type": "Myndighedsrapport"
             },
             {
               "titel": "Dansk adoptionsformidling fra Colombia, Bangladesh, Indonesien og Sri Lanka i 70'erne og 80'erne",
@@ -307,7 +338,8 @@
               "aar": "2022",
               "udgiver": "Ankestyrelsen",
               "link": "https://ft.dk/samling/20211/almdel/SOU/bilag/158/2543874.pdf",
-              "resume": "Ankestyrelsen undersøgte, om de forhold, den hollandske Joustra-komité fandt, også gjaldt for Danmark. Den fandt visse fællestræk i risikabel adfærd, men gik ikke videre med Bangladesh, Indonesien og Sri Lanka. Undersøgelsen af Colombia fortsatte. Adoption & Samfund kritiserede, at adopterede blev efterladt med flere spørgsmål end svar."
+              "resume": "Ankestyrelsen undersøgte, om de forhold, den hollandske Joustra-komité fandt, også gjaldt for Danmark. Den fandt visse fællestræk i risikabel adfærd, men gik ikke videre med Bangladesh, Indonesien og Sri Lanka. Undersøgelsen af Colombia fortsatte. Adoption & Samfund kritiserede, at adopterede blev efterladt med flere spørgsmål end svar.",
+              "type": "Myndighedsrapport"
             },
             {
               "titel": "Adopteredes ret til egen identitet",
@@ -315,11 +347,15 @@
               "aar": "2022",
               "udgiver": "Ankestyrelsen",
               "link": "https://cdn.ast.dk/ankestyrelsen/Media/639117762590995706/adopteredes-ret-til-egen-identitet.pdf",
-              "resume": "Samler Ankestyrelsens erfaringer fra undersøgelserne og indeholder styrelsens retningslinjer for, hvordan den behandler mistanke om ulovlige eller uregelmæssige forhold i en adoptionssag. Nyttig, hvis man vil vide, hvad man kan forvente, når man henvender sig."
+              "resume": "Samler Ankestyrelsens erfaringer fra undersøgelserne og indeholder styrelsens retningslinjer for, hvordan den behandler mistanke om ulovlige eller uregelmæssige forhold i en adoptionssag. Nyttig, hvis man vil vide, hvad man kan forvente, når man henvender sig.",
+              "type": "Myndighedsrapport"
             }
           ]
         }
-      ]
+      ],
+      "status": "udkast",
+      "reviewer": "",
+      "review_dato": ""
     },
     {
       "id": "internationale-granskninger",
@@ -346,7 +382,8 @@
               "aar": "2025",
               "udgiver": "Resumé hos American Society of International Law",
               "link": "https://www.asil.org/ILIB/south-korean-truth-and-reconciliation-commission-finds-human-rights-violations-overseas",
-              "resume": "Kommissionen undersøgte klager fra 367 adopterede, der blev sendt til udlandet mellem 1964 og 1999, også til Danmark. Den fandt, at staten havde krænket adopteredes rettigheder. Udenlandsk adoption blev brugt som et billigt alternativ til at bygge et socialt system op, private bureauer fik magten uden tilstrækkeligt tilsyn, og børn blev registreret som forældreløse, selv om de havde forældre. Kommissionen bekræftede krænkelser i 56 sager og anbefalede en officiel undskyldning."
+              "resume": "Kommissionen undersøgte klager fra 367 adopterede, der blev sendt til udlandet mellem 1964 og 1999, også til Danmark. Den fandt, at staten havde krænket adopteredes rettigheder. Udenlandsk adoption blev brugt som et billigt alternativ til at bygge et socialt system op, private bureauer fik magten uden tilstrækkeligt tilsyn, og børn blev registreret som forældreløse, selv om de havde forældre. Kommissionen bekræftede krænkelser i 56 sager og anbefalede en officiel undskyldning.",
+              "type": "Officiel granskning"
             },
             {
               "titel": "South Korea's president apologizes over poorly managed foreign adoption programs",
@@ -354,7 +391,8 @@
               "aar": "2025",
               "udgiver": "AP",
               "link": "https://www.news4jax.com/news/world/2025/10/02/south-koreas-president-apologizes-over-poorly-managed-foreign-adoption-programs/",
-              "resume": "I oktober 2025 gav præsident Lee Jae Myung en officiel undskyldning til adopterede, deres familier og de biologiske familier. Sydkorea har siden tilsluttet sig Haagerkonventionen og meddelt, at landet vil stoppe udenlandske adoptioner. Adopterede kritiserer, at de stadig mangler oprejsning, og kun 56 af 367 sager fik medhold. En ny undersøgelse af sagerne begyndte i juli 2026."
+              "resume": "I oktober 2025 gav præsident Lee Jae Myung en officiel undskyldning til adopterede, deres familier og de biologiske familier. Sydkorea har siden tilsluttet sig Haagerkonventionen og meddelt, at landet vil stoppe udenlandske adoptioner. Adopterede kritiserer, at de stadig mangler oprejsning, og kun 56 af 367 sager fik medhold. En ny undersøgelse af sagerne begyndte i juli 2026.",
+              "type": "Presse"
             }
           ]
         },
@@ -367,7 +405,8 @@
               "aar": "2021",
               "udgiver": "Hollands regering",
               "link": "https://bettercarenetwork.org/sites/default/files/2021-06/Summary-of-the-report-of-the-Committee-Investigating-Intercountry-Adoption.pdf",
-              "resume": "Den første store granskning i et modtagerland. Den dækker adoptioner til Holland 1967–1998 og især Brasilien, Bangladesh, Colombia, Indonesien og Sri Lanka. Komitéen fandt alvorlige strukturelle misbrug gennem hele perioden og i alle lande, blandt andet børnetyveri, korruption og forfalskede dokumenter. Regeringen og formidlerne kendte til misbruget allerede fra 1960'erne. Holland stoppede alle nye udenlandske adoptioner, da rapporten udkom. Rapporten fik Ankestyrelsen til at undersøge fire af de samme lande i Danmark."
+              "resume": "Den første store granskning i et modtagerland. Den dækker adoptioner til Holland 1967–1998 og især Brasilien, Bangladesh, Colombia, Indonesien og Sri Lanka. Komitéen fandt alvorlige strukturelle misbrug gennem hele perioden og i alle lande, blandt andet børnetyveri, korruption og forfalskede dokumenter. Regeringen og formidlerne kendte til misbruget allerede fra 1960'erne. Holland stoppede alle nye udenlandske adoptioner, da rapporten udkom. Rapporten fik Ankestyrelsen til at undersøge fire af de samme lande i Danmark.",
+              "type": "Officiel granskning"
             },
             {
               "titel": "Sveriges internationella adoptionsverksamhet – lärdomar och vägen framåt (SOU 2025:61)",
@@ -375,7 +414,8 @@
               "aar": "2025",
               "udgiver": "Sveriges regering",
               "link": "https://regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/06/sou-202561/",
-              "resume": "Kommissionen fandt uregelmæssigheder i adoptioner til Sverige gennem flere årtier. Den foreslår, at formidlingen af udenlandske adoptioner afvikles, at staten giver en offentlig undskyldning, og at der oprettes et nationalt ressourcecenter for adopterede og adoptionsspørgsmål. Det foreslår den sammen med økonomisk støtte til rejser til oprindelseslandet. Mange adoptiv- og adoptionsforeninger bakker op om ressourcecentret, mens flere er imod at stoppe adoptionerne. Regeringen havde i efteråret 2025 endnu ikke givet en undskyldning."
+              "resume": "Kommissionen fandt uregelmæssigheder i adoptioner til Sverige gennem flere årtier. Den foreslår, at formidlingen af udenlandske adoptioner afvikles, at staten giver en offentlig undskyldning, og at der oprettes et nationalt ressourcecenter for adopterede og adoptionsspørgsmål. Det foreslår den sammen med økonomisk støtte til rejser til oprindelseslandet. Mange adoptiv- og adoptionsforeninger bakker op om ressourcecentret, mens flere er imod at stoppe adoptionerne. Regeringen havde i efteråret 2025 endnu ikke givet en undskyldning.",
+              "type": "Officiel granskning"
             },
             {
               "titel": "Soundness, Risk, and Trust: An Investigation of Inter-country Adoption to Norway (NOU 2026:7)",
@@ -383,11 +423,15 @@
               "aar": "2026",
               "udgiver": "Norges regering",
               "link": "https://www.regjeringen.no/no/dokumenter/nou-2026-7/id3166395/?ch=8",
-              "resume": "Udvalget fandt både ulovlige og uetiske forhold og klare mangler i det norske adoptionssystem i hele perioden. Typiske risici var manglende informeret samtykke, økonomisk vinding og iscenesat efterladelse af børn. Om Sydkorea konkluderer udvalget, at tilsynet var meget mangelfuldt, især før 1989, og at børn med kendte forældre blev registreret som forældreløse. Udvalget anbefaler blandt andet et videncenter, støtte fra andre adopterede, sprogundervisning og lettere adgang til egne papirer."
+              "resume": "Udvalget fandt både ulovlige og uetiske forhold og klare mangler i det norske adoptionssystem i hele perioden. Typiske risici var manglende informeret samtykke, økonomisk vinding og iscenesat efterladelse af børn. Om Sydkorea konkluderer udvalget, at tilsynet var meget mangelfuldt, især før 1989, og at børn med kendte forældre blev registreret som forældreløse. Udvalget anbefaler blandt andet et videncenter, støtte fra andre adopterede, sprogundervisning og lettere adgang til egne papirer.",
+              "type": "Officiel granskning"
             }
           ]
         }
-      ]
+      ],
+      "status": "udkast",
+      "reviewer": "",
+      "review_dato": ""
     },
     {
       "id": "biologisk-ophav",
@@ -415,7 +459,8 @@
               "aar": "2026",
               "udgiver": "Digitaliseringsstyrelsen",
               "link": "https://www.borger.dk/familie-og-boern/adoption",
-              "resume": "Den officielle indgang. Her står, hvor du skal søge oplysninger om dine biologiske forældre afhængigt af, hvornår du blev adopteret, og hvordan du ansøger hos Rigsarkivet eller Ankestyrelsen."
+              "resume": "Den officielle indgang. Her står, hvor du skal søge oplysninger om dine biologiske forældre afhængigt af, hvornår du blev adopteret, og hvordan du ansøger hos Rigsarkivet eller Ankestyrelsen.",
+              "type": "Officiel vejledning"
             },
             {
               "titel": "Flere hundrede adopterede i Danmark venter på indsigt i egen sag",
@@ -423,7 +468,8 @@
               "aar": "2025",
               "udgiver": "DR",
               "link": "https://www.dr.dk/nyheder/indland/flere-hundrede-adopterede-i-danmark-venter-paa-indsigt-i-egen-sag",
-              "resume": "Ankestyrelsen overtog DIA's opgaver og en lang række ubesvarede anmodninger om aktindsigt. Artiklen beskriver ventetiden og baggrunden. God at kende, hvis du skal søge om din egen sag."
+              "resume": "Ankestyrelsen overtog DIA's opgaver og en lang række ubesvarede anmodninger om aktindsigt. Artiklen beskriver ventetiden og baggrunden. God at kende, hvis du skal søge om din egen sag.",
+              "type": "Presse"
             },
             {
               "titel": "Adopteredes ret til egen identitet (kapitel 4: Hjælp til adopterede)",
@@ -431,7 +477,8 @@
               "aar": "2022",
               "udgiver": "Ankestyrelsen",
               "link": "https://cdn.ast.dk/ankestyrelsen/Media/639117762590995706/adopteredes-ret-til-egen-identitet.pdf",
-              "resume": "Ankestyrelsens oversigt over de muligheder, der findes i Danmark for at hjælpe adopterede med at genoprette deres identitet og få indsigt i deres baggrund."
+              "resume": "Ankestyrelsens oversigt over de muligheder, der findes i Danmark for at hjælpe adopterede med at genoprette deres identitet og få indsigt i deres baggrund.",
+              "type": "Myndighedsrapport"
             }
           ]
         },
@@ -444,7 +491,8 @@
               "aar": "2024",
               "udgiver": "PBS FRONTLINE",
               "link": "https://www.pbs.org/wgbh/frontline/article/south-korean-adoptees-question-past-how-to-find-families",
-              "resume": "En praktisk guide til koreansk adopterede. Du kan bede dit adoptionsbureau eller det statslige National Center for the Rights of the Child (NCRC) om oplysninger. Myndighederne må kun kontakte de biologiske forældre med brev og højst tre gange per søgning. De koreanske papirer indeholder ofte flere oplysninger end de oversatte papirer, der blev sendt til adoptivforældrene. Lykkes søgningen ikke, kan man registrere sit DNA hos politiet eller en koreansk ambassade."
+              "resume": "En praktisk guide til koreansk adopterede. Du kan bede dit adoptionsbureau eller det statslige National Center for the Rights of the Child (NCRC) om oplysninger. Myndighederne må kun kontakte de biologiske forældre med brev og højst tre gange per søgning. De koreanske papirer indeholder ofte flere oplysninger end de oversatte papirer, der blev sendt til adoptivforældrene. Lykkes søgningen ikke, kan man registrere sit DNA hos politiet eller en koreansk ambassade.",
+              "type": "Presse (praktisk guide)"
             },
             {
               "titel": "Notat om Ankestyrelsens tilsynsrejse til Sydkorea 2023",
@@ -452,7 +500,8 @@
               "aar": "2023",
               "udgiver": "Ankestyrelsen",
               "link": "https://ast.dk/born-familie/hvad-handler-din-klage-om/adoption/tilsyn-med-de-formidlende-organisationer/notat-om-ankestyrelsens-tilsynsrejse-til-sydkorea-2023-handicaptilgaengelig.pdf/@@download/file/Notat%20om%20Ankestyrelsens%20tilsynsrejse%20til%20Sydkorea%202023,%20handicaptilg%C3%A6ngelig.pdf",
-              "resume": "Beskriver de muligheder, adopterede har i Sydkorea for at få indsigt i egne oplysninger og kontakt til biologisk familie. Hvis de biologiske forældre ikke giver samtykke, eller hvis de er døde, kan man kun få mere generelle oplysninger, fx hvilket område familien boede i."
+              "resume": "Beskriver de muligheder, adopterede har i Sydkorea for at få indsigt i egne oplysninger og kontakt til biologisk familie. Hvis de biologiske forældre ikke giver samtykke, eller hvis de er døde, kan man kun få mere generelle oplysninger, fx hvilket område familien boede i.",
+              "type": "Myndighedsrapport"
             },
             {
               "titel": "Korean adoption system misidentifies birth parents, 15 years of errors go unchecked",
@@ -460,7 +509,8 @@
               "aar": "2025",
               "udgiver": "The Korea Times",
               "link": "https://www.koreatimes.co.kr/southkorea/society/20250618/korean-adoption-system-misidentifies-birth-parents-15-years-of-errors-go-unchecked",
-              "resume": "Afslører fejl i det koreanske system, der sender breve til biologiske forældre, blandt andet fordi adresserne i gamle sager er forældede. I 2024 bad 3.374 udlandsadopterede om adgang til deres papirer i Korea, og 259 blev genforenet med familie."
+              "resume": "Afslører fejl i det koreanske system, der sender breve til biologiske forældre, blandt andet fordi adresserne i gamle sager er forældede. I 2024 bad 3.374 udlandsadopterede om adgang til deres papirer i Korea, og 259 blev genforenet med familie.",
+              "type": "Presse"
             }
           ]
         },
@@ -473,7 +523,8 @@
               "aar": "2022",
               "udgiver": "Det hollandske justitsministeriums forskningscenter (WODC)",
               "link": "https://dialogic.nl/en/projecten/gebruik-internationale-dna-databanken-door-geadopteerden-n-a-v-interlandelijke-adopties",
-              "resume": "Undersøger, om det hollandske videncenter for adopterede skal hjælpe med DNA-test, når adoptionspapirerne er forkerte eller mangler. Konklusionen er, at chancen for at finde et tæt nok familiemedlem statistisk set er meget lille, også i den største database, fordi få i afgiverlandene er testet."
+              "resume": "Undersøger, om det hollandske videncenter for adopterede skal hjælpe med DNA-test, når adoptionspapirerne er forkerte eller mangler. Konklusionen er, at chancen for at finde et tæt nok familiemedlem statistisk set er meget lille, også i den største database, fordi få i afgiverlandene er testet.",
+              "type": "Forskningsrapport"
             },
             {
               "titel": "\"Tracing a Hundred Years of Secrets\": Finnish Adoptees' Search for Birth Families Through DNA Testing",
@@ -481,7 +532,8 @@
               "aar": "2025",
               "udgiver": "Adoption Quarterly",
               "link": "https://trepo.tuni.fi/handle/10024/230858",
-              "resume": "Bygger på interviews med 12 finske adopterede, der har brugt kommercielle DNA-test til at søge efter deres biologiske forældre. De fleste fandt deres mor gennem de almindelige adoptionspapirer, men det krævede meget tid, besvær og penge at finde faren. Nogle brugte testen til at bekræfte oplysninger, andre fandt først familie efter lang tids forgæves søgning. Forskerne peger på, at en uventet kontakt efter mange år også kan være krævende for de biologiske forældre og deres familier."
+              "resume": "Bygger på interviews med 12 finske adopterede, der har brugt kommercielle DNA-test til at søge efter deres biologiske forældre. De fleste fandt deres mor gennem de almindelige adoptionspapirer, men det krævede meget tid, besvær og penge at finde faren. Nogle brugte testen til at bekræfte oplysninger, andre fandt først familie efter lang tids forgæves søgning. Forskerne peger på, at en uventet kontakt efter mange år også kan være krævende for de biologiske forældre og deres familier.",
+              "type": "Interviewstudie"
             },
             {
               "titel": "Mixed-Race Korean Adoptees Use DNA to Search For Roots",
@@ -489,7 +541,8 @@
               "aar": "2016",
               "udgiver": "NBC News",
               "link": "https://www.nbcnews.com/news/asian-america/mixed-race-korean-adoptees-use-dna-search-roots-n525586",
-              "resume": "Om 325Kamra, en frivillig organisation stiftet af koreansk adopterede, som giver DNA-test til adopterede og til koreanske familier, der har bortadopteret børn. Jo flere der er i databasen, jo større er chancen for at finde hinanden."
+              "resume": "Om 325Kamra, en frivillig organisation stiftet af koreansk adopterede, som giver DNA-test til adopterede og til koreanske familier, der har bortadopteret børn. Jo flere der er i databasen, jo større er chancen for at finde hinanden.",
+              "type": "Presse"
             }
           ]
         },
@@ -502,7 +555,8 @@
               "aar": "2022",
               "udgiver": "University of East Anglia",
               "link": "https://ueaeprints.uea.ac.uk/89964/1/Julia%20Feast%20PhD%20Final%20Submission%20%2029th%20July%202022%20FINAL.pdf",
-              "resume": "Samler tre britiske studier fra 1997 til 2013 om adopteredes erfaringer med nysgerrighed, søgen og genforening, og om hvordan den viden siden er blevet udbygget. Et godt overblik over den britiske forskning på området."
+              "resume": "Samler tre britiske studier fra 1997 til 2013 om adopteredes erfaringer med nysgerrighed, søgen og genforening, og om hvordan den viden siden er blevet udbygget. Et godt overblik over den britiske forskning på området.",
+              "type": "Ph.d.-afhandling"
             },
             {
               "titel": "The long term outcome of reunions between adult adopted people and their birth mothers",
@@ -510,7 +564,8 @@
               "aar": "",
               "udgiver": "Videnskabelig artikel",
               "link": "https://research-portal.uea.ac.uk/en/publications/the-long-term-outcome-of-reunions-between-adult-adopted-people-an/",
-              "resume": "Et af de få studier, der følger genforeninger over lang tid. Over halvdelen af de adopterede havde stadig kontakt med deres biologiske mor otte år eller mere efter genforeningen, og endnu flere havde kontakt med deres adoptivmor. Genforening erstatter altså ikke adoptivfamilien."
+              "resume": "Et af de få studier, der følger genforeninger over lang tid. Over halvdelen af de adopterede havde stadig kontakt med deres biologiske mor otte år eller mere efter genforeningen, og endnu flere havde kontakt med deres adoptivmor. Genforening erstatter altså ikke adoptivfamilien.",
+              "type": "Forskningsartikel"
             },
             {
               "titel": "The search for missing pieces: a grounded theory of adult adoptees' experiences of searching and re-engaging with birth families",
@@ -518,7 +573,8 @@
               "aar": "2021",
               "udgiver": "Ph.d.-afhandling, Robert Gordon University",
               "link": "https://rgu-repository.worktribe.com/OutputFile/1603305",
-              "resume": "Undersøger, hvordan voksne adopterede oplever at søge og genoptage kontakten med deres biologiske familie, og hvad det betyder for deres følelsesmæssige og psykiske trivsel. Forfatteren påpeger, at området er underbelyst i socialt arbejde."
+              "resume": "Undersøger, hvordan voksne adopterede oplever at søge og genoptage kontakten med deres biologiske familie, og hvad det betyder for deres følelsesmæssige og psykiske trivsel. Forfatteren påpeger, at området er underbelyst i socialt arbejde.",
+              "type": "Ph.d.-afhandling"
             },
             {
               "titel": "Historic forced adoption – scoping study: research findings",
@@ -526,13 +582,17 @@
               "aar": "2023",
               "udgiver": "gov.scot",
               "link": "https://gov.scot/publications/scoping-study-historic-forced-adoption-research-findings/pages/2",
-              "resume": "Handler om tvangsadoption i Skotland, men pointerne gælder bredt. At finde og møde forældre og søskende kan styrke identiteten og forståelsen af ens ophav. Det kan dog også være hårdt, hvis familien ikke kan findes, er død, ikke vil mødes, eller hvis forholdet ikke udvikler sig som håbet. De adopterede efterlyser støtte i alle faser: forberedelse, søgning, første kontakt, selve mødet og den videre relation."
+              "resume": "Handler om tvangsadoption i Skotland, men pointerne gælder bredt. At finde og møde forældre og søskende kan styrke identiteten og forståelsen af ens ophav. Det kan dog også være hårdt, hvis familien ikke kan findes, er død, ikke vil mødes, eller hvis forholdet ikke udvikler sig som håbet. De adopterede efterlyser støtte i alle faser: forberedelse, søgning, første kontakt, selve mødet og den videre relation.",
+              "type": "Myndighedsrapport"
             }
           ]
         }
       ],
       "guide_tekst": "Klar til at søge? Læs vores søgeguides – for alle lande og for udvalgte lande.",
-      "guide_link": "/viden/soegeguide-alle-lande/"
+      "guide_link": "/viden/soegeguide-alle-lande/",
+      "status": "udkast",
+      "reviewer": "",
+      "review_dato": ""
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk.",
@@ -593,6 +653,14 @@
       "titel": "Sager og politik: tidslinje",
       "tekst": "Undersøgelser, politiske aftaler og retssager siden 2019 – samlet i én tidslinje.",
       "link": "/viden/sager-og-politik/"
+    },
+    {
+      "ikon": "book",
+      "farve": "petrol",
+      "titel": "Sådan arbejder vi med viden",
+      "tekst": "Hvordan vi vælger kilder, hvad statusfeltet betyder, vores brug af AI – og hvordan du kan bidrage.",
+      "link": "/viden/saadan-arbejder-vi/"
     }
-  ]
+  ],
+  "kildetyper_link": "/viden/saadan-arbejder-vi/"
 }

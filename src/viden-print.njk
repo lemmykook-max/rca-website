@@ -2,6 +2,7 @@
 permalink: /viden/print/
 eleventyExcludeFromCollections: true
 ---
+{%- from "vidensstatus.njk" import vidensstatus -%}
 {%- set v = viden -%}
 {%- set url = (site.url or "https://rca-website.netlify.app") + "/viden/" -%}
 <!doctype html>
@@ -56,6 +57,8 @@ eleventyExcludeFromCollections: true
     a{color:inherit;text-decoration:none}
     .pv a[href^="http"]:not(.nourl)::after{content:" (" attr(href) ")";font-size:8pt;color:#555;word-break:break-all}
     .prose blockquote{background:none;border-left:3px solid #999}
+    .vstatus-links{display:none}
+    .logliste li{box-shadow:none;border:1px solid #ddd;break-inside:avoid}
     table{font-size:10pt}
   }
 </style>
@@ -91,6 +94,7 @@ eleventyExcludeFromCollections: true
       {%- for t in v.temaer %}{% if t.klar %}
       <li>Tema: {{ t.titel }}</li>
       {%- endif %}{% endfor %}
+      <li>Ændringslog</li>
     </ol>
   </nav>
 
@@ -100,6 +104,7 @@ eleventyExcludeFromCollections: true
     <p class="eyebrow">{{ p.data.eyebrow or "Guide" }}</p>
     <h2>{{ p.data.title }}</h2>
     {% if p.data.intro %}<p class="lead">{{ p.data.intro }}</p>{% endif %}
+    {% if p.data.status %}{{ vidensstatus(p.data.status, p.data.reviewer, p.data.review_dato, p.url, p.data.title) }}{% endif %}
     <div class="prose">{{ p.content | safe }}</div>
   </section>
   {%- endif %}{% endfor %}
@@ -109,6 +114,7 @@ eleventyExcludeFromCollections: true
   <section class="kapitel">
     <p class="eyebrow">Tema</p>
     <h2>{{ t.titel }}</h2>
+    {{ vidensstatus(t.status, t.reviewer, t.review_dato, "/viden/#" + t.id, "Tema: " + t.titel) }}
     <p>{{ t.intro }}</p>
     {% if t.pointer %}<h3>Det vigtigste</h3>
     <ul class="check">
@@ -118,7 +124,7 @@ eleventyExcludeFromCollections: true
     {% for gr in t.grupper %}
     <h3>{{ gr.titel }}</h3>
     {% for k in gr.kilder %}<div class="card kilde">
-      <p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
+      {% if k.type %}<span class="ktype">{{ k.type }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
       <h4>{% if k.link %}<a href="{{ k.link }}">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
       <p style="margin:0">{{ k.resume }}</p>
     </div>
@@ -127,6 +133,15 @@ eleventyExcludeFromCollections: true
     {% if t.stoette %}<p class="stoette">{{ t.stoette }}</p>{% endif %}
   </section>
   {%- endif %}{% endfor %}
+
+  <section class="kapitel">
+    <p class="eyebrow">Viden</p>
+    <h2>Ændringslog</h2>
+    <ul class="logliste">
+      {% for p in aendringslog.poster %}<li><span class="when">{{ p.dato | dato }}</span><b>{{ p.side }}</b><br>{{ p.tekst }}</li>
+      {% endfor %}
+    </ul>
+  </section>
 
   <div class="sidefod">
     <p>{{ site.navn }} · {{ site.email }} · {{ url | replace("https://", "") }}</p>

@@ -48,6 +48,9 @@ collections:
       - { label: "Indledning", name: "intro", widget: "text", required: false }
       - { label: "Beskrivelse til Google", name: "description", widget: "string", required: false }
       - { label: "Adresse", name: "permalink", widget: "string", hint: "Fx /ny-side/ – må ikke ændres på sider, der allerede er delt" }
+      - { label: "Vidensstatus (kun Viden-sider)", name: "status", widget: "select", required: false, options: [{ label: "Udkast – ikke fagligt gennemgået", value: "udkast" }, { label: "Fagligt gennemgået", value: "gennemgaaet" }, { label: "Opdateret efter review", value: "opdateret" }] }
+      - { label: "Gennemgået af (navn og rolle)", name: "reviewer", widget: "string", required: false }
+      - { label: "Dato for review", name: "review_dato", widget: "string", required: false, hint: "Fx 15. januar 2027" }
       - { label: "PDF til download", name: "pdf", widget: "file", required: false }
       - { label: "Tekst på PDF-knappen", name: "pdf_tekst", widget: "string", required: false }
       - { label: "Tekst", name: "body", widget: "markdown", hint: "Tip: Start et afsnit med > for at vise det som en fremhævet beslutning." }
@@ -282,6 +285,9 @@ collections:
               - { label: "Titel", name: "titel", widget: "string" }
               - { label: "Kort beskrivelse (vises i oversigten)", name: "kort", widget: "text" }
               - { label: "Temaet er klar (ellers vises 'Kommer snart')", name: "klar", widget: "boolean", default: false }
+              - { label: "Vidensstatus", name: "status", widget: "select", required: false, default: "udkast", options: [{ label: "Udkast – ikke fagligt gennemgået", value: "udkast" }, { label: "Fagligt gennemgået", value: "gennemgaaet" }, { label: "Opdateret efter review", value: "opdateret" }] }
+              - { label: "Gennemgået af (navn og rolle)", name: "reviewer", widget: "string", required: false }
+              - { label: "Dato for review", name: "review_dato", widget: "string", required: false }
               - { label: "Indledning", name: "intro", widget: "text", required: false }
               - { label: "Det vigtigste – punkter", name: "pointer", widget: "list", required: false, field: { label: "Punkt", name: "punkt", widget: "text" } }
               - label: "Grupper af kilder"
@@ -296,6 +302,7 @@ collections:
                     widget: "list"
                     summary: "{{fields.aar}} – {{fields.titel}}"
                     fields:
+                      - { label: "Kildetype", name: "type", widget: "select", required: false, options: ["Metaanalyse", "Forskningsoversigt", "Registerstudie", "Forskningsrapport", "Forskningsartikel", "Ph.d.-afhandling", "Spørgeskemaundersøgelse", "Spørgeskemaundersøgelse (over tid)", "Interviewstudie", "Interview- og observationsstudie", "Officiel granskning", "Myndighedsrapport", "Igangværende undersøgelse", "Anbefaling fra myndighed", "Politisk aftale", "Officiel vejledning", "Presse", "Presse (praktisk guide)", "Organisation"] }
                       - { label: "Titel", name: "titel", widget: "string" }
                       - { label: "Forfattere", name: "forfattere", widget: "string" }
                       - { label: "År", name: "aar", widget: "string" }
@@ -306,6 +313,19 @@ collections:
               - { label: "Fremhævet guide – link", name: "guide_link", widget: "string", required: false, hint: "Fx /viden/soegeguide-sydkorea/" }
               - { label: "Støttetekst nederst i temaet", name: "stoette", widget: "text", required: false }
           - { label: "Note nederst", name: "note", widget: "text", required: false }
+
+      - label: "Viden: ændringslog"
+        name: "aendringslog"
+        file: "src/_data/aendringslog.json"
+        fields:
+          - label: "Poster (nyeste øverst)"
+            name: "poster"
+            widget: "list"
+            summary: "{{fields.dato}} – {{fields.side}}"
+            fields:
+              - { label: "Dato", name: "dato", widget: "datetime", format: "YYYY-MM-DD", date_format: "D. MMMM YYYY", time_format: false, picker_utc: true }
+              - { label: "Side", name: "side", widget: "string" }
+              - { label: "Hvad er ændret?", name: "tekst", widget: "text" }
 
       - label: "Kontakt"
         name: "kontakt"

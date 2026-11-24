@@ -3,6 +3,9 @@ title: "Søgeguide: Indien, Vietnam og Libanon"
 eyebrow: Viden · Søgeguide
 description: Praktisk guide til adopterede fra Indien, Vietnam og Libanon, der vil søge efter deres papirer og biologiske familie.
 intro: Er du adopteret fra Indien, Vietnam eller Libanon? Fra august 2026 kan du få hjælp fra den danske ambassade i dit oprindelsesland. Her er de fælles trin og det vigtigste at vide om hvert land.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/soegeguide-indien-vietnam-libanon/
 ---
 

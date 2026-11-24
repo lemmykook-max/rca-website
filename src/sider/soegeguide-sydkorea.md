@@ -3,6 +3,9 @@ title: "Søgeguide: Find dit ophav i Sydkorea"
 eyebrow: Viden · Søgeguide
 description: En praktisk guide til koreansk adopterede i Danmark, der vil søge efter deres papirer og biologiske familie.
 intro: Er du adopteret fra Sydkorea og vil vide mere om, hvor du kommer fra? Her er de trin, du kan tage – fra din danske sag til papirerne i Korea, DNA og hjælp undervejs. Reglerne ændrer sig, så tjek altid de officielle sider.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/soegeguide-sydkorea/
 ---
 

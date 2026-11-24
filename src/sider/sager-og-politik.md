@@ -3,6 +3,9 @@ title: "Sager og politik: tidslinje"
 eyebrow: Viden · Tidslinje
 description: Overblik over undersøgelser, politiske aftaler og retssager om international adoption i Danmark og udlandet siden 2019.
 intro: Der er sket meget på adoptionsområdet de seneste år. Her er de vigtigste undersøgelser, politiske beslutninger og retssager samlet i én tidslinje. Vi opdaterer den løbende.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/sager-og-politik/
 ---
 

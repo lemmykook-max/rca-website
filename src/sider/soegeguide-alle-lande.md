@@ -3,6 +3,9 @@ title: "Søgeguide: Find dit ophav – uanset hvor du er adopteret fra"
 eyebrow: Viden · Søgeguide
 description: Generel guide til adopterede fra alle lande, der vil søge efter deres papirer og biologiske familie.
 intro: Omkring 23.000 børn fra 70 lande blev adopteret til Danmark fra 1964 til 2016. Uanset hvor du kommer fra, er de første trin de samme. Her er en generel guide, eksempler fra enkelte lande og links til vores landeguides.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/soegeguide-alle-lande/
 ---
 

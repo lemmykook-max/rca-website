@@ -3,6 +3,9 @@ title: "Adoption gennem hele livet"
 eyebrow: Viden · Livsfaser
 description: Hvordan adoption kan fylde på nye måder, når man selv får børn, når adoptivforældrene bliver gamle, og for den næste generation.
 intro: Adoption er ikke noget, der sker én gang og så er overstået. For mange dukker nye spørgsmål op senere i livet – når man selv bliver forælder, når adoptivforældrene dør, eller når ens egne børn begynder at spørge. Her er, hvad forskningen siger, og hvad der kan hjælpe.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/livets-faser/
 ---
 

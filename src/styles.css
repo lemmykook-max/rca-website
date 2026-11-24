@@ -290,3 +290,13 @@
   .kilde p:last-of-type{margin-bottom:.6em}
   .kilde-link{font-weight:600;font-size:.95rem}
   .stoette{max-width:820px;margin-top:32px;background:var(--tint);border-radius:10px;padding:14px 18px}
+
+  /* Vidensstatus og kildetyper */
+  .vstatus{border-radius:10px;padding:12px 16px;margin:16px 0 4px;font-size:.95rem;border-left:4px solid var(--terra);background:var(--terra-tint)}
+  .vstatus p{margin:0}
+  .vstatus-gennemgaaet,.vstatus-opdateret{border-left-color:var(--ink-2);background:var(--tint)}
+  .vstatus-links{margin-top:6px!important;font-size:.9rem}
+  .ktype{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);background:var(--tint);border-radius:999px;padding:2px 10px;margin-bottom:8px}
+  .logliste{list-style:none;padding:0;margin:0;display:grid;gap:12px;max-width:820px}
+  .logliste li{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px}
+  .logliste .when{font-weight:700;color:var(--terra);margin-right:8px}

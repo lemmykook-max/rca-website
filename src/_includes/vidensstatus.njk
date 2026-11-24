@@ -1,0 +1,12 @@
+{%- macro vidensstatus(status, reviewer, dato, side, titel) -%}
+<div class="vstatus vstatus-{{ status or 'udkast' }}">
+  {%- if status == "gennemgaaet" %}
+  <p><b>Fagligt gennemgået</b> af {{ reviewer }}{% if dato %}, {{ dato }}{% endif %}.</p>
+  {%- elif status == "opdateret" %}
+  <p><b>Opdateret efter fagligt review</b>{% if reviewer %} af {{ reviewer }}{% endif %}{% if dato %}, {{ dato }}{% endif %}.</p>
+  {%- else %}
+  <p><b>Udkast – ikke fagligt gennemgået endnu.</b> Indholdet er samlet af RCA med hjælp fra AI og venter på review fra fagpersoner. Brug det som en indgang, og tjek altid kilderne.</p>
+  {%- endif %}
+  <p class="vstatus-links"><a href="/viden/bidrag/?side={{ side | urlencode }}&amp;titel={{ titel | urlencode }}">Foreslå en rettelse eller kilde</a> · <a href="/viden/saadan-arbejder-vi/">Sådan arbejder vi med viden</a> · <a href="/viden/aendringslog/">Ændringslog</a></p>
+</div>
+{%- endmacro -%}

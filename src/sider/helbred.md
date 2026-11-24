@@ -3,6 +3,9 @@ title: "Helbred uden familiehistorie"
 eyebrow: Viden · Helbred
 description: Hvad det betyder ikke at kende sin families sygehistorie, og hvad du kan gøre – hos lægen, med genetisk rådgivning og DNA-test.
 intro: Mange adopterede kender ikke deres biologiske families sygdomme. Det kan gøre det sværere for lægen at vurdere din risiko. Her er, hvad du kan gøre, og hvad forskningen siger.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/helbred/
 ---
 

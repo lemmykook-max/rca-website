@@ -3,6 +3,9 @@ title: "Rejsen til oprindelseslandet"
 eyebrow: Viden · Rejse
 description: Gode råd til adopterede, der vil rejse til deres oprindelsesland – forberedelse, besøg, tolk, fællesskab og at passe på sig selv.
 intro: For mange adopterede er rejsen til oprindelseslandet en af de største oplevelser i livet. Den kan give svar, men også rejse nye spørgsmål. Her er gode råd fra forskningen og fra andre adopterede.
+status: udkast
+reviewer: ""
+review_dato: ""
 permalink: /viden/rejse-til-oprindelseslandet/
 ---
 
