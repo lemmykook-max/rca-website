@@ -326,8 +326,68 @@
       "ikon": "book",
       "farve": "petrol",
       "titel": "Granskninger i andre lande",
-      "kort": "Sydkorea, Holland, Sverige og Norge har undersøgt deres adoptionssystemer.",
-      "klar": false
+      "kort": "Sydkorea, Holland, Sverige og Norge har undersøgt deres adoptionssystemer. Konklusionerne ligner hinanden.",
+      "klar": true,
+      "intro": "Danmark er ikke alene. Både et afgiverland og flere modtagerlande har gennemført store, uafhængige granskninger af international adoption. Konklusionerne minder meget om hinanden, og de er vigtige for at forstå, hvad den danske undersøgelse kan komme til at vise.",
+      "pointer": [
+        "Alle fire granskninger fandt alvorlige og systematiske problemer, og de fandt dem gennem hele perioden, ikke kun i enkelte sager.",
+        "Typiske problemer var børn, der blev registreret som forældreløse, selv om de havde forældre, ændrede identiteter, manglende samtykke og penge, der gav en tilskyndelse til at formidle flere børn.",
+        "Myndighederne i modtagerlandene kendte ofte til problemerne, men greb ikke ind.",
+        "Holland stoppede alle udenlandske adoptioner, da rapporten kom i 2021. Sydkoreas præsident gav en officiel undskyldning i 2025.",
+        "Både den svenske og den norske granskning anbefaler et nationalt ressourcecenter eller videncenter med støtte til adopterede."
+      ],
+      "grupper": [
+        {
+          "titel": "Afgiverlandet: Sydkorea",
+          "kilder": [
+            {
+              "titel": "South Korean Truth and Reconciliation Commission finds human rights violations in overseas adoptions",
+              "forfattere": "Sandheds- og Forsoningskommissionen i Sydkorea",
+              "aar": "2025",
+              "udgiver": "Resumé hos American Society of International Law",
+              "link": "https://www.asil.org/ILIB/south-korean-truth-and-reconciliation-commission-finds-human-rights-violations-overseas",
+              "resume": "Kommissionen undersøgte klager fra 367 adopterede, der blev sendt til udlandet mellem 1964 og 1999, også til Danmark. Den fandt, at staten havde krænket adopteredes rettigheder. Udenlandsk adoption blev brugt som et billigt alternativ til at bygge et socialt system op, private bureauer fik magten uden tilstrækkeligt tilsyn, og børn blev registreret som forældreløse, selv om de havde forældre. Kommissionen bekræftede krænkelser i 56 sager og anbefalede en officiel undskyldning."
+            },
+            {
+              "titel": "South Korea's president apologizes over poorly managed foreign adoption programs",
+              "forfattere": "Associated Press",
+              "aar": "2025",
+              "udgiver": "AP",
+              "link": "https://www.news4jax.com/news/world/2025/10/02/south-koreas-president-apologizes-over-poorly-managed-foreign-adoption-programs/",
+              "resume": "I oktober 2025 gav præsident Lee Jae Myung en officiel undskyldning til adopterede, deres familier og de biologiske familier. Sydkorea har siden tilsluttet sig Haagerkonventionen og meddelt, at landet vil stoppe udenlandske adoptioner. Adopterede kritiserer, at de stadig mangler oprejsning, og kun 56 af 367 sager fik medhold. En ny undersøgelse af sagerne begyndte i juli 2026."
+            }
+          ]
+        },
+        {
+          "titel": "Modtagerlande",
+          "kilder": [
+            {
+              "titel": "Committee Investigating Intercountry Adoption (Joustra-komitéen) – summary",
+              "forfattere": "Commissie Onderzoek Interlandelijke Adoptie",
+              "aar": "2021",
+              "udgiver": "Hollands regering",
+              "link": "https://bettercarenetwork.org/sites/default/files/2021-06/Summary-of-the-report-of-the-Committee-Investigating-Intercountry-Adoption.pdf",
+              "resume": "Den første store granskning i et modtagerland. Den dækker adoptioner til Holland 1967–1998 og især Brasilien, Bangladesh, Colombia, Indonesien og Sri Lanka. Komitéen fandt alvorlige strukturelle misbrug gennem hele perioden og i alle lande, blandt andet børnetyveri, korruption og forfalskede dokumenter. Regeringen og formidlerne kendte til misbruget allerede fra 1960'erne. Holland stoppede alle nye udenlandske adoptioner, da rapporten udkom. Rapporten fik Ankestyrelsen til at undersøge fire af de samme lande i Danmark."
+            },
+            {
+              "titel": "Sveriges internationella adoptionsverksamhet – lärdomar och vägen framåt (SOU 2025:61)",
+              "forfattere": "Adoptionskommissionen, særlig utreder Anna Singer",
+              "aar": "2025",
+              "udgiver": "Sveriges regering",
+              "link": "https://regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/06/sou-202561/",
+              "resume": "Kommissionen fandt uregelmæssigheder i adoptioner til Sverige gennem flere årtier. Den foreslår, at formidlingen af udenlandske adoptioner afvikles, at staten giver en offentlig undskyldning, og at der oprettes et nationalt ressourcecenter for adopterede og adoptionsspørgsmål. Det foreslår den sammen med økonomisk støtte til rejser til oprindelseslandet. Mange adoptiv- og adoptionsforeninger bakker op om ressourcecentret, mens flere er imod at stoppe adoptionerne. Regeringen havde i efteråret 2025 endnu ikke givet en undskyldning."
+            },
+            {
+              "titel": "Soundness, Risk, and Trust: An Investigation of Inter-country Adoption to Norway (NOU 2026:7)",
+              "forfattere": "Utvalget for gjennomgang av utenlandsadopsjoner",
+              "aar": "2026",
+              "udgiver": "Norges regering",
+              "link": "https://www.regjeringen.no/no/dokumenter/nou-2026-7/id3166395/?ch=8",
+              "resume": "Udvalget fandt både ulovlige og uetiske forhold og klare mangler i det norske adoptionssystem i hele perioden. Typiske risici var manglende informeret samtykke, økonomisk vinding og iscenesat efterladelse af børn. Om Sydkorea konkluderer udvalget, at tilsynet var meget mangelfuldt, især før 1989, og at børn med kendte forældre blev registreret som forældreløse. Udvalget anbefaler blandt andet et videncenter, støtte fra andre adopterede, sprogundervisning og lettere adgang til egne papirer."
+            }
+          ]
+        }
+      ]
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk."
