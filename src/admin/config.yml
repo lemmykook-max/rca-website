@@ -259,6 +259,18 @@ collections:
           - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
           - { label: "Overskrift", name: "overskrift", widget: "string" }
           - { label: "Indledning", name: "intro", widget: "text" }
+          - { label: "Guides – overskrift", name: "guides_overskrift", widget: "string", required: false }
+          - label: "Guides"
+            name: "guides"
+            widget: "list"
+            required: false
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Kort tekst", name: "tekst", widget: "text" }
+              - { label: "Link", name: "link", widget: "string", hint: "Fx /viden/dine-rettigheder/" }
           - label: "Temaer"
             name: "temaer"
             widget: "list"

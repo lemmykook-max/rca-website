@@ -12,6 +12,16 @@ description: Forskning og undersøgelser om transnational adoption, samlet af Re
     <p class="lead" style="max-width:780px">{{ v.intro }}</p>
   </div></div>
 
+  {% if v.guides %}<section>
+    <div class="wrap">
+      <h2>{{ v.guides_overskrift or "Praktiske guides" }}</h2>
+      <div class="grid g2" style="margin-top:24px">
+        {% for g in v.guides %}<a class="card news-card tema" href="{{ g.link }}">{{ ikon(g.ikon, g.farve) }}<h3>{{ g.titel }}</h3><p>{{ g.tekst }}</p><span class="tema-link">Læs guiden</span></a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>{% endif %}
+
   <section>
     <div class="wrap">
       <h2>Temaer</h2>

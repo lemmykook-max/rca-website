@@ -535,5 +535,22 @@
       "guide_link": "/viden/soegeguide-sydkorea/"
     }
   ],
-  "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk."
+  "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk.",
+  "guides_overskrift": "Praktiske guides",
+  "guides": [
+    {
+      "ikon": "lock",
+      "farve": "terra",
+      "titel": "Kend dine rettigheder",
+      "tekst": "Aktindsigt, rådgivning, gratis juridisk hjælp, navn, ophævelse og retssager – samlet ét sted.",
+      "link": "/viden/dine-rettigheder/"
+    },
+    {
+      "ikon": "pin",
+      "farve": "petrol",
+      "titel": "Søgeguide: Sydkorea",
+      "tekst": "Trin for trin fra din danske sag til papirerne i Korea, DNA og hjælp fra ambassaden.",
+      "link": "/viden/soegeguide-sydkorea/"
+    }
+  ]
 }
