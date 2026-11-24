@@ -530,7 +530,9 @@
             }
           ]
         }
-      ]
+      ],
+      "guide_tekst": "Adopteret fra Sydkorea? Læs vores trin-for-trin søgeguide.",
+      "guide_link": "/viden/soegeguide-sydkorea/"
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk."

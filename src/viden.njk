@@ -30,6 +30,8 @@ description: Forskning og undersøgelser om transnational adoption, samlet af Re
       <h2>{{ t.titel }}</h2>
       <p style="max-width:820px">{{ t.intro }}</p>
 
+      {% if t.guide_link %}<div class="news" style="max-width:820px;margin-top:24px"><p><b>{{ t.guide_tekst }}</b></p><a class="btn terra" href="{{ t.guide_link }}">Gå til guiden</a></div>{% endif %}
+
       {% if t.pointer %}<div class="card tinted" style="max-width:820px;margin:28px 0 8px">
         <h3>Det vigtigste</h3>
         <ul class="check">

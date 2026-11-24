@@ -290,6 +290,8 @@ collections:
                       - { label: "Udgiver / tidsskrift", name: "udgiver", widget: "string" }
                       - { label: "Link til kilden", name: "link", widget: "string", required: false }
                       - { label: "Resumé (med egne ord)", name: "resume", widget: "text" }
+              - { label: "Fremhævet guide – tekst", name: "guide_tekst", widget: "string", required: false }
+              - { label: "Fremhævet guide – link", name: "guide_link", widget: "string", required: false, hint: "Fx /viden/soegeguide-sydkorea/" }
               - { label: "Støttetekst nederst i temaet", name: "stoette", widget: "text", required: false }
           - { label: "Note nederst", name: "note", widget: "text", required: false }
 
