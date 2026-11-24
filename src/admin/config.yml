@@ -356,6 +356,7 @@ collections:
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Tekst i sidefoden", name: "footer_tekst", widget: "text" }
           - { label: "Kontaktmail", name: "email", widget: "string" }
+          - { label: "LinkedIn-side", name: "linkedin", widget: "string", required: false }
           - { label: "Knap øverst til højre – tekst", name: "knap_tekst", widget: "string", required: false }
           - { label: "Knap øverst til højre – link", name: "knap_link", widget: "string", required: false }
           - label: "Menu"

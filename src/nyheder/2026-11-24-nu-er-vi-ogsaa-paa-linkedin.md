@@ -9,4 +9,4 @@ Ressourcecenter for Adopterede (RCA) blev stiftet i november. Vi er en uafhængi
 
 Vi startede, fordi svarene ligger spredt. Hvor finder man sine papirer? Hvad siger forskningen? Hvordan søger man sit ophav? Nu samler vi det ét sted på **[Viden](/viden/)**. Det er et udkast, og det er meningen, at vi skal bygge det sammen med adopterede, forskere og fagfolk.
 
-Følg os på LinkedIn, hvis du er adopteret, familie, forsker eller fagperson. Eller hvis du bare synes, det er vigtigt. Du finder os ved at søge efter **Ressourcecenter for Adopterede** på LinkedIn.
+**[Følg os på LinkedIn](https://www.linkedin.com/company/rcfadk)**, hvis du er adopteret, familie, forsker eller fagperson. Eller hvis du bare synes, det er vigtigt.

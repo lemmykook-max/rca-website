@@ -41,7 +41,7 @@
     <div>
       <p style="font-family:var(--serif);font-size:1.3rem;font-weight:700;margin-bottom:.3em">{{ site.navn }}</p>
       <p>{{ site.footer_tekst }}</p>
-      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if site.linkedin %} · <a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}</p>
     </div>
     <nav aria-label="Sidefod">
       <ul>
