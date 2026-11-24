@@ -558,6 +558,13 @@
       "titel": "Søgeguide: Indien, Vietnam og Libanon",
       "tekst": "Fælles trin, hjælp fra ambassaderne og det vigtigste at vide om hvert land.",
       "link": "/viden/soegeguide-indien-vietnam-libanon/"
+    },
+    {
+      "ikon": "heart",
+      "farve": "terra",
+      "titel": "Helbred uden familiehistorie",
+      "tekst": "Hvad du kan sige til lægen, genetisk rådgivning, DNA-test og helbred – og tidlig pubertet hos adopterede piger.",
+      "link": "/viden/helbred/"
     }
   ]
 }
