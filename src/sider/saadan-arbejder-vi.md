@@ -50,6 +50,8 @@ Vi skriver resuméer med egne ord og linker altid til den originale kilde.
 
 RCA er en uafhængig forening. Vi modtager ikke betaling for at omtale kilder, organisationer eller tilbud. Vi bestræber os på at give et fair billede, også når forskningen peger i forskellige retninger, eller når emnet er politisk.
 
+Vi tager gerne imod input fra organisationer, der selv tilbyder hjælp til adopterede, fx søgetjenester. Deres viden er ofte uvurderlig. Men RCA skriver altid selv teksten. Når en oplysning kommer fra organisationen selv og ikke fra en uafhængig kilde, skriver vi det. Vi oplyser også, hvis et tilbud koster penge.
+
 ## Rettelser og opdateringer
 
 - Alle sider har en dato for, hvornår de sidst er opdateret.
