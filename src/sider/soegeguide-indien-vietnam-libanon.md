@@ -30,6 +30,8 @@ permalink: /viden/soegeguide-indien-vietnam-libanon/
 - I Indien kaldes søgen efter ophav **"root search"**. Retten er beskrevet i de indiske adoptionsregler fra 2022 (Adoption Regulations, regulation 47).
 - Er du **over 18 år**, kan du selv søge online hos den indiske centralmyndighed **CARA** (Central Adoption Resource Authority). Adoptionsbureauer og myndigheder skal hjælpe dig.
 - Din ret til at kende dit ophav må ikke krænke dine biologiske forældres ret til privatliv. Afviser de kontakt, eller kan de ikke findes, skal myndighederne fortælle dig hvorfor.
+- **Vejen via CARA virker ikke for alle.** Flere adopterede og organisationer fortæller, at den officielle vej ofte går i stå. Det gælder især, når papirerne er mangelfulde, eller når barnehjemmet ikke vil samarbejde. Det kan derfor være en god idé at undersøge flere veje på én gang.
+- **Uafhængig søgehjælp:** [Adoptee Rights Council (ARC)](https://www.adopteerightscouncil.org/da/) hjælper adopterede fra Indien med at søge efter papirer og familie i Indien. Organisationen drives af Arun Dohle, der selv er adopteret fra Indien, og menneskeretsjuristen Anjali Pawar. Selv oplyser de, at de har løst over 90 sager. Søgningerne er et betalt arbejde, så spørg om pris og vilkår, før du går i gang. RCA anbefaler ikke bestemte aktører, men vi oplyser om dem, adopterede selv har brugt.
 - Der har været sager om ulovlige adoptioner fra Indien til Danmark. Familiestyrelsen undersøgte formidlingen fra 2000–2007, og DR har dokumenteret sager fra slutningen af 1970'erne. Indien indgår i VIVE's uvildige undersøgelse.
 
 ## Vietnam
@@ -50,6 +52,7 @@ permalink: /viden/soegeguide-indien-vietnam-libanon/
 
 - [Udenrigsministeriet: Hjælp til danske adopterede fra Sydkorea, Indien, Vietnam og Libanon](https://um.dk/rejse-og-ophold/hjaelp-til-danske-adopterede-fra-sydkorea-indien-vietnam-og-libanon/)
 - [Nyaaya: Root search efter de indiske adoptionsregler (engelsk)](https://nyaaya.org/?p=29340)
+- [Undark: Despite mixed results, South Asian adoptees turn to DNA tests (engelsk)](https://undark.org/2020/10/19/south-asian-adoptees-dna-tests/)
 - [Familiestyrelsen: Undersøgelsesrapport om adoptionsformidlingen fra Indien 2000–2007 (pdf)](https://ast.dk/publikationer/undersogelsesrapport-om-adoptionsformidling-fra-indien-i-perioden-2000-2007/@@download/publication)
 - [Vietnams svar til Haagerkonferencen om søgen efter ophav (pdf, engelsk)](https://assets.hcch.net/docs/76adc539-ce59-4015-b52e-69cf2ed3a111.pdf)
 - [Al Jazeera: Lebanon's abandoned children are coming home (engelsk)](https://www.aljazeera.com/features/2023/2/4/lebanons-abandoned-children-are-coming-home)
