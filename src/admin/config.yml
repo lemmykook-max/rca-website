@@ -11,8 +11,8 @@ backend:
     deleteMedia: "Slet “{{path}}”"
 
 locale: "da"
-site_url: "https://rca-website.netlify.app"
-display_url: "https://rca-website.netlify.app"
+site_url: "https://rcfa.dk"
+display_url: "https://rcfa.dk"
 media_folder: "src/files"
 public_folder: "/files"
 slug:
