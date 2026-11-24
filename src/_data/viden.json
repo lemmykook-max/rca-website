@@ -135,8 +135,106 @@
       "ikon": "users",
       "farve": "petrol",
       "titel": "Identitet, race og racisme",
-      "kort": "Kritisk adoptionsforskning om at vokse op som adopteret i et hvidt Danmark.",
-      "klar": false
+      "kort": "Kritisk adoptionsforskning om at vokse op synligt anderledes i en familie og et samfund, der ofte ikke taler om race.",
+      "klar": true,
+      "intro": "De fleste udlandsadopterede vokser op i hvide familier i et land, hvor man helst ikke taler om race. Forskningen her ser på, hvad det betyder at blive set som anderledes udefra, mens man hjemme bliver mødt som 'helt almindelig dansk'. En del af forskningen er skrevet af adopterede selv.",
+      "pointer": [
+        "Adopterede fortæller om alt fra 'nysgerrige spørgsmål' om, hvor de kommer fra, til åben racisme. Det følger dem gennem livet.",
+        "Forskerne beskriver en farveblindhed: Familien og samfundet understreger, at barnet er dansk, og taler ikke om den racisme, barnet møder. Så står den adopterede ofte alene med det.",
+        "Køn spiller ind. Asiatisk adopterede kvinder møder seksualiserede stereotyper, som de skal forholde sig til.",
+        "Oplevet diskrimination hænger sammen med psykisk mistrivsel, også når man har taget højde for forhold før adoptionen.",
+        "Adoptivforældre mener ofte, at de taler mere om kultur og oprindelse, end deres børn selv oplever.",
+        "Vi har ikke fundet danske studier, der måler, hvor meget diskrimination udlandsadopterede oplever, eller hvad det betyder for deres trivsel."
+      ],
+      "grupper": [
+        {
+          "titel": "Danske studier",
+          "kilder": [
+            {
+              "titel": "Adopteret – fortællinger om transnational og racialiseret tilblivelse",
+              "forfattere": "Lene Myong Petersen",
+              "aar": "2009",
+              "udgiver": "Ph.d.-afhandling, DPU, Aarhus Universitet",
+              "link": "https://tidsskrift.dk/nu/article/download/134479/179382/288759",
+              "resume": "Danmarks første ph.d.-afhandling om adoption. Den bygger på interviews med 35 voksne koreansk adopterede født 1967–1981. Afhandlingen viser, hvordan race bliver ved med at have betydning i adopteredes liv. Samtidig bliver forskellen benægtet og forbigået i et samfund, hvor idealet er at være farveblind. Linket går til en artikel, hvor Lene Myong fremlægger afhandlingen."
+            },
+            {
+              "titel": "At blive en ligeværdig dansk kvinde – fortællinger om race, køn og heteroseksualitet",
+              "forfattere": "Lene Myong Petersen",
+              "aar": "2009",
+              "udgiver": "Kvinder, Køn & Forskning",
+              "link": "https://doi.org/10.7146/kkf.v0i2.27986",
+              "resume": "Bygger på interviews med voksne koreansk adopterede kvinder. Artiklen viser, hvordan de møder seksualiserede forestillinger om asiatiske kvinder, som støder sammen med danske idealer om ligestilling. Kvinderne fortæller blandt andet om at blive taget for at være thailandske."
+            }
+          ]
+        },
+        {
+          "titel": "Svenske og norske studier",
+          "kilder": [
+            {
+              "titel": "Comforting an orphaned nation: Representations of international adoption and adopted Koreans in Korean popular culture",
+              "forfattere": "Tobias Hübinette",
+              "aar": "2005",
+              "udgiver": "Ph.d.-afhandling, Stockholms universitet",
+              "link": "http://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-696",
+              "resume": "Hübinette er selv adopteret fra Korea og en af pionererne i kritisk adoptionsforskning. Afhandlingen undersøger, hvordan koreansk film og musik fremstiller de adopterede, og hvad det betyder for en nation, der ser sig selv som én stor familie, at den har sendt så mange af sine børn væk."
+            },
+            {
+              "titel": "Between colourblindness and ethnicisation: Transnational adoptees and race in a Swedish context",
+              "forfattere": "Tobias Hübinette og Malinda Andersson",
+              "aar": "2012",
+              "udgiver": "Adoption & Fostering",
+              "link": "https://lup.lub.lu.se/record/3195619",
+              "resume": "Undersøger, hvornår og hvordan race og etnicitet dukker op i adopteredes hverdag i Sverige, hvor farveblind antiracisme er normen. Bygger på interviews med adopterede og på dokumenter fra adoptionsverdenen."
+            },
+            {
+              "titel": "The Importance of Perceived Discrimination and Pre-Adoption Risk for Mental Health Problems among Young Adult Internationally Adopted Students in Norway",
+              "forfattere": "Forskere ved Folkehelseinstituttet (SHoT-studiet)",
+              "aar": "2022",
+              "udgiver": "Adoption Quarterly",
+              "link": "https://fhi.brage.unit.no/fhi-xmlui/handle/11250/3037591",
+              "resume": "Bygger på svar fra 409 udlandsadopterede studerende i Norge. De adopterede havde mere psykisk mistrivsel og flere selvmordstanker end andre studerende. Oplevet diskrimination hang sammen med mere mistrivsel, tanker om selvskade og selvmordstanker. Alder ved adoptionen hang ikke sammen med nogen af udfaldene."
+            },
+            {
+              "titel": "Mental Health Struggles among Norwegian International Adoptees",
+              "forfattere": "Kjersti Grinde Satish",
+              "aar": "2024",
+              "udgiver": "Adoption Quarterly",
+              "link": "https://doi.org/10.1080/10926755.2023.2172506",
+              "resume": "Interviews med 26 udlandsadopterede i Norge mellem 21 og 34 år. Mange havde haft alvorlige psykiske problemer, især depression, som de selv kobler til spørgsmål om identitet og tilhørsforhold. Forfatteren peger på, at støtte efter adoptionen kan forhindre, at de adopterede sidder alene med de spørgsmål."
+            }
+          ]
+        },
+        {
+          "titel": "Internationale studier",
+          "kilder": [
+            {
+              "titel": "The Transracial Adoption Paradox: History, Research, and Counseling Implications of Cultural Socialization",
+              "forfattere": "Richard M. Lee",
+              "aar": "2003",
+              "udgiver": "The Counseling Psychologist",
+              "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2366972/",
+              "resume": "En klassisk gennemgang, der satte ord på 'adoptionsparadokset': Adopterede er en minoritet i samfundet, men bliver opfattet og opdraget, som om de var en del af majoriteten. Artiklen er et godt overblik over, hvordan familier kan tale om kultur og race."
+            },
+            {
+              "titel": "Cultural Socialization in Families with Adopted Korean Adolescents: A Mixed-Method, Multi-Informant Study",
+              "forfattere": "Oh Myo Kim, Reed Reichwald og Richard M. Lee",
+              "aar": "2013",
+              "udgiver": "Journal of Adolescent Research",
+              "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3825402/",
+              "resume": "Sammenligner, hvad adoptivforældre og deres koreansk adopterede teenagere siger om, hvor meget familien beskæftiger sig med kultur og oprindelse. Forældrene mente, at de gjorde mere, end de unge oplevede. Det var de unges beskrivelse, der passede bedst med, hvad forskerne selv observerede i familiens samtaler."
+            },
+            {
+              "titel": "Adoptive Parents' Racial Colorblindness and Adopted Korean Adolescents' Experiences of Discrimination",
+              "forfattere": "Kay A. Simon, Richard M. Lee m.fl.",
+              "aar": "2025",
+              "udgiver": "Cultural Diversity & Ethnic Minority Psychology",
+              "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11902873/",
+              "resume": "Følger amerikanske adoptivfamilier med koreansk adopterede børn over tid. Forældrenes farveblindhed ændrede sig ikke fra barndom til teenageår, men den diskrimination, forældrene så deres børn møde, steg. Forældre, der var farveblinde, da barnet var lille, rapporterede mere diskrimination senere."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "danske-undersoegelser",
@@ -155,5 +253,5 @@
       "klar": false
     }
   ],
-  "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til gitmosep@gmail.com."
+  "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk."
 }
