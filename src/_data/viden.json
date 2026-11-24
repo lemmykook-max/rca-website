@@ -551,6 +551,13 @@
       "titel": "Søgeguide: Sydkorea",
       "tekst": "Trin for trin fra din danske sag til papirerne i Korea, DNA og hjælp fra ambassaden.",
       "link": "/viden/soegeguide-sydkorea/"
+    },
+    {
+      "ikon": "pin",
+      "farve": "petrol",
+      "titel": "Søgeguide: Indien, Vietnam og Libanon",
+      "tekst": "Fælles trin, hjælp fra ambassaderne og det vigtigste at vide om hvert land.",
+      "link": "/viden/soegeguide-indien-vietnam-libanon/"
     }
   ]
 }
