@@ -18,6 +18,11 @@ export default function (cfg) {
   cfg.addFilter("mail_links", (s) => String(s || "").replace(/[\w.+-]+@[\w-]+\.[\w.]+[a-z]/gi, (m) => `<a href="mailto:${m}">${m}</a>`));
   cfg.addFilter("isodato", (d) => new Date(d).toISOString().slice(0, 10));
 
+  cfg.addGlobalData("byggedato", () => new Date());
+  cfg.addCollection("vidensider", (api) =>
+    api.getFilteredByGlob("src/sider/*.md").filter((p) => String(p.data.permalink || "").startsWith("/viden/"))
+  );
+
   cfg.addCollection("nyheder", (api) =>
     api.getFilteredByGlob("src/nyheder/*.md").sort((a, b) => b.date - a.date)
   );
