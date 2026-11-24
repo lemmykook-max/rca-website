@@ -289,7 +289,7 @@
   .kilde-meta{font-size:.9rem;color:var(--muted);margin-bottom:.4em}
   .kilde p:last-of-type{margin-bottom:.6em}
   .kilde-link{font-weight:600;font-size:.95rem}
-  .stoette{max-width:820px;margin-top:32px;background:var(--tint);border-radius:10px;padding:14px 18px}
+  .stoette{max-width:820px;margin:16px 0 20px;background:var(--tint);border-left:4px solid var(--ink-2);border-radius:10px;padding:14px 18px}
 
   /* Vidensstatus og kildetyper */
   .vstatus{border-radius:10px;padding:12px 16px;margin:16px 0 4px;font-size:.95rem;border-left:4px solid var(--terra);background:var(--terra-tint)}

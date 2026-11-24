@@ -41,6 +41,7 @@ description: Forskning og undersøgelser om transnational adoption, samlet af Re
     <div class="wrap">
       <p class="eyebrow">Tema</p>
       <h2>{{ t.titel }}</h2>
+      {% if t.stoette %}<p class="stoette" role="note"><b>Vær opmærksom:</b> {{ t.stoette }}</p>{% endif %}
       <div style="max-width:820px">{{ vidensstatus(t.status, t.reviewer, t.review_dato, "/viden/#" + t.id, "Tema: " + t.titel) }}</div>
       <p style="max-width:820px">{{ t.intro }}</p>
 
@@ -67,7 +68,6 @@ description: Forskning og undersøgelser om transnational adoption, samlet af Re
       </div>
       {% endfor %}
 
-      {% if t.stoette %}<p class="stoette">{{ t.stoette }}</p>{% endif %}
     </div>
   </section>
 {% endif %}{% endfor %}
