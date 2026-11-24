@@ -31,9 +31,22 @@ eleventyExcludeFromCollections: true
   .toc li{margin:.2em 0}
   .pv-bar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
   .pv-bar .in{max-width:820px;margin:0 auto;padding:12px 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+  .forside{display:flex;flex-direction:column;gap:18px;padding:24px 0 8px}
+  .forside .logo-row{display:flex;align-items:center;gap:16px}
+  .forside .logo-row img{width:72px;height:72px}
+  .forside .logo-row b{font-family:var(--serif);font-size:1.5rem;display:block;line-height:1.2}
+  .forside .logo-row span{color:var(--muted);font-size:.95rem}
+  .forside h1{font-size:3rem;margin:24px 0 4px}
+  .forside .udgave{font-size:1.05rem;color:var(--ink-2)}
   .sidefod{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
   @media print{
-    @page{size:A4;margin:18mm 16mm}
+    @page{size:A4;margin:16mm 16mm 20mm;
+      @bottom-left{content:"Ressourcecenter for Adopterede (RCA) · {{ site.email }}";font-family:Aptos,"Segoe UI",Arial,sans-serif;font-size:8pt;color:#17424d}
+      @bottom-right{content:"Udgave {{ byggedato | dato }} · opdateres løbende · side " counter(page) " af " counter(pages);font-family:Aptos,"Segoe UI",Arial,sans-serif;font-size:8pt;color:#555}
+    }
+    @page:first{@bottom-left{content:none}@bottom-right{content:none}}
+    .forside{min-height:240mm;justify-content:space-between;break-after:page}
+    .forside h1{font-size:34pt}
     body{font-size:11pt;line-height:1.45}
     .pv-bar{display:none}
     .pv{padding:0;max-width:none}
@@ -54,13 +67,19 @@ eleventyExcludeFromCollections: true
 </div></div>
 
 <main class="pv">
-  <p class="eyebrow">{{ site.navn }}</p>
-  <h1>{{ v.overskrift }}</h1>
-  <p class="lead">{{ v.intro }}</p>
-
-  <div class="opdateres">
-    <p style="margin:0 0 .4em"><b>Denne samling opdateres løbende.</b></p>
-    <p style="margin:0">Denne udgave er fra <b>{{ byggedato | dato }}</b>. Regler, tilbud og forskning ændrer sig, så tjek altid den nyeste version på <a class="nourl" href="{{ url }}">{{ url | replace("https://", "") }}</a>, før du bruger oplysningerne. Har du rettelser, så skriv til {{ site.email }}.</p>
+  <div class="forside">
+    <div class="logo-row"><img src="/files/signatur/rca-logo.png" alt="RCA-logo"><div><b>{{ site.undertitel }}</b><span>{{ site.tagline }}</span></div></div>
+    <div>
+      <p class="eyebrow">Udgivet af {{ site.navn }}</p>
+      <h1>{{ v.overskrift }}</h1>
+      <p class="udgave">Samlet viden, guides og forskning for adopterede, familier og fagfolk</p>
+      <p class="lead">{{ v.intro }}</p>
+      <div class="opdateres">
+        <p style="margin:0 0 .4em"><b>Denne samling opdateres løbende.</b></p>
+        <p style="margin:0">Denne udgave er fra <b>{{ byggedato | dato }}</b>. Regler, tilbud og forskning ændrer sig, så tjek altid den nyeste version på <a class="nourl" href="{{ url }}">{{ url | replace("https://", "") }}</a>, før du bruger oplysningerne. Har du rettelser, så skriv til {{ site.email }}.</p>
+      </div>
+    </div>
+    <p class="muted" style="font-size:.9rem;margin:0">© {{ byggedato.getFullYear() }} {{ site.navn }} · {{ site.email }}. Må gerne deles og printes med kildeangivelse.</p>
   </div>
 
   <nav class="toc" aria-label="Indhold">
