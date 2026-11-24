@@ -206,6 +206,19 @@ collections:
               - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
               - { label: "Titel", name: "titel", widget: "string" }
               - { label: "Tekst", name: "tekst", widget: "text" }
+          - { label: "Bestyrelsen – lille overskrift", name: "bestyrelse_eyebrow", widget: "string", required: false }
+          - { label: "Bestyrelsen – overskrift", name: "bestyrelse_overskrift", widget: "string", required: false }
+          - { label: "Bestyrelsen – intro", name: "bestyrelse_intro", widget: "text", required: false }
+          - label: "Bestyrelsesmedlemmer"
+            name: "bestyrelse"
+            widget: "list"
+            required: false
+            summary: "{{fields.navn}} – {{fields.post}}"
+            fields:
+              - { label: "Navn", name: "navn", widget: "string" }
+              - { label: "Post", name: "post", widget: "string" }
+              - { label: "Mail", name: "email", widget: "string", required: false }
+          - { label: "Revisor", name: "revisor", widget: "string", required: false }
           - { label: "Link nederst – tekst", name: "link_tekst", widget: "string", required: false }
           - { label: "Link nederst – adresse", name: "link", widget: "string", required: false }
 

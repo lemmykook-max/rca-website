@@ -80,7 +80,7 @@
       "ikon": "star",
       "farve": "petrol",
       "titel": "Bestyrelsen",
-      "tekst": "3–5 medlemmer: formand, kasserer og sekretær – og eventuelt næstformand og kommunikationsansvarlig. Desuden op til 2 suppleanter."
+      "tekst": "3–5 medlemmer: forperson, kasserer og sekretær – og eventuelt næstforperson og kommunikationsansvarlig. Desuden op til 2 suppleanter."
     },
     {
       "ikon": "lock",
@@ -89,6 +89,32 @@
       "tekst": "Det, medlemmer fortæller om personlige forhold i foreningens fællesskaber, er fortroligt og deles ikke uden samtykke."
     }
   ],
+  "bestyrelse_eyebrow": "Bestyrelsen",
+  "bestyrelse_overskrift": "Hvem sidder i bestyrelsen?",
+  "bestyrelse_intro": "Bestyrelsen blev valgt på den stiftende generalforsamling den 15. november 2026 og konstituerede sig på sit første bestyrelsesmøde.",
+  "bestyrelse": [
+    {
+      "navn": "Lemmy Kook Lyngholm",
+      "post": "Forperson",
+      "email": "chair@rcfa.dk"
+    },
+    {
+      "navn": "Gitte Mose",
+      "post": "Næstforperson",
+      "email": "vice@rcfa.dk"
+    },
+    {
+      "navn": "Lena Lee Skibye",
+      "post": "Kommunikationsansvarlig",
+      "email": "comms@rcfa.dk"
+    },
+    {
+      "navn": "Annemaj Ree Bengtson",
+      "post": "Bestyrelsesmedlem",
+      "email": "annemaj@rcfa.dk"
+    }
+  ],
+  "revisor": "Chang Lee Nielsen",
   "link_tekst": "Læs vedtægterne under Dokumenter →",
   "link": "/dokumenter"
 }

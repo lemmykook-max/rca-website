@@ -44,6 +44,18 @@ title: Om RCA
         {% for s in o.org %}<div class="card">{{ ikon(s.ikon, s.farve) }}<h3>{{ s.titel }}</h3><p>{{ s.tekst }}</p></div>
         {% endfor %}
       </div>
+      {% if o.bestyrelse %}
+      <div style="margin-top:40px">
+        <p class="eyebrow">{{ o.bestyrelse_eyebrow }}</p>
+        <h2>{{ o.bestyrelse_overskrift }}</h2>
+        {% if o.bestyrelse_intro %}<p class="muted" style="max-width:720px">{{ o.bestyrelse_intro }}</p>{% endif %}
+        <div class="grid g2" style="margin-top:16px">
+          {% for b in o.bestyrelse %}<div class="card"><h3 style="margin:0">{{ b.navn }}</h3><p style="margin:4px 0 0"><b>{{ b.post }}</b>{% if b.email %} · <a href="mailto:{{ b.email }}">{{ b.email }}</a>{% endif %}</p></div>
+          {% endfor %}
+        </div>
+        {% if o.revisor %}<p class="muted" style="margin-top:16px">Revisor: {{ o.revisor }}. Fælles mail til hele bestyrelsen: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>{% endif %}
+      </div>
+      {% endif %}
       {% if o.link_tekst %}<p style="margin-top:24px"><a href="{{ o.link }}">{{ o.link_tekst }}</a></p>{% endif %}
     </div>
   </section>
