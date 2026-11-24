@@ -1,0 +1,159 @@
+{
+  "eyebrow": "Viden",
+  "overskrift": "Viden om adoption",
+  "intro": "Her samler vi forskning og undersøgelser om transnational adoption, så adopterede, familier og fagfolk kan finde den samme viden ét sted. Vi skriver resuméerne med egne ord og linker altid til kilden.",
+  "temaer": [
+    {
+      "id": "psykisk-helbred",
+      "ikon": "heart",
+      "farve": "terra",
+      "titel": "Trivsel og psykisk helbred",
+      "kort": "Hvad registerstudier fra Danmark og Sverige viser om adopteredes psykiske helbred.",
+      "klar": true,
+      "intro": "Store registerstudier følger alle adopterede i et land og sammenligner dem med jævnaldrende. Billedet er ret entydigt: de fleste udlandsadopterede klarer sig godt, men som gruppe har adopterede en højere risiko for psykiske problemer end ikke-adopterede. Forskellen er størst i ungdommen og det tidlige voksenliv.",
+      "pointer": [
+        "Danske adopterede født 1989–1994 havde dobbelt så ofte været i kontakt med psykiatrien inden de fyldte 20 år som deres jævnaldrende.",
+        "Der er store forskelle inden for gruppen. Hvor man er adopteret fra, og hvor gammel man var ved adoptionen, betyder meget.",
+        "I Sverige falder risikoen for selvmord med alderen og er i 30'erne på niveau med andres. Risikoen for selvmordsforsøg falder også, men forbliver højere.",
+        "Forskerne peger på tidlige belastninger før adoptionen og på identitet, tilhørsforhold og racisme efter adoptionen som mulige forklaringer.",
+        "Vi har ikke fundet danske studier, der følger udlandsadopterede ind i 40'erne og 50'erne, eller som undersøger sammenhængen mellem oplevet racisme og psykisk helbred."
+      ],
+      "grupper": [
+        {
+          "titel": "Danske studier",
+          "kilder": [
+            {
+              "titel": "At vokse op som adopteret i Danmark",
+              "forfattere": "Sofie Henze-Pedersen og Rikke Fuglsang Olsen",
+              "aar": "2017",
+              "udgiver": "VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd",
+              "link": "https://vive.dk/da/udgivelser/at-vokse-op-som-adopteret-i-danmark-5678",
+              "resume": "Det danske hovedværk om adopterede. Rapporten samler VIVE's analyser af adopteredes opvækst, uddannelse og psykiske helbred med særligt fokus på fremmedadopterede. Et godt sted at starte."
+            },
+            {
+              "titel": "Mental Health in Danish Domestic and International Adoptees as Young Adults",
+              "forfattere": "Rikke Fuglsang Olsen",
+              "aar": "2017",
+              "udgiver": "VIVE Working Paper",
+              "link": "https://www.vive.dk/da/udgivelser/mental-health-in-danish-domestic-and-international-adoptees-as-young-adults-dx3p73vb/",
+              "resume": "Følger alle 3.180 fremmedadopterede født 1989–1994 og sammenligner dem med over 418.000 jævnaldrende. Adopterede havde 2,6 gange så høj odds for at have været i kontakt med psykiatrien inden de fyldte 20 år (17,5 % mod 9,0 %). Forskellen var særlig stor for ADHD, tilknytningsforstyrrelser og stressrelaterede lidelser. Rumænsk adopterede lå markant højest. Når adoptivforældrene havde højere uddannelse og indkomst, blev risikoen mindre, men den forsvandt ikke."
+            },
+            {
+              "titel": "Full Spectrum of Psychiatric Disorders Related to Foreign Migration",
+              "forfattere": "Elizabeth Cantor-Graae og Carsten Bøcker Pedersen",
+              "aar": "2013",
+              "udgiver": "JAMA Psychiatry",
+              "link": "https://lup.lub.lu.se/record/3979311",
+              "resume": "Studiet følger næsten 1,9 millioner personer i Danmark født 1971–2000. Udlandsadopterede havde den højeste risiko for psykiske lidelser af alle grupper med migrationsbaggrund. De havde omkring 1,65 gange så høj risiko for psykiatrisk kontakt som personer med dansk baggrund, og risikoen var forhøjet for alle de lidelser, der blev målt."
+            },
+            {
+              "titel": "Psychiatric status among stepchildren and domestic and international adoptees in Denmark",
+              "forfattere": "Merete Laubjerg, Anne Maj Christensen og Birgit Petersson",
+              "aar": "2009",
+              "udgiver": "Scandinavian Journal of Public Health",
+              "link": "",
+              "resume": "Det første landsdækkende danske registerstudie af adopteredes kontakt med psykiatrien. Det omfatter 13.524 adopterede af syv forskellige adoptionstyper og sammenligner dem med ikke-adopterede."
+            }
+          ]
+        },
+        {
+          "titel": "Svenske studier",
+          "kilder": [
+            {
+              "titel": "Suicide, psychiatric illness, and social maladjustment in intercountry adoptees in Sweden",
+              "forfattere": "Anders Hjern, Frank Lindblad og Bo Vinnerljung",
+              "aar": "2002",
+              "udgiver": "The Lancet",
+              "link": "https://www.scilit.net/publications/c26ba548a3ea686cc02e58f0ea3b0ccb",
+              "resume": "Det mest citerede studie på området. Det følger svenske udlandsadopterede født i 1970'erne. Selv når der var taget højde for familiens sociale forhold, havde de unge adopterede tre til fem gange så høj risiko for selvmord, selvmordsforsøg, psykiatrisk indlæggelse og misbrug."
+            },
+            {
+              "titel": "Suicidal behaviour in national and international adult adoptees",
+              "forfattere": "Annika von Borczyskowski, Anders Hjern, Frank Lindblad og Bo Vinnerljung",
+              "aar": "2006",
+              "udgiver": "Social Psychiatry and Psychiatric Epidemiology",
+              "link": "https://doi.org/10.1007/s00127-005-0974-2",
+              "resume": "Sammenligner udlandsadopterede med indenlandsk adopterede og ikke-adopterede født 1963–1973. Begge grupper af adopterede havde forhøjet risiko, men udlandsadopterede havde den højeste. Risikoen for selvmordsforsøg var særlig forhøjet hos kvinder."
+            },
+            {
+              "titel": "Increased risk of suicidal behaviour in non-European international adoptees decreases with age: A Swedish national cohort study",
+              "forfattere": "Anders Hjern, Jesús Palacios, Bo Vinnerljung, Hélio Manhica og Frank Lindblad",
+              "aar": "2020",
+              "udgiver": "EClinicalMedicine",
+              "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7710634/",
+              "resume": "Opfølgningen på studiet fra 2002 og den vigtigste nuancering. Selvmordsrisikoen var højest i alderen 18–22 år, faldt derefter og var på niveau med svenskfødtes fra 33 år. Risikoen for selvmordsforsøg faldt også, men var højere i alle aldersgrupper. Risikoen er faldet i senere årgange, og den er lavest for dem, der blev adopteret som spæde. Forskerne peger på identitet og tilhørsforhold i ungdommen som mulige forklaringer."
+            }
+          ]
+        },
+        {
+          "titel": "Samlede analyser (metaanalyser)",
+          "kilder": [
+            {
+              "titel": "Behavior Problems and Mental Health Referrals of International Adoptees: A Meta-analysis",
+              "forfattere": "Femmie Juffer og Marinus H. van IJzendoorn",
+              "aar": "2005",
+              "udgiver": "JAMA",
+              "link": "https://marinusvanijzendoorn.nl/wp-content/uploads/2024/10/JAMA-2005-JufferVanIJzendoorn.pdf",
+              "resume": "Samler resultater fra en lang række studier af udlandsadopterede i alle aldre. Konklusionen er, at langt de fleste udlandsadopterede er velfungerende, men at de oftere end ikke-adopterede bliver henvist til psykiatrien. Udlandsadopterede havde i gennemsnit færre problemer end indenlandsk adopterede."
+            },
+            {
+              "titel": "Mental Health in Internationally Adopted Adolescents: A Meta-Analysis",
+              "forfattere": "Kristin G. Askeland m.fl.",
+              "aar": "2017",
+              "udgiver": "Journal of the American Academy of Child & Adolescent Psychiatry",
+              "link": "https://pubmed.ncbi.nlm.nih.gov/28219486/",
+              "resume": "Samler 11 studier med næsten 18.000 adopterede unge og over en million ikke-adopterede. De fleste adopterede unge klarer sig godt, men som gruppe har de flere psykiske problemer. Forfatterne anbefaler, at der er relevant støtte til rådighed."
+            }
+          ]
+        },
+        {
+          "titel": "Racisme, identitet og mødet med sundhedsvæsenet",
+          "kilder": [
+            {
+              "titel": "Transnational adoptees in healthcare: barriers, resources, and needs",
+              "forfattere": "Mattias Strand og Natte Hillerberg",
+              "aar": "2024",
+              "udgiver": "Frontiers in Public Health",
+              "link": "https://doi.org/10.3389/fpubh.2024.1426489",
+              "resume": "Interviews med 66 voksne udlandsadopterede i Sverige om deres møde med sundhedsvæsenet og psykiatrien. De fortæller om manglende viden om adopteredes helbred, farveblindhed og modvilje mod at tale om racisme, forventninger om taknemmelighed og høje udgifter til terapi. Forfatterne mener, at forskningen bør lære af de adopteredes egne erfaringer og ikke kun bygge på registerdata."
+            },
+            {
+              "titel": "Adoption with complications: Conversations with adoptees and adoptive parents on everyday racism and ethnic identity",
+              "forfattere": "Carina Tigervall og Tobias Hübinette",
+              "aar": "2010",
+              "udgiver": "International Social Work",
+              "link": "https://doi.org/10.1177/0020872809359272",
+              "resume": "Interviews med 20 voksne adopterede og otte adoptivforældre i Sverige om hverdagsracisme og etnisk identitet. Forfatterne mener, at man ikke kan forstå adopteredes psykiske helbred uden at tage racisme med i billedet."
+            }
+          ]
+        }
+      ],
+      "stoette": "Teksterne her handler blandt andet om selvmord. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201."
+    },
+    {
+      "id": "identitet-racisme",
+      "ikon": "users",
+      "farve": "petrol",
+      "titel": "Identitet, race og racisme",
+      "kort": "Kritisk adoptionsforskning om at vokse op som adopteret i et hvidt Danmark.",
+      "klar": false
+    },
+    {
+      "id": "danske-undersoegelser",
+      "ikon": "file",
+      "farve": "petrol",
+      "titel": "Danske undersøgelser af adoptionsformidlingen",
+      "kort": "Ankestyrelsens undersøgelser og den uvildige afdækning af adoptioner 1964–2016.",
+      "klar": false
+    },
+    {
+      "id": "internationale-granskninger",
+      "ikon": "book",
+      "farve": "petrol",
+      "titel": "Granskninger i andre lande",
+      "kort": "Sydkorea, Holland, Sverige og Norge har undersøgt deres adoptionssystemer.",
+      "klar": false
+    }
+  ],
+  "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til gitmosep@gmail.com."
+}

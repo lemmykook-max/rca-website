@@ -1,0 +1,63 @@
+---
+layout: base.njk
+permalink: /viden/
+title: Viden
+description: Forskning og undersøgelser om transnational adoption, samlet af Ressourcecenter for Adopterede (RCA).
+---
+{% from "ikon.njk" import ikon %}
+{% set v = viden %}
+  <div class="page-head"><div class="wrap">
+    <p class="eyebrow">{{ v.eyebrow }}</p>
+    <h1>{{ v.overskrift }}</h1>
+    <p class="lead" style="max-width:780px">{{ v.intro }}</p>
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <h2>Temaer</h2>
+      <div class="grid g2" style="margin-top:24px">
+        {% for t in v.temaer %}{% if t.klar %}<a class="card news-card tema" href="#{{ t.id }}">{{ ikon(t.ikon, t.farve) }}<h3>{{ t.titel }}</h3><p>{{ t.kort }}</p><span class="tema-link">Læs mere</span></a>
+        {% else %}<div class="card tema">{{ ikon(t.ikon, t.farve) }}<h3>{{ t.titel }}</h3><p class="muted">{{ t.kort }}</p><span class="soon">Kommer snart</span></div>
+        {% endif %}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% for t in v.temaer %}{% if t.klar %}
+  <section id="{{ t.id }}" class="tema-sektion">
+    <div class="wrap">
+      <p class="eyebrow">Tema</p>
+      <h2>{{ t.titel }}</h2>
+      <p style="max-width:820px">{{ t.intro }}</p>
+
+      {% if t.pointer %}<div class="card tinted" style="max-width:820px;margin:28px 0 8px">
+        <h3>Det vigtigste</h3>
+        <ul class="check">
+          {% for p in t.pointer %}<li>{{ p }}</li>
+          {% endfor %}
+        </ul>
+      </div>{% endif %}
+
+      {% for g in t.grupper %}
+      <h3 class="kilde-gruppe">{{ g.titel }}</h3>
+      <div class="grid">
+        {% for k in g.kilder %}<article class="card kilde">
+          <p class="kilde-meta">{{ k.forfattere }} · {{ k.aar }} · {{ k.udgiver }}</p>
+          <h4>{% if k.link %}<a href="{{ k.link }}" target="_blank" rel="noopener">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
+          <p>{{ k.resume }}</p>
+          {% if k.link %}<a class="kilde-link" href="{{ k.link }}" target="_blank" rel="noopener">Gå til kilden</a>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      {% endfor %}
+
+      {% if t.stoette %}<p class="stoette">{{ t.stoette }}</p>{% endif %}
+    </div>
+  </section>
+{% endif %}{% endfor %}
+
+  {% if v.note %}<section>
+    <div class="wrap">
+      <p class="muted">{{ v.note | escape | mail_links | safe }}</p>
+    </div>
+  </section>{% endif %}

@@ -252,6 +252,47 @@ collections:
               - { label: "Fremhæv med terracotta-ikon", name: "fremhaev", widget: "boolean", default: false }
           - { label: "Note nederst", name: "note", widget: "text", required: false }
 
+      - label: "Viden"
+        name: "viden"
+        file: "src/_data/viden.json"
+        fields:
+          - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
+          - { label: "Overskrift", name: "overskrift", widget: "string" }
+          - { label: "Indledning", name: "intro", widget: "text" }
+          - label: "Temaer"
+            name: "temaer"
+            widget: "list"
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Id (bruges i adressen, fx psykisk-helbred)", name: "id", widget: "string" }
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["book", "heart", "voice", "users", "tools", "chat", "star", "lock", "file", "mail", "cal", "clock", "pin", "video"] }
+              - { label: "Farve", name: "farve", widget: "select", options: [{ label: "Petrol", value: "petrol" }, { label: "Terracotta", value: "terra" }], default: "petrol" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Kort beskrivelse (vises i oversigten)", name: "kort", widget: "text" }
+              - { label: "Temaet er klar (ellers vises 'Kommer snart')", name: "klar", widget: "boolean", default: false }
+              - { label: "Indledning", name: "intro", widget: "text", required: false }
+              - { label: "Det vigtigste – punkter", name: "pointer", widget: "list", required: false, field: { label: "Punkt", name: "punkt", widget: "text" } }
+              - label: "Grupper af kilder"
+                name: "grupper"
+                widget: "list"
+                required: false
+                summary: "{{fields.titel}}"
+                fields:
+                  - { label: "Overskrift", name: "titel", widget: "string" }
+                  - label: "Kilder"
+                    name: "kilder"
+                    widget: "list"
+                    summary: "{{fields.aar}} – {{fields.titel}}"
+                    fields:
+                      - { label: "Titel", name: "titel", widget: "string" }
+                      - { label: "Forfattere", name: "forfattere", widget: "string" }
+                      - { label: "År", name: "aar", widget: "string" }
+                      - { label: "Udgiver / tidsskrift", name: "udgiver", widget: "string" }
+                      - { label: "Link til kilden", name: "link", widget: "string", required: false }
+                      - { label: "Resumé (med egne ord)", name: "resume", widget: "text" }
+              - { label: "Støttetekst nederst i temaet", name: "stoette", widget: "text", required: false }
+          - { label: "Note nederst", name: "note", widget: "text", required: false }
+
       - label: "Kontakt"
         name: "kontakt"
         file: "src/_data/kontakt.json"

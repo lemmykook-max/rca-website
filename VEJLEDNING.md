@@ -30,7 +30,7 @@ Tekster og dokumenter redigeres på **https://rca-website.netlify.app/admin**.
 2. Vælg det, du vil rette:
    - **Nyheder** – opret en ny nyhed med "+ nyhed". De 3 nyeste vises på forsiden.
    - **Tekstsider** – sider med fri tekst, fx referater. Start et afsnit med `>` for at vise det som en fremhævet beslutning.
-   - **Sider på hjemmesiden** – forsiden, Om RCA, Bliv medlem, Dokumenter, Kontakt og menuen.
+   - **Sider på hjemmesiden** – forsiden, Om RCA, Viden, Bliv medlem, Dokumenter, Kontakt og menuen.
 3. Tryk **Publicer → Publicer nu**. Ændringen er på hjemmesiden efter ca. 1 minut.
 
 PDF'er uploades i feltet "PDF-fil" under Dokumenter eller under "Medier" øverst.
