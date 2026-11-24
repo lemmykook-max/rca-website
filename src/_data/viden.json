@@ -565,6 +565,13 @@
       "titel": "Helbred uden familiehistorie",
       "tekst": "Hvad du kan sige til lægen, genetisk rådgivning, DNA-test og helbred – og tidlig pubertet hos adopterede piger.",
       "link": "/viden/helbred/"
+    },
+    {
+      "ikon": "star",
+      "farve": "petrol",
+      "titel": "Rejsen til oprindelseslandet",
+      "tekst": "Forberedelse, tolk, at passe på sig selv – og F-4-visum og statsborgerskab for koreansk adopterede.",
+      "link": "/viden/rejse-til-oprindelseslandet/"
     }
   ]
 }
