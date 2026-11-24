@@ -48,7 +48,7 @@
   .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;color:var(--ink);cursor:pointer}
   @media (max-width:900px){
     .logo span{display:none}
-    .menu-btn{display:block}
+    .menu-btn{display:block;margin-left:auto}
     nav.main{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
     nav.main.open{display:block}
     nav.main ul{flex-direction:column;padding:10px 16px 16px}
@@ -300,3 +300,10 @@
   .logliste{list-style:none;padding:0;margin:0;display:grid;gap:12px;max-width:820px}
   .logliste li{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px}
   .logliste .when{font-weight:700;color:var(--terra);margin-right:8px}
+
+/* Søgning */
+.soeg-link{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--petrol,#17424d);flex:none;margin-left:4px}
+.soeg-link:hover,.soeg-link:focus-visible{background:rgba(23,66,77,.08)}
+.soeg-boks{--pagefind-ui-primary:#17424d;--pagefind-ui-text:#1d2b2e;--pagefind-ui-background:#fff;--pagefind-ui-border:#d9e2e0;--pagefind-ui-tag:#eef3f2;--pagefind-ui-border-width:1px;--pagefind-ui-border-radius:10px;--pagefind-ui-font:inherit;--pagefind-ui-scale:.95}
+.soeg-boks .pagefind-ui__result-link{color:#17424d}
+.soeg-boks mark{background:#f4e3da;color:inherit}

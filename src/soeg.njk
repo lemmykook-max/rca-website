@@ -1,0 +1,42 @@
+---
+layout: base.njk
+permalink: /soeg/
+title: Søg
+description: Søg i viden, guides, nyheder og sider på rcfa.dk.
+soeg: false
+---
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<div class="page-head"><div class="wrap">
+  <p class="eyebrow">Søg</p>
+  <h1>Søg på rcfa.dk</h1>
+  <p class="lead" style="max-width:720px">Søg i guides, viden, nyheder og foreningens sider. Prøv fx "DNA", "Sydkorea", "papirer" eller "psykolog".</p>
+</div></div>
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div id="soeg" class="soeg-boks"></div>
+    <noscript><p>Søgningen kræver JavaScript. Du kan også finde alt under <a href="/viden/">Viden</a> og <a href="/nyheder/">Nyheder</a>.</p></noscript>
+  </div>
+</section>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ui = new PagefindUI({
+      element: '#soeg',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      translations: {
+        placeholder: 'Hvad leder du efter?',
+        clear_search: 'Ryd',
+        load_more: 'Vis flere resultater',
+        search_label: 'Søg på rcfa.dk',
+        zero_results: 'Ingen resultater for [SEARCH_TERM]',
+        many_results: '[COUNT] resultater for [SEARCH_TERM]',
+        one_result: '1 resultat for [SEARCH_TERM]',
+        searching: 'Søger efter [SEARCH_TERM] …'
+      }
+    });
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) ui.triggerSearch(q);
+  });
+</script>
