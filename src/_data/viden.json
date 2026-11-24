@@ -531,8 +531,8 @@
           ]
         }
       ],
-      "guide_tekst": "Adopteret fra Sydkorea? Læs vores trin-for-trin søgeguide.",
-      "guide_link": "/viden/soegeguide-sydkorea/"
+      "guide_tekst": "Klar til at søge? Læs vores søgeguides – for alle lande og for udvalgte lande.",
+      "guide_link": "/viden/soegeguide-alle-lande/"
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk.",
@@ -544,6 +544,13 @@
       "titel": "Kend dine rettigheder",
       "tekst": "Aktindsigt, rådgivning, gratis juridisk hjælp, navn, ophævelse og retssager – samlet ét sted.",
       "link": "/viden/dine-rettigheder/"
+    },
+    {
+      "ikon": "pin",
+      "farve": "terra",
+      "titel": "Søgeguide: Alle lande",
+      "tekst": "De fælles trin uanset hvor du er adopteret fra – plus eksempler fra Chile, Colombia og Sri Lanka.",
+      "link": "/viden/soegeguide-alle-lande/"
     },
     {
       "ikon": "pin",
