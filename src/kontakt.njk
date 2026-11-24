@@ -21,4 +21,9 @@ title: Kontakt
       </div>
       {% endfor %}
     </div>
+    {% if site.linkedin or site.facebook %}<div class="wrap" style="margin-top:28px"><div class="card tinted">
+      <h3 style="margin-top:0">Følg os</h3>
+      <p>Nyheder, ny viden og invitationer deler vi også her:</p>
+      <div class="btns">{% if site.linkedin %}<a class="btn ghost" href="{{ site.linkedin }}">LinkedIn</a>{% endif %}{% if site.facebook %}<a class="btn ghost" href="{{ site.facebook }}">Facebook-gruppen</a>{% endif %}</div>
+    </div></div>{% endif %}
   </section>

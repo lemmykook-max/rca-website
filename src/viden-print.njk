@@ -82,7 +82,7 @@ eleventyExcludeFromCollections: true
         <p style="margin:0">Denne udgave er fra <b>{{ byggedato | dato }}</b>. Regler, tilbud og forskning ændrer sig, så tjek altid den nyeste version på <a class="nourl" href="{{ url }}">{{ url | replace("https://", "") }}</a>, før du bruger oplysningerne. Har du rettelser, så skriv til {{ site.email }}.</p>
       </div>
     </div>
-    <p class="muted" style="font-size:.9rem;margin:0">© {{ byggedato.getFullYear() }} {{ site.navn }} · {{ site.email }}. Må gerne deles og printes med kildeangivelse.</p>
+    <p class="muted" style="font-size:.9rem;margin:0">© {{ byggedato.getFullYear() }} {{ site.navn }} · {{ site.email }}. Må gerne deles og printes med kildeangivelse.{% if site.linkedin %}<br>Følg os på LinkedIn: <span class="nourl">{{ site.linkedin | replace("https://www.", "") }}</span>{% endif %}{% if site.facebook %} · Facebook: <span class="nourl">{{ site.facebook | replace("https://www.", "") }}</span>{% endif %}</p>
   </div>
 
   <nav class="toc" aria-label="Indhold">
