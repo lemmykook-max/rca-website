@@ -241,8 +241,85 @@
       "ikon": "file",
       "farve": "petrol",
       "titel": "Danske undersøgelser af adoptionsformidlingen",
-      "kort": "Ankestyrelsens undersøgelser og den uvildige afdækning af adoptioner 1964–2016.",
-      "klar": false
+      "kort": "Hvad Ankestyrelsen har fundet, og hvor den uvildige undersøgelse af adoptioner 1964–2016 står.",
+      "klar": true,
+      "intro": "Siden 2019 har Ankestyrelsen undersøgt den danske adoptionsformidling fra flere lande, fordi adopterede og medier har rejst mistanke om ulovligheder. Nu er en stor uvildig undersøgelse af alle adoptioner til Danmark fra 1964 til 2016 i gang. Her er et overblik over, hvad der er fundet indtil nu.",
+      "pointer": [
+        "Ankestyrelsen har undersøgt adoptionerne fra Chile, Bangladesh, Colombia, Indonesien, Sri Lanka og Sydkorea.",
+        "Om Sydkorea konkluderer Ankestyrelsen, at formidlingen i 1970'erne og 80'erne foregik i et ureguleret system, hvor store pengesummer gik mellem danske og koreanske organisationer, og hvor adopteredes identitet kunne blive ændret i papirerne.",
+        "Om Chile kan Ankestyrelsen ikke udelukke, at der skete ulovligheder i adoptionerne gennem AC Børnehjælp 1978–1988.",
+        "VIVE står for den uvildige undersøgelse, som omfatter cirka 23.000 børn fra 70 lande. Den løber til udgangen af 2027.",
+        "Undersøgelsen er beskrivende. Den skal ikke vurdere, om enkelte adoptioner var ulovlige, eller placere et juridisk ansvar. Det har adopterede og Institut for Menneskerettigheder kritiseret.",
+        "Har du mistanke om fejl i din egen adoption, kan du få hjælp af Ankestyrelsen til at få indsigt i din sag."
+      ],
+      "grupper": [
+        {
+          "titel": "Den uvildige undersøgelse (i gang)",
+          "kilder": [
+            {
+              "titel": "Ny VIVE-undersøgelse skal granske 50 års adoption til Danmark",
+              "forfattere": "VIVE, projektleder Mai Heide Ottosen",
+              "aar": "2025–2027",
+              "udgiver": "VIVE i samarbejde med Juridisk Fakultet, Aalborg Universitet",
+              "link": "https://www.vive.dk/da/undersoegelser-i-gang/ny-vive-undersoegelse-skal-granske-50-aars-adoption-til-danmark-1o8mr90d/",
+              "resume": "Undersøger adoptionsformidlingen til Danmark fra 1964 til 2016, hvor cirka 23.000 børn fra 70 lande blev adopteret. Den ser på dansk lovgivning, myndighedernes tilsyn, organisationernes rolle og forholdene i afgiverlandene. VIVE besøger 10 lande og interviewer blandt andet myndigheder, organisationer, forskere og mødre eller andre familiemedlemmer til de bortadopterede børn. Undersøgelsen løber fra slutningen af 2025 til slutningen af 2027."
+            },
+            {
+              "titel": "Ny aftale om en samlet indsats på adoptionsområdet",
+              "forfattere": "Regeringen, SF og Det Konservative Folkeparti",
+              "aar": "2025",
+              "udgiver": "Social- og Boligministeriet",
+              "link": "https://www.sm.dk/nyheder/nyhedsarkiv/2025/jun/ny-aftale-om-en-samlet-indsats-paa-adoptionsomraadet",
+              "resume": "Den politiske aftale fra juni 2025, som satte den uvildige undersøgelse i gang. Aftalen indeholder også styrket hjælp til voksne adopterede og en analyse af, hvordan et fremtidigt adoptionssystem kan se ud."
+            },
+            {
+              "titel": "Staten skal anerkende adopteredes menneskerettigheder",
+              "forfattere": "Institut for Menneskerettigheder",
+              "aar": "2024",
+              "udgiver": "Institut for Menneskerettigheder",
+              "link": "https://menneskeret.dk/nyheder/staten-anerkende-adopteredes-menneskerettigheder",
+              "resume": "Instituttet anbefaler en juridisk undersøgelse, der tager stilling til, om den danske stat har krænket adopteredes menneskerettigheder. Hvis det er tilfældet, kan staten have pligt til at give en økonomisk godtgørelse. Instituttet foreslår også ændrede forældelsesregler og et uafhængigt nævn til de historiske sager."
+            }
+          ]
+        },
+        {
+          "titel": "Ankestyrelsens undersøgelser",
+          "kilder": [
+            {
+              "titel": "Adoptionsformidlingen fra Sydkorea til Danmark i 1970'erne og 1980'erne",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2024",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://www.ft.dk/samling/20231/almdel/SOU/bilag/97/2815458/index.htm",
+              "resume": "Undersøgelsen blev sat i gang efter henvendelser fra Danish Korean Rights Group. Ankestyrelsen vurderer, at formidlingen foregik i et ureguleret system med en problematisk økonomisk tilskyndelse. Koreanske organisationer kunne ændre børnenes identitet og baggrund i papirerne. De danske organisationer støttede deres koreanske partnere økonomisk og ønskede at holde antallet af adoptioner højt. De danske myndigheder kendte til flere forhold, der ikke levede op til danske krav. Det betyder ikke nødvendigvis, at adoptionerne skete mod de biologiske forældres vilje."
+            },
+            {
+              "titel": "Mistanke om ulovlige forhold i adoptioner fra Chile til Danmark 1978–1988",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2021",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://ast.dk/publikationer/rapporten-201dmistanke-om-ulovlige-forhold-i-adoptioner-fra-chile-til-danmark-1978-1988201d/@@download/publication",
+              "resume": "Sat i gang efter henvendelser fra seks adopterede. Ankestyrelsen kan ikke udelukke, at der skete ulovligheder i Chile i adoptionerne gennem AC Børnehjælp. Fødselsattester mangler ofte de biologiske forældres navne, og det kan ikke fastslås, at forældrene forstod, at de gav samtykke til adoption til udlandet. De danske myndigheder kendte allerede i 1982 til børnehjemmets dårlige ry."
+            },
+            {
+              "titel": "Dansk adoptionsformidling fra Colombia, Bangladesh, Indonesien og Sri Lanka i 70'erne og 80'erne",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2022",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://ft.dk/samling/20211/almdel/SOU/bilag/158/2543874.pdf",
+              "resume": "Ankestyrelsen undersøgte, om de forhold, den hollandske Joustra-komité fandt, også gjaldt for Danmark. Den fandt visse fællestræk i risikabel adfærd, men gik ikke videre med Bangladesh, Indonesien og Sri Lanka. Undersøgelsen af Colombia fortsatte. Adoption & Samfund kritiserede, at adopterede blev efterladt med flere spørgsmål end svar."
+            },
+            {
+              "titel": "Adopteredes ret til egen identitet",
+              "forfattere": "Ankestyrelsen",
+              "aar": "2022",
+              "udgiver": "Ankestyrelsen",
+              "link": "https://cdn.ast.dk/ankestyrelsen/Media/639117762590995706/adopteredes-ret-til-egen-identitet.pdf",
+              "resume": "Samler Ankestyrelsens erfaringer fra undersøgelserne og indeholder styrelsens retningslinjer for, hvordan den behandler mistanke om ulovlige eller uregelmæssige forhold i en adoptionssag. Nyttig, hvis man vil vide, hvad man kan forvente, når man henvender sig."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "internationale-granskninger",
