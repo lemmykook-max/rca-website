@@ -649,6 +649,13 @@
       "link": "/viden/livets-faser/"
     },
     {
+      "ikon": "book",
+      "farve": "terra",
+      "titel": "Anbefalet læsning: bøger og stemmer",
+      "tekst": "Klassikere, erindringer og danske bøger om adoption – tydeligt mærket, så du ved, hvad du læser. Foreslå gerne flere.",
+      "link": "/viden/anbefalet-laesning/"
+    },
+    {
       "ikon": "cal",
       "farve": "petrol",
       "titel": "Sager og politik: tidslinje",
