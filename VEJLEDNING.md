@@ -1,7 +1,7 @@
 # RCA's hjemmeside – vejledning
 
 Hjemmesiden bygges automatisk af Netlify, hver gang der gemmes en ændring i GitHub.
-Tekster og dokumenter redigeres på **https://rca-website.netlify.app/admin**.
+Tekster og dokumenter redigeres på **https://rcfa.dk/admin**.
 
 ## Opsætning (gøres én gang)
 
@@ -16,7 +16,7 @@ Tekster og dokumenter redigeres på **https://rca-website.netlify.app/admin**.
    - Byggeindstillingerne læses fra `netlify.toml`, så I skal ikke udfylde noget.
 4. **Login til redigeringsværktøjet**
    - På GitHub: Settings → Developer settings → OAuth Apps → **New OAuth App**.
-     - Homepage URL: `https://rca-website.netlify.app`
+     - Homepage URL: `https://rcfa.dk`
      - Authorization callback URL: `https://api.netlify.com/auth/done`
    - Kopiér Client ID, og lav en Client secret.
    - I Netlify: projektets konfiguration → Access & security → **OAuth** → Install provider → GitHub → indsæt Client ID og secret.
@@ -26,7 +26,7 @@ Tekster og dokumenter redigeres på **https://rca-website.netlify.app/admin**.
 
 ## Sådan redigerer man
 
-1. Gå til **https://rca-website.netlify.app/admin** og log ind med GitHub.
+1. Gå til **https://rcfa.dk/admin** og log ind med GitHub.
 2. Vælg det, du vil rette:
    - **Nyheder** – opret en ny nyhed med "+ nyhed". De 3 nyeste vises på forsiden.
    - **Tekstsider** – sider med fri tekst, fx referater. Start et afsnit med `>` for at vise det som en fremhævet beslutning.
