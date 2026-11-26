@@ -9,7 +9,7 @@ review_dato: ""
 permalink: /viden/anbefalet-laesning/
 ---
 
-**Sidst opdateret:** 24. november 2026
+**Sidst opdateret:** 26. november 2026
 
 > Bøgerne her er ikke forskning i samme forstand som kilderne i vores temaer. De bygger på erfaring – egen eller fra terapirummet – og nogle af dem er omdiskuterede. Læs dem som stemmer, ikke som facit. Og husk, at de kan vække meget.
 
@@ -42,6 +42,18 @@ Soll er selv adopteret og psykoterapeut og har arbejdet med adopterede og biolog
 Beskriver de faser, adopterede typisk går igennem fra barndom til alderdom, og hvordan spørgsmålene om adoptionen ændrer sig undervejs. Bogen regnes for en af de mest afbalancerede, fordi den både rummer det, man mister, og det, man får.
 
 Se også vores temaer om [psykisk helbred](/viden/#psykisk-helbred) og [identitet og racisme](/viden/#identitet-racisme), hvor forskningen fra fx Lene Myong og Tobias Hübinette er beskrevet.
+
+## Tidsskrifter at følge
+
+Der kommer hele tiden ny forskning om adoption, især fra USA. To internationale tidsskrifter er et godt sted at holde øje med den. De fleste artikler kræver abonnement, men mange biblioteker giver adgang.
+
+**[*Adoption & Culture*](https://ohiostatepress.org/AdoptionCulture.html)**
+*Tidsskrift · engelsk · humaniora og samfundsvidenskab*
+Udgives af Ohio State University Press for Alliance for the Study of Adoption and Culture (ASAC). Ser på adoption gennem kultur, historie, litteratur og kønsforskning og har haft temanumre om fx adopterede af farve og retten til at kende sin oprindelse. Tobias Hübinette sidder i redaktionen.
+
+**[*Adoption Quarterly*](https://www.tandfonline.com/journals/wado20)**
+*Tidsskrift · engelsk · tværfagligt, fagfællebedømt*
+Udgives af Taylor & Francis og har eksisteret siden 1997. Dækker adoption gennem hele livet: identitet, kontakt med den biologiske familie, adopteredes trivsel og forholdene for både biologiske og adoptivforældre.
 
 ## Transracial adoption og egne stemmer
 
