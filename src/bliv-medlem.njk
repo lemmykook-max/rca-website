@@ -31,7 +31,7 @@ title: Bliv medlem
         <p class="eyebrow">{{ m.saadan_eyebrow }}</p>
         <h2>{{ m.saadan_overskrift }}</h2>
         <p>{{ m.saadan_tekst }}</p>
-        <div class="btns"><a class="btn terra" href="mailto:{{ site.email }}?subject=Medlemskab%20af%20RCA"><svg><use href="#i-mail"/></svg>Skriv til {{ site.email }}</a></div>
+        <div class="btns"><a class="btn terra" href="{{ m.saadan_link or 'https://medlem.rcfa.dk/#/login' }}">{{ m.saadan_knap or "Meld dig ind" }}</a><a class="btn ghost" href="mailto:{{ site.email }}?subject=Medlemskab%20af%20RCA"><svg><use href="#i-mail"/></svg>Spørgsmål? Skriv til {{ site.email }}</a></div>
       </div>
       <div class="card">
         <h3>{{ m.godt_overskrift }}</h3>

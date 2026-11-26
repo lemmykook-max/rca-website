@@ -34,11 +34,13 @@
   "note": "Den stiftende generalforsamling besluttede, at kontingentet er 0 kr. til at starte med. Frivillige donationer er velkomne, når foreningen har fået en bankkonto. Kontingentet tages op igen på en senere generalforsamling.",
   "saadan_eyebrow": "Sådan gør du",
   "saadan_overskrift": "Meld dig ind",
-  "saadan_tekst": "Skriv til os, og fortæl, hvilket medlemskab du ønsker. Så registrerer vi dig som medlem.",
+  "saadan_tekst": "Meld dig ind på medlemsplatformen. Du opretter en konto, bekræfter din e-mail og udfylder indmeldelsen. Du får en kvittering med det samme og en velkomstmail med dit medlemsnummer, når bestyrelsen har godkendt dig.",
   "godt_overskrift": "Godt at vide",
   "godt_at_vide": [
     "Stemmeret kræver fuldt eller studie-/pensionistmedlemskab, at man er fyldt 18 år og har betalt kontingent.",
     "Man kan melde sig ud ved skriftlig besked til bestyrelsen.",
     "Vi bruger kun dine oplysninger til at administrere dit medlemskab og giver dem ikke videre uden dit samtykke."
-  ]
+  ],
+  "saadan_knap": "Meld dig ind",
+  "saadan_link": "https://medlem.rcfa.dk/#/login"
 }

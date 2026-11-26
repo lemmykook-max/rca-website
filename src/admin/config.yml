@@ -245,6 +245,8 @@ collections:
           - { label: "Sådan gør du – lille overskrift", name: "saadan_eyebrow", widget: "string" }
           - { label: "Sådan gør du – overskrift", name: "saadan_overskrift", widget: "string" }
           - { label: "Sådan gør du – tekst", name: "saadan_tekst", widget: "text" }
+          - { label: "Sådan gør du – knaptekst", name: "saadan_knap", widget: "string", required: false }
+          - { label: "Sådan gør du – knaplink", name: "saadan_link", widget: "string", required: false }
           - { label: "Godt at vide – overskrift", name: "godt_overskrift", widget: "string" }
           - { label: "Godt at vide – punkter", name: "godt_at_vide", widget: "list", field: { label: "Punkt", name: "punkt", widget: "text" } }
 
