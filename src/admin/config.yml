@@ -317,7 +317,8 @@ collections:
                     widget: "list"
                     summary: "{{fields.aar}} – {{fields.titel}}"
                     fields:
-                      - { label: "Kildetype", name: "type", widget: "select", required: false, options: ["Metaanalyse", "Forskningsoversigt", "Registerstudie", "Forskningsrapport", "Forskningsartikel", "Ph.d.-afhandling", "Spørgeskemaundersøgelse", "Spørgeskemaundersøgelse (over tid)", "Interviewstudie", "Interview- og observationsstudie", "Officiel granskning", "Myndighedsrapport", "Igangværende undersøgelse", "Anbefaling fra myndighed", "Politisk aftale", "Officiel vejledning", "Presse", "Presse (praktisk guide)", "Organisation"] }
+                      - { label: "Kildetype", name: "kildetype", widget: "select", required: true, hint: "Hvem står bag, og hvordan er kilden kvalitetssikret?", options: ["Fagfællebedømt forskning", "Ph.d.-afhandling", "Forskningsrapport", "Officiel undersøgelse", "Officiel vejledning", "Aftale eller anbefaling", "Igangværende undersøgelse", "Journalistik"] }
+                      - { label: "Metode (valgfri)", name: "metode", widget: "select", required: false, options: ["Metaanalyse", "Forskningsoversigt", "Registerstudie", "Spørgeskemaundersøgelse", "Spørgeskemaundersøgelse (over tid)", "Interviewstudie", "Interview- og observationsstudie", "Interview- og spørgeskemaundersøgelse"] }
                       - { label: "Titel", name: "titel", widget: "string" }
                       - { label: "Forfattere", name: "forfattere", widget: "string" }
                       - { label: "År", name: "aar", widget: "string" }

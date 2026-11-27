@@ -59,7 +59,7 @@ description: Forskning og undersøgelser om transnational adoption, samlet af Re
       <h3 class="kilde-gruppe">{{ g.titel }}</h3>
       <div class="grid">
         {% for k in g.kilder %}<article class="card kilde">
-          {% if k.type %}<span class="ktype">{{ k.type }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
+          {% if k.kildetype %}<span class="ktype">{{ k.kildetype }}</span>{% endif %}{% if k.metode %}<span class="kmetode">{{ k.metode }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
           <h4>{% if k.link %}<a href="{{ k.link }}" target="_blank" rel="noopener">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
           <p>{{ k.resume }}</p>
           {% if k.link %}<a class="kilde-link" href="{{ k.link }}" target="_blank" rel="noopener">Gå til kilden</a>{% endif %}

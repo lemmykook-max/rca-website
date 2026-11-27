@@ -125,7 +125,7 @@ eleventyExcludeFromCollections: true
     {% for gr in t.grupper %}
     <h3>{{ gr.titel }}</h3>
     {% for k in gr.kilder %}<div class="card kilde">
-      {% if k.type %}<span class="ktype">{{ k.type }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
+      {% if k.kildetype %}<span class="ktype">{{ k.kildetype }}</span>{% endif %}{% if k.metode %}<span class="kmetode">{{ k.metode }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
       <h4>{% if k.link %}<a href="{{ k.link }}">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
       <p style="margin:0">{{ k.resume }}</p>
     </div>

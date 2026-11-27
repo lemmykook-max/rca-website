@@ -6,7 +6,7 @@ intro: Vi vil gerne være et sted, hvor adopterede, familier og fagfolk kan stol
 permalink: /viden/saadan-arbejder-vi/
 ---
 
-**Sidst opdateret:** 24. november 2026
+**Sidst opdateret:** 27. november 2026
 
 ## Vi skaber viden sammen
 
@@ -36,7 +36,20 @@ De første udkast til vores vidensider er skrevet med hjælp fra AI, som har sø
 
 ## Hvordan vi vælger kilder
 
-Vi prioriterer kilder i denne rækkefølge, og hver kilde er mærket med sin type, så du kan se, hvor stærk den er:
+Hver kilde har to mærker. Det første fortæller, hvem der står bag kilden, og hvordan den er kvalitetssikret:
+
+| Kildetype | Betyder |
+|---|---|
+| **Fagfællebedømt forskning** | Udgivet i et videnskabeligt tidsskrift. Andre forskere har vurderet studiet, før det blev udgivet. |
+| **Ph.d.-afhandling** | Forskning, som et fagligt udvalg på et universitet har bedømt. |
+| **Forskningsrapport** | Fra et forskningsinstitut eller bestilt af en myndighed. Grundig, men ikke bedømt af et tidsskrift. |
+| **Officiel undersøgelse** | Rapport fra en myndighed, en regering eller en granskningskommission. |
+| **Officiel vejledning** | Praktisk information fra en myndighed, fx borger.dk. |
+| **Aftale eller anbefaling** | Politisk aftale eller anbefaling fra en uafhængig institution. Viser, hvad der er besluttet eller anbefalet – ikke hvad forskningen viser. |
+| **Igangværende undersøgelse** | Undersøgelse, der ikke er færdig endnu. Vi opdaterer, når resultaterne kommer. |
+| **Journalistik** | Nyheder og reportager. Bruges til nyheder og praktiske oplysninger – ikke som dokumentation for forskningsresultater. |
+
+Det andet mærke viser metoden, hvis kilden er et studie, fx registerstudie eller interviewstudie. Vi prioriterer metoderne i denne rækkefølge:
 
 1. **Metaanalyser og forskningsoversigter**, der samler mange studier.
 2. **Registerstudier**, der følger alle adopterede i et land.
