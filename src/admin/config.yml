@@ -375,6 +375,9 @@ collections:
           - { label: "Facebook-gruppe", name: "facebook", widget: "string", required: false }
           - { label: "Knap øverst til højre – tekst", name: "knap_tekst", widget: "string", required: false }
           - { label: "Knap øverst til højre – link", name: "knap_link", widget: "string", required: false }
+          - { label: "Søgemaskiner – titel på forsiden", name: "seo_titel", widget: "string", required: false, hint: "Vises i Google og når forsiden deles. Højst ca. 60 tegn er bedst." }
+          - { label: "Søgemaskiner – beskrivelse af foreningen", name: "seo_beskrivelse", widget: "text", required: false, hint: "1–2 sætninger. Bruges i Google, ved deling og af AI-assistenter." }
+          - { label: "Stiftet (dato)", name: "stiftet", widget: "string", required: false, hint: "Format: ÅÅÅÅ-MM-DD" }
           - label: "Menu"
             name: "menu"
             widget: "list"
