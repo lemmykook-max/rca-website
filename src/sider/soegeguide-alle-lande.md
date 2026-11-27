@@ -9,7 +9,7 @@ review_dato: ""
 permalink: /viden/soegeguide-alle-lande/
 ---
 
-**Sidst opdateret:** 24. november 2026
+**Sidst opdateret:** 27. november 2026
 
 > Har vi en særskilt guide til dit land, finder du den nederst. Mangler dit land, så skriv til os – vi udbygger løbende.
 
@@ -34,6 +34,7 @@ Ankestyrelsen kan give dig indledende vejledning om, hvor du skal henvende dig.
 - **Gratis juridisk rådgivning.** KFUM's Sociale Arbejde hjælper internationalt adopterede **fra alle lande** med at forstå papirerne og søge aktindsigt. Book via [raad.dk](https://www.raad.dk/om-raadgivningen/retshjaelp-til-internationalt-adopterede).
 - **International Social Service (ISS)** er et internationalt netværk med partnere i over 120 lande. ISS hjælper adopterede med at søge efter ophav på tværs af grænser, med rådgivning og med mægling ved en første kontakt. Læs mere på [iss-ssi.org](https://iss-ssi.org/identity-rights-and-access-to-origins/).
 - **Ambassadehjælp.** Er du adopteret fra Sydkorea, Indien, Vietnam eller Libanon, kan du frem til midten af 2028 få personlig vejledning fra den danske ambassade.
+- **Selv at researche.** Organisationen Against Child Trafficking (ACT) har en [åben database](https://database.againstchildtrafficking.org) med nyhedsartikler, rapporter og dokumenter om adoption og børnehandel fra mange lande, også om adoptioner til Danmark.
 - **Andre adopterede.** Mange lande har foreninger og netværk drevet af adopterede, både i Danmark og i oprindelseslandet. RCA vil gerne hjælpe dig med at finde dem.
 
 ## Trin 5: Overvej DNA

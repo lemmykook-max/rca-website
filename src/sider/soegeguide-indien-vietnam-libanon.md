@@ -9,7 +9,7 @@ review_dato: ""
 permalink: /viden/soegeguide-indien-vietnam-libanon/
 ---
 
-**Sidst opdateret:** 24. november 2026
+**Sidst opdateret:** 27. november 2026
 
 > Reglerne og mulighederne er meget forskellige fra land til land, og de ændrer sig. Tjek altid de officielle sider, og brug gerne den gratis juridiske rådgivning, før du går i gang.
 
@@ -31,8 +31,9 @@ permalink: /viden/soegeguide-indien-vietnam-libanon/
 - Er du **over 18 år**, kan du selv søge online hos den indiske centralmyndighed **CARA** (Central Adoption Resource Authority). Adoptionsbureauer og myndigheder skal hjælpe dig.
 - Din ret til at kende dit ophav må ikke krænke dine biologiske forældres ret til privatliv. Afviser de kontakt, eller kan de ikke findes, skal myndighederne fortælle dig hvorfor.
 - **Vejen via CARA virker ikke for alle.** Den officielle vej går gennem børnehjemmene og adoptionsbureauerne i Indien. Ifølge adopterede og uafhængige søgere går mange søgninger i stå netop dér. Oplysninger om mor står ofte ikke i de danske papirer og skal findes i Indien. Ifølge den schweiziske undersøgelse nedenfor var mange af børnene født af ugifte mødre, der blev presset af social skam og manglende hjælp. ARC anslår ud fra egne sager, at det gælder omkring 70 procent. Derfor kan det være en god idé at undersøge flere veje på én gang.
-- **Uafhængig søgehjælp:** [Adoptee Rights Council (ARC)](https://www.adopteerightscouncil.org/da/) hjælper adopterede fra Indien med at søge efter papirer og familie i Indien. Organisationen drives af Arun Dohle, der selv er adopteret fra Indien, og Anjali Pawar, der er uddannet socialrådgiver og praktiserende advokat. ARC samarbejder med organisationen Against Child Trafficking (ACT), som Arun Dohle leder. ACT har ifølge egne oplysninger leveret research til DR-dokumentaren *A Baby Business* fra 2004. Selv oplyser de, at de har løst over 80 sager. ARC er registreret som non-profit i Indien og tager betaling for udgifterne ved søgningerne, så spørg om pris og vilkår, før du går i gang. RCA anbefaler ikke bestemte aktører, men vi oplyser om dem, adopterede selv har brugt.
-- I Schweiz har kantonerne Zürich og Thurgau fået lavet en uvildig undersøgelse af adoptioner fra Indien fra 1973 til 2002, kaldet *Mother Unknown* (2025). Den handler blandt andet om, hvordan ugifte mødre blev stigmatiseret, og om de mangelfulde oplysninger om adopteredes ophav. ACT har kritiseret undersøgelsen for ikke at have talt med mødrene i Indien.
+- **Uafhængig søgehjælp:** [Adoptee Rights Council (ARC)](https://www.adopteerightscouncil.org/da/) hjælper adopterede fra Indien med at søge efter papirer og familie i Indien. Organisationen drives af Arun Dohle, der selv er adopteret fra Indien, og Anjali Pawar, der er uddannet socialrådgiver og praktiserende advokat. ARC samarbejder med organisationen Against Child Trafficking (ACT), som Arun Dohle leder. ACT har ifølge egne oplysninger leveret research til DR-dokumentaren *A Baby Business* fra 2004. Ifølge ACT lavede organisationen også feltarbejde i Indien for DR til *Det store adoptionstyveri* og hjalp David Kildendal med at finde sin familie. Selv oplyser de, at de har løst over 90 sager. ARC er registreret som non-profit i Indien. Arbejdet har ingen fast finansiering, så ARC tager betaling for udgifterne i Indien. Spørg om pris og vilkår, før du går i gang. RCA anbefaler ikke bestemte aktører, men vi oplyser om dem, adopterede selv har brugt.
+- I Schweiz har kantonerne Zürich og Thurgau fået lavet en uvildig undersøgelse af adoptioner fra Indien fra 1973 til 2002, kaldet *Mother Unknown* (2025). Den handler blandt andet om, hvordan ugifte mødre blev stigmatiseret, og om de mangelfulde oplysninger om adopteredes ophav. ACT har kritiseret undersøgelsen for ikke at have talt med mødrene i Indien og for mest at bygge på kilder fra adoptionssektoren. [Læs ACT's kritik (engelsk)](https://www.againstchildtrafficking.org/review-swiss-study-mother-unknown/).
+- **ACT's database:** [database.againstchildtrafficking.org](https://database.againstchildtrafficking.org) er åben for alle. Den samler nyhedsartikler, rapporter og dokumenter om adoption og børnehandel, også mange om adoptioner til Danmark, og du kan bruge den til din egen research. Har du materiale, der bør med, kan du sende det til ACT.
 - Der har været sager om ulovlige adoptioner fra Indien til Danmark. Familiestyrelsen undersøgte formidlingen fra 2000–2007. Sagerne er også beskrevet i flere dokumentarer og artikler, se kilderne nedenfor. Indien indgår i VIVE's uvildige undersøgelse.
 
 ## Vietnam
@@ -58,6 +59,8 @@ permalink: /viden/soegeguide-indien-vietnam-libanon/
 - [Politiken: Ny skandale i Indien rammer hundreder af danske adoptioner](https://politiken.dk/danmark/art5504709/Ny-skandale-i-Indien-rammer-hundreder-af-danske-adoptioner) (kræver abonnement)
 - DR: *A Baby Business* (dokumentar, 2004) om handel med børn til adoption fra Indien til Danmark
 - [Abraham, Bitter & Kesselring (red.): Mother Unknown. Adoption of Children from India in the Swiss Cantons of Zurich and Thurgau, 1973–2002 (Chronos 2025, gratis e-bog, engelsk)](https://doi.org/10.33057/chronos.1809)
+- [Against Child Trafficking: Review of the Swiss Study "Mother Unknown" (2026, engelsk)](https://www.againstchildtrafficking.org/review-swiss-study-mother-unknown/)
+- [Against Child Trafficking: database over adoption og børnehandel (engelsk)](https://database.againstchildtrafficking.org)
 - [Undark: Despite mixed results, South Asian adoptees turn to DNA tests (engelsk)](https://undark.org/2020/10/19/south-asian-adoptees-dna-tests/)
 - [Familiestyrelsen: Undersøgelsesrapport om adoptionsformidlingen fra Indien 2000–2007 (pdf)](https://ast.dk/publikationer/undersogelsesrapport-om-adoptionsformidling-fra-indien-i-perioden-2000-2007/@@download/publication)
 - [Vietnams svar til Haagerkonferencen om søgen efter ophav (pdf, engelsk)](https://assets.hcch.net/docs/76adc539-ce59-4015-b52e-69cf2ed3a111.pdf)
