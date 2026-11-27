@@ -4,8 +4,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if title %}{{ title }} · {{ site.undertitel }}{% else %}{{ site.navn }}{% endif %}</title>
-<meta name="description" content="{{ description or site.footer_tekst }}">
+{%- set sidetitel -%}{% if title %}{{ title }} · {{ site.undertitel }}{% else %}{{ site.seo_titel or site.navn }}{% endif %}{%- endset -%}
+{%- set beskrivelse = description or summary or site.seo_beskrivelse or site.footer_tekst -%}
+{%- set kanonisk = site.url + page.url -%}
+{%- set delebillede = site.url + "/files/rca-deling.png" -%}
+<title>{{ sidetitel }}</title>
+<meta name="description" content="{{ beskrivelse }}">
+{% if noindex %}<meta name="robots" content="noindex, follow">{% else %}<link rel="canonical" href="{{ kanonisk }}">{% endif %}
+<meta property="og:type" content="{% if page.url.startsWith('/nyheder/') and page.url != '/nyheder/' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.navn }}">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="{{ title or site.seo_titel or site.navn }}">
+<meta property="og:description" content="{{ beskrivelse }}">
+<meta property="og:url" content="{{ kanonisk }}">
+<meta property="og:image" content="{{ delebillede }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ressourcecenter for Adopterede – Viden · Fællesskab · Rettigheder">
+<meta name="twitter:card" content="summary_large_image">
+{%- set org = {
+  "@type": "NGO", "@id": site.url + "/#organisation",
+  "name": "Ressourcecenter for Adopterede", "alternateName": ["RCA", "Ressourcecenter for Adopterede (RCA)"],
+  "url": site.url + "/", "logo": site.url + "/files/signatur/rca-logo.png", "image": delebillede,
+  "description": site.seo_beskrivelse or site.footer_tekst, "email": site.email,
+  "foundingDate": site.stiftet, "areaServed": {"@type": "Country", "name": "Danmark"},
+  "knowsAbout": ["Adoption", "Transnational adoption", "Adopteredes rettigheder", "Søgning efter biologisk ophav", "Adopteredes psykiske helbred"],
+  "sameAs": [site.linkedin]
+} -%}
+{%- set graf = [org, {
+  "@type": "WebSite", "@id": site.url + "/#website", "url": site.url + "/", "name": site.navn, "inLanguage": "da-DK",
+  "publisher": {"@id": site.url + "/#organisation"},
+  "potentialAction": {"@type": "SearchAction", "target": site.url + "/soeg/?q={search_term_string}", "query-input": "required name=search_term_string"}
+}] -%}
+{%- if page.url.startsWith("/viden/") and page.url != "/viden/" and not noindex -%}
+{%- set opd = content | opdateret_iso -%}
+{%- set _x = graf.push({
+  "@type": "Article", "@id": kanonisk + "#artikel", "headline": title, "description": beskrivelse, "url": kanonisk,
+  "inLanguage": "da-DK", "isAccessibleForFree": true, "image": delebillede,
+  "author": {"@id": site.url + "/#organisation"}, "publisher": {"@id": site.url + "/#organisation"},
+  "dateModified": opd or none, "mainEntityOfPage": kanonisk, "isPartOf": {"@id": site.url + "/#website"}
+}) -%}
+{%- set _x = graf.push({"@type": "BreadcrumbList", "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Forside", "item": site.url + "/"},
+  {"@type": "ListItem", "position": 2, "name": "Viden", "item": site.url + "/viden/"},
+  {"@type": "ListItem", "position": 3, "name": title, "item": kanonisk}]}) -%}
+{%- elif page.url.startsWith("/nyheder/") and page.url != "/nyheder/" -%}
+{%- set _x = graf.push({
+  "@type": "NewsArticle", "@id": kanonisk + "#nyhed", "headline": title, "description": beskrivelse, "url": kanonisk,
+  "inLanguage": "da-DK", "image": delebillede, "datePublished": page.date | isodato,
+  "author": {"@id": site.url + "/#organisation"}, "publisher": {"@id": site.url + "/#organisation"}, "mainEntityOfPage": kanonisk
+}) -%}
+{%- endif %}
+{% if not noindex %}<script type="application/ld+json">{{ {"@context": "https://schema.org", "@graph": graf} | json | safe }}</script>{% endif %}
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="/styles.css">
 <link rel="alternate" type="application/rss+xml" title="Nyheder fra {{ site.navn }}" href="/feed.xml">

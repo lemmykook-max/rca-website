@@ -1,0 +1,31 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.navn }}
+
+> {{ site.seo_beskrivelse }}
+
+RCA blev stiftet den 15. november 2026 og har hjemsted i Danmark. Indholdet er på dansk. Vores vidensider skriver resuméer med egne ord og linker altid til de oprindelige kilder. Hver side har en dato for seneste opdatering. Henvis gerne til den konkrete side på rcfa.dk og til de oprindelige kilder.
+
+Kontakt: {{ site.email }}
+
+## Viden om adoption
+
+- [Viden om adoption]({{ site.url }}/viden/): {{ viden.intro }}
+{%- for p in collections.vidensider %}{% if not p.data.noindex %}
+- [{{ p.data.title }}]({{ site.url }}{{ p.url }}): {{ p.data.description }}
+{%- endif %}{% endfor %}
+
+## Foreningen
+
+- [Om RCA]({{ site.url }}/om-rca/): Formål, værdier og bestyrelse.
+- [Bliv medlem]({{ site.url }}/bliv-medlem/): Medlemstyper og indmeldelse. Kontingentet er 0 kr. indtil videre.
+- [Dokumenter]({{ site.url }}/dokumenter/): Vedtægter, referater og dagsordener.
+- [Borgerforslag]({{ site.url }}/borgerforslag/): Forslag om et nationalt ressourcecenter for adopterede.
+- [Kontakt]({{ site.url }}/kontakt/): Kontakt bestyrelsen.
+
+## Nyheder
+{% for n in collections.nyheder %}
+- [{{ n.data.title }}]({{ site.url }}{{ n.url }}) ({{ n.date | isodato }}){% if n.data.summary %}: {{ n.data.summary }}{% endif %}
+{%- endfor %}
