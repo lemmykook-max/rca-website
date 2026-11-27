@@ -22,7 +22,7 @@ description: Foreslå en rettelse, en kilde eller del din erfaring med RCA's vid
           <option value="{{ g.link }}">{{ g.titel }}</option>
           {%- endfor %}
           {%- for t in viden.temaer %}{% if t.klar %}
-          <option value="/viden/#{{ t.id }}">Tema: {{ t.titel }}</option>
+          <option value="/viden/{{ t.id }}/">Tema: {{ t.titel }}</option>
           {%- endif %}{% endfor %}
         </select></label>
 

@@ -277,7 +277,24 @@ collections:
           - { label: "Lille overskrift", name: "eyebrow", widget: "string" }
           - { label: "Overskrift", name: "overskrift", widget: "string" }
           - { label: "Indledning", name: "intro", widget: "text" }
+          - { label: "Behov – overskrift", name: "behov_overskrift", widget: "string", required: false }
+          - { label: "Behov – undertekst", name: "behov_intro", widget: "string", required: false }
+          - label: "Behov (de store kort øverst)"
+            name: "behov"
+            widget: "list"
+            required: false
+            summary: "{{fields.titel}}"
+            fields:
+              - { label: "Ikon", name: "ikon", widget: "select", options: ["soeg", "papir", "hjerte", "puls", "fly", "bog"] }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Undertekst (tom for kortet om forskning tæller kilderne automatisk)", name: "tekst", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string" }
+          - { label: "Hjælp nu (tekst under kortene)", name: "hjaelp_nu", widget: "string", required: false }
           - { label: "Guides – overskrift", name: "guides_overskrift", widget: "string", required: false }
+          - { label: "Guides – undertekst", name: "guides_intro", widget: "string", required: false }
+          - { label: "Forskning – overskrift", name: "forskning_overskrift", widget: "string", required: false }
+          - { label: "Forskning – undertekst", name: "forskning_intro", widget: "text", required: false }
+          - { label: "Metode – tekst", name: "metode_tekst", widget: "text", required: false }
           - label: "Guides"
             name: "guides"
             widget: "list"
@@ -289,6 +306,8 @@ collections:
               - { label: "Titel", name: "titel", widget: "string" }
               - { label: "Kort tekst", name: "tekst", widget: "text" }
               - { label: "Link", name: "link", widget: "string", hint: "Fx /viden/dine-rettigheder/" }
+              - { label: "Meget kort tekst (vises i listen)", name: "kort", widget: "string", required: false }
+              - { label: "Placering", name: "sektion", widget: "select", default: "guide", options: [{ label: "Hjælp og guides", value: "guide" }, { label: "Forskning og dokumentation", value: "forskning" }, { label: "Link under forskning (læsning)", value: "laesning" }, { label: "Metodeboksen", value: "metode" }] }
           - label: "Temaer"
             name: "temaer"
             widget: "list"
@@ -300,6 +319,10 @@ collections:
               - { label: "Titel", name: "titel", widget: "string" }
               - { label: "Kort beskrivelse (vises i oversigten)", name: "kort", widget: "text" }
               - { label: "Temaet er klar (ellers vises 'Kommer snart')", name: "klar", widget: "boolean", default: false }
+              - { label: "Sidst opdateret", name: "opdateret", widget: "datetime", format: "YYYY-MM-DD", date_format: "D. MMMM YYYY", time_format: false, required: false }
+              - { label: "Støttetekst (fx Livslinien)", name: "stoette", widget: "text", required: false }
+              - { label: "Henvisning til guide – tekst", name: "guide_tekst", widget: "string", required: false }
+              - { label: "Henvisning til guide – link", name: "guide_link", widget: "string", required: false }
               - { label: "Vidensstatus", name: "status", widget: "select", required: false, default: "udkast", options: [{ label: "Udkast – ikke fagligt gennemgået", value: "udkast" }, { label: "Fagligt gennemgået", value: "gennemgaaet" }, { label: "Opdateret efter review", value: "opdateret" }] }
               - { label: "Gennemgået af (navn og rolle)", name: "reviewer", widget: "string", required: false }
               - { label: "Dato for review", name: "review_dato", widget: "string", required: false }

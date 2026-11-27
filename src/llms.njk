@@ -13,6 +13,9 @@ Kontakt: {{ site.email }}
 ## Viden om adoption
 
 - [Viden om adoption]({{ site.url }}/viden/): {{ viden.intro }}
+{%- for t in viden.temaer %}{% if t.klar %}
+- [{{ t.titel }}]({{ site.url }}/viden/{{ t.id }}/): {{ t.kort }} Forskningstema med {{ (t | tema_kilder) | length }} kilder, hver mærket med kildetype.
+{%- endif %}{% endfor %}
 {%- for p in collections.vidensider %}{% if not p.data.noindex %}
 - [{{ p.data.title }}]({{ site.url }}{{ p.url }}): {{ p.data.description }}
 {%- endif %}{% endfor %}

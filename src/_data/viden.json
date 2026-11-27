@@ -2,6 +2,47 @@
   "eyebrow": "Viden",
   "overskrift": "Viden om adoption",
   "intro": "Her samler vi forskning og undersøgelser om transnational adoption, så adopterede, familier og fagfolk kan finde den samme viden ét sted. Vi skriver resuméerne med egne ord og linker altid til kilden.",
+  "behov_overskrift": "Hvad har du brug for?",
+  "behov_intro": "Vælg det, der passer bedst. Du kan altid gå tilbage.",
+  "behov": [
+    {
+      "ikon": "soeg",
+      "titel": "Jeg vil finde min biologiske familie",
+      "tekst": "Søgeguides for Korea, Indien, Vietnam, Libanon og alle andre lande",
+      "link": "/viden/soegeguide-alle-lande/"
+    },
+    {
+      "ikon": "papir",
+      "titel": "Jeg vil se mine papirer og kende mine rettigheder",
+      "tekst": "Aktindsigt, gratis rådgivning og juridisk hjælp",
+      "link": "/viden/dine-rettigheder/"
+    },
+    {
+      "ikon": "hjerte",
+      "titel": "Jeg har det svært, eller vil vide mere om trivsel",
+      "tekst": "Hvad forskningen viser – og hvor du kan få hjælp nu",
+      "link": "/viden/psykisk-helbred/"
+    },
+    {
+      "ikon": "puls",
+      "titel": "Jeg vil vide noget om helbred og arv",
+      "tekst": "Hvad du kan sige til lægen, genetisk rådgivning og DNA-test",
+      "link": "/viden/helbred/"
+    },
+    {
+      "ikon": "fly",
+      "titel": "Jeg skal rejse til mit oprindelsesland",
+      "tekst": "Forberedelse, tolk og at passe på sig selv undervejs",
+      "link": "/viden/rejse-til-oprindelseslandet/"
+    },
+    {
+      "ikon": "bog",
+      "titel": "Jeg vil læse forskningen",
+      "tekst": "",
+      "link": "#forskning"
+    }
+  ],
+  "hjaelp_nu": "Har du brug for at tale med nogen lige nu? Ring anonymt til Livslinien på 70 201 201.",
   "temaer": [
     {
       "id": "psykisk-helbred",
@@ -162,7 +203,8 @@
       "stoette": "Teksterne her handler blandt andet om selvmord. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201.",
       "status": "udkast",
       "reviewer": "",
-      "review_dato": ""
+      "review_dato": "",
+      "opdateret": "2026-11-27"
     },
     {
       "id": "identitet-racisme",
@@ -288,7 +330,8 @@
       "status": "udkast",
       "reviewer": "",
       "review_dato": "",
-      "stoette": "Nogle af teksterne her handler om racisme, psykisk mistrivsel og selvmordstanker. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201."
+      "stoette": "Nogle af teksterne her handler om racisme, psykisk mistrivsel og selvmordstanker. Har du brug for at tale med nogen, kan du ringe anonymt til Livslinien på 70 201 201.",
+      "opdateret": "2026-11-27"
     },
     {
       "id": "danske-undersoegelser",
@@ -383,7 +426,8 @@
       ],
       "status": "udkast",
       "reviewer": "",
-      "review_dato": ""
+      "review_dato": "",
+      "opdateret": "2026-11-27"
     },
     {
       "id": "internationale-granskninger",
@@ -459,7 +503,8 @@
       ],
       "status": "udkast",
       "reviewer": "",
-      "review_dato": ""
+      "review_dato": "",
+      "opdateret": "2026-11-27"
     },
     {
       "id": "biologisk-ophav",
@@ -623,81 +668,106 @@
       "guide_link": "/viden/soegeguide-alle-lande/",
       "status": "udkast",
       "reviewer": "",
-      "review_dato": ""
+      "review_dato": "",
+      "opdateret": "2026-11-27"
     }
   ],
   "note": "Kender du til forskning, vi mangler, eller har du rettelser? Skriv til bestyrelse@rcfa.dk.",
-  "guides_overskrift": "Praktiske guides",
+  "guides_overskrift": "Hjælp og guides",
+  "guides_intro": "Praktiske trin, du kan bruge med det samme.",
+  "forskning_overskrift": "Forskning og dokumentation",
+  "forskning_intro": "Studier, rapporter og granskninger, skrevet om med egne ord og med link til kilden. Hvert tema starter med det vigtigste kort fortalt.",
+  "metode_tekst": "Vi vælger kilder efter faste kriterier, skriver resuméer med egne ord og linker altid til originalen. Hver kilde er mærket med sin type, og hver side viser, hvornår den sidst er opdateret, og om den er fagligt gennemgået.",
   "guides": [
     {
       "ikon": "lock",
       "farve": "terra",
       "titel": "Kend dine rettigheder",
       "tekst": "Aktindsigt, rådgivning, gratis juridisk hjælp, navn, ophævelse og retssager – samlet ét sted.",
-      "link": "/viden/dine-rettigheder/"
+      "link": "/viden/dine-rettigheder/",
+      "kort": "Aktindsigt, rådgivning og retssager",
+      "sektion": "guide"
     },
     {
       "ikon": "pin",
       "farve": "terra",
       "titel": "Søgeguide: Alle lande",
       "tekst": "De fælles trin uanset hvor du er adopteret fra – plus eksempler fra Chile, Colombia og Sri Lanka.",
-      "link": "/viden/soegeguide-alle-lande/"
+      "link": "/viden/soegeguide-alle-lande/",
+      "kort": "De fælles trin, uanset land",
+      "sektion": "guide"
     },
     {
       "ikon": "pin",
       "farve": "petrol",
       "titel": "Søgeguide: Sydkorea",
       "tekst": "Trin for trin fra din danske sag til papirerne i Korea, DNA og hjælp fra ambassaden.",
-      "link": "/viden/soegeguide-sydkorea/"
+      "link": "/viden/soegeguide-sydkorea/",
+      "kort": "Fra din danske sag til papirerne i Korea",
+      "sektion": "guide"
     },
     {
       "ikon": "pin",
       "farve": "petrol",
       "titel": "Søgeguide: Indien, Vietnam og Libanon",
       "tekst": "Fælles trin, hjælp fra ambassaderne og det vigtigste at vide om hvert land.",
-      "link": "/viden/soegeguide-indien-vietnam-libanon/"
+      "link": "/viden/soegeguide-indien-vietnam-libanon/",
+      "kort": "Ambassader og det vigtigste om hvert land",
+      "sektion": "guide"
     },
     {
       "ikon": "heart",
       "farve": "terra",
       "titel": "Helbred uden familiehistorie",
       "tekst": "Hvad du kan sige til lægen, genetisk rådgivning, DNA-test og helbred – og tidlig pubertet hos adopterede piger.",
-      "link": "/viden/helbred/"
+      "link": "/viden/helbred/",
+      "kort": "Lægen, genetisk rådgivning og DNA",
+      "sektion": "guide"
     },
     {
       "ikon": "star",
       "farve": "petrol",
       "titel": "Rejsen til oprindelseslandet",
       "tekst": "Forberedelse, tolk, at passe på sig selv – og F-4-visum og statsborgerskab for koreansk adopterede.",
-      "link": "/viden/rejse-til-oprindelseslandet/"
+      "link": "/viden/rejse-til-oprindelseslandet/",
+      "kort": "Forberedelse og at passe på sig selv",
+      "sektion": "guide"
     },
     {
       "ikon": "users",
       "farve": "terra",
       "titel": "Adoption gennem hele livet",
       "tekst": "Når du selv bliver forælder, når adoptivforældrene dør, og den næste generation.",
-      "link": "/viden/livets-faser/"
+      "link": "/viden/livets-faser/",
+      "kort": "Egne børn, adoptivforældre, næste generation",
+      "sektion": "guide"
     },
     {
       "ikon": "book",
       "farve": "terra",
       "titel": "Anbefalet læsning: bøger og stemmer",
       "tekst": "Klassikere, erindringer og danske bøger om adoption – tydeligt mærket, så du ved, hvad du læser. Foreslå gerne flere.",
-      "link": "/viden/anbefalet-laesning/"
+      "link": "/viden/anbefalet-laesning/",
+      "kort": "Bøger og stemmer, tydeligt mærket",
+      "sektion": "laesning"
     },
     {
       "ikon": "cal",
       "farve": "petrol",
       "titel": "Sager og politik: tidslinje",
       "tekst": "Undersøgelser, politiske aftaler og retssager siden 2019 – samlet i én tidslinje.",
-      "link": "/viden/sager-og-politik/"
+      "link": "/viden/sager-og-politik/",
+      "kort": "Undersøgelser, politiske aftaler og retssager siden 2019.",
+      "sektion": "forskning"
     },
     {
       "ikon": "book",
       "farve": "petrol",
       "titel": "Sådan arbejder vi med viden",
       "tekst": "Hvordan vi vælger kilder, hvad statusfeltet betyder, vores brug af AI – og hvordan du kan bidrage.",
-      "link": "/viden/saadan-arbejder-vi/"
+      "link": "/viden/saadan-arbejder-vi/",
+      "kort": "Kildetyper, status og vores brug af AI",
+      "sektion": "metode"
     }
   ],
   "kildetyper_link": "/viden/saadan-arbejder-vi/"

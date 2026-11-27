@@ -49,7 +49,7 @@ Danske forskere har vist, at **internationalt adopterede piger har en markant ø
 
 ## Psykisk helbred
 
-Udlandsadopterede har som gruppe en højere risiko for psykiske problemer, især som unge. Læs mere i temaet [Trivsel og psykisk helbred](/viden/#psykisk-helbred). Ankestyrelsen tilbyder psykologfaglig rådgivning (PAS) til voksne adopterede. Se [Kend dine rettigheder](/viden/dine-rettigheder/).
+Udlandsadopterede har som gruppe en højere risiko for psykiske problemer, især som unge. Læs mere i temaet [Trivsel og psykisk helbred](/viden/psykisk-helbred/). Ankestyrelsen tilbyder psykologfaglig rådgivning (PAS) til voksne adopterede. Se [Kend dine rettigheder](/viden/dine-rettigheder/).
 
 ## Kilder
 

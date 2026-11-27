@@ -53,6 +53,6 @@ permalink: /viden/sager-og-politik/
 
 ## Mere viden
 
-Læs mere om undersøgelserne i temaerne [Danske undersøgelser af adoptionsformidlingen](/viden/#danske-undersoegelser) og [Granskninger i andre lande](/viden/#internationale-granskninger).
+Læs mere om undersøgelserne i temaerne [Danske undersøgelser af adoptionsformidlingen](/viden/danske-undersoegelser/) og [Granskninger i andre lande](/viden/internationale-granskninger/).
 
 Mangler der noget i tidslinjen? Skriv til [bestyrelse@rcfa.dk](mailto:bestyrelse@rcfa.dk).

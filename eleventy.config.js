@@ -28,6 +28,17 @@ export default function (cfg) {
   cfg.addFilter("striptags", (s) => String(s || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
 
   cfg.addGlobalData("byggedato", () => new Date());
+  cfg.addFilter("tema_kilder", (t) => (t && t.grupper || []).flatMap((g) => g.kilder || []));
+  cfg.addFilter("kilde_citater", (kilder) => (kilder || []).map((k) => {
+    const typ = { "Fagfællebedømt forskning": "ScholarlyArticle", "Ph.d.-afhandling": "Thesis", "Forskningsrapport": "Report", "Officiel undersøgelse": "Report", "Journalistik": "NewsArticle" }[k.kildetype] || "CreativeWork";
+    const c = { "@type": typ, name: k.titel };
+    if (k.forfattere) c.author = k.forfattere;
+    if (/^\d{4}$/.test(k.aar || "")) c.datePublished = k.aar;
+    if (k.udgiver) c.publisher = k.udgiver;
+    if (k.link) c.url = k.link;
+    return c;
+  }));
+  cfg.addFilter("antal_kilder", (temaer) => (temaer || []).filter((t) => t.klar).reduce((n, t) => n + (t.grupper || []).reduce((m, g) => m + (g.kilder || []).length, 0), 0));
   cfg.addCollection("vidensider", (api) =>
     api.getFilteredByGlob("src/sider/*.md").filter((p) => String(p.data.permalink || "").startsWith("/viden/"))
   );

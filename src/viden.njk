@@ -1,79 +1,95 @@
 ---
 layout: base.njk
 permalink: /viden/
-title: Viden
-description: Forskning og undersøgelser om transnational adoption, samlet af Ressourcecenter for Adopterede (RCA).
+title: Viden om adoption
+description: Guides og forskning om transnational adoption samlet ét sted – søg dit ophav, kend dine rettigheder, helbred og trivsel. Med kilder og tydelige kildetyper.
 ---
-{% from "ikon.njk" import ikon %}
-{% from "vidensstatus.njk" import vidensstatus %}
 {% set v = viden %}
-  <div class="page-head"><div class="wrap">
-    <p class="eyebrow">{{ v.eyebrow }}</p>
-    <h1>{{ v.overskrift }}</h1>
-    <p class="lead" style="max-width:780px">{{ v.intro }}</p>
-    <div class="btns"><a class="btn ghost" href="/viden/print/"><svg><use href="#i-down"/></svg>Hent hele samlingen som PDF</a></div>
-    <p class="muted" style="font-size:.95rem;margin-top:12px">Samlingen opdateres løbende. Senest opdateret {{ byggedato | dato }}. Vi skaber den sammen med adopterede og fagfolk – <a href="/viden/bidrag/">bidrag med viden eller rettelser</a>, og læs <a href="/viden/saadan-arbejder-vi/">hvordan vi arbejder</a>.</p>
-  </div></div>
-
-  {% if v.guides %}<section>
-    <div class="wrap">
-      <h2>{{ v.guides_overskrift or "Praktiske guides" }}</h2>
-      <div class="grid g2" style="margin-top:24px">
-        {% for g in v.guides %}<a class="card news-card tema" href="{{ g.link }}">{{ ikon(g.ikon, g.farve) }}<h3>{{ g.titel }}</h3><p>{{ g.tekst }}</p><span class="tema-link">Læs guiden</span></a>
-        {% endfor %}
-      </div>
-    </div>
-  </section>{% endif %}
-
-  <section>
-    <div class="wrap">
-      <h2>Temaer</h2>
-      <div class="grid g2" style="margin-top:24px">
-        {% for t in v.temaer %}{% if t.klar %}<a class="card news-card tema" href="#{{ t.id }}">{{ ikon(t.ikon, t.farve) }}<h3>{{ t.titel }}</h3><p>{{ t.kort }}</p><span class="tema-link">Læs mere</span></a>
-        {% else %}<div class="card tema">{{ ikon(t.ikon, t.farve) }}<h3>{{ t.titel }}</h3><p class="muted">{{ t.kort }}</p><span class="soon">Kommer snart</span></div>
-        {% endif %}{% endfor %}
-      </div>
-    </div>
-  </section>
-
-{% for t in v.temaer %}{% if t.klar %}
-  <section id="{{ t.id }}" class="tema-sektion">
-    <div class="wrap">
-      <p class="eyebrow">Tema</p>
-      <h2>{{ t.titel }}</h2>
-      {% if t.stoette %}<p class="stoette" role="note"><b>Vær opmærksom:</b> {{ t.stoette }}</p>{% endif %}
-      <div style="max-width:820px">{{ vidensstatus(t.status, t.reviewer, t.review_dato, "/viden/#" + t.id, "Tema: " + t.titel) }}</div>
-      <p style="max-width:820px">{{ t.intro }}</p>
-
-      {% if t.guide_link %}<div class="news" style="max-width:820px;margin-top:24px"><p><b>{{ t.guide_tekst }}</b></p><a class="btn terra" href="{{ t.guide_link }}">Gå til guiden</a></div>{% endif %}
-
-      {% if t.pointer %}<div class="card tinted" style="max-width:820px;margin:28px 0 8px">
-        <h3>Det vigtigste</h3>
-        <ul class="check">
-          {% for p in t.pointer %}<li>{{ p }}</li>
-          {% endfor %}
-        </ul>
-      </div>{% endif %}
-
-      {% for g in t.grupper %}
-      <h3 class="kilde-gruppe">{{ g.titel }}</h3>
-      <div class="grid">
-        {% for k in g.kilder %}<article class="card kilde">
-          {% if k.kildetype %}<span class="ktype">{{ k.kildetype }}</span>{% endif %}{% if k.metode %}<span class="kmetode">{{ k.metode }}</span>{% endif %}<p class="kilde-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
-          <h4>{% if k.link %}<a href="{{ k.link }}" target="_blank" rel="noopener">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
-          <p>{{ k.resume }}</p>
-          {% if k.link %}<a class="kilde-link" href="{{ k.link }}" target="_blank" rel="noopener">Gå til kilden</a>{% endif %}
-        </article>
-        {% endfor %}
-      </div>
+{% set antal = v.temaer | antal_kilder %}
+{%- set ikoner = {
+  "soeg": '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+  "papir": '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/>',
+  "hjerte": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  "puls": '<path d="M4 12h4l2-5 4 10 2-5h4"/>',
+  "fly": '<path d="M2 16l20-8-6 12-3-5z"/><path d="M13 15 22 8"/>',
+  "bog": '<path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3"/><path d="M20 5v13h-7"/>'
+} -%}
+<script>
+  /* Gamle links som /viden/#psykisk-helbred sendes videre til temaets egen side */
+  (function(){var h=decodeURIComponent(location.hash.slice(1)),ids=[{% for t in v.temaer %}{% if t.klar %}"{{ t.id }}",{% endif %}{% endfor %}];if(h&&ids.indexOf(h)>-1)location.replace("/viden/"+h+"/");})();
+</script>
+<div class="vh-band">
+  <div class="wrap vh-hero">
+    <h1><span class="vh-eyebrow">{{ v.overskrift }}</span>{{ v.behov_overskrift }}</h1>
+    <p class="vh-intro">{{ v.behov_intro }}</p>
+    <form class="vh-soeg" action="/soeg/" method="get" role="search">
+      <label for="vq" class="sr-only">Søg i viden</label>
+      <input id="vq" name="q" type="search" placeholder="Søg fx: aktindsigt, DNA, Korea, psykolog" autocomplete="off">
+      <button type="submit">Søg</button>
+    </form>
+  </div>
+  <div class="wrap vh-behov">
+    <ul class="vh-kort">
+      {% for b in v.behov %}<li><a href="{{ b.link }}">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{{ ikoner[b.ikon] | safe }}</svg>
+        <span><b>{{ b.titel }}</b><span>{{ b.tekst or (antal + " studier og rapporter, opdelt i " + (v.temaer | length) + " temaer") }}</span></span>
+      </a></li>
       {% endfor %}
+    </ul>
+    {% if v.hjaelp_nu %}<p class="vh-hjaelp" role="note">{{ v.hjaelp_nu | replace("70 201 201", "<b>70 201 201</b>") | safe }}</p>{% endif %}
+  </div>
+</div>
 
-    </div>
-  </section>
-{% endif %}{% endfor %}
+<div class="vg-band">
+  <div class="wrap">
+    <p class="eyebrow">Trin for trin</p>
+    <h2>{{ v.guides_overskrift }}</h2>
+    <p class="vg-intro">{{ v.guides_intro }}</p>
+    <ul class="vg-liste">
+      {% for g in v.guides %}{% if (g.sektion or "guide") == "guide" %}<li><a href="{{ g.link }}">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7H4V5h11"/></svg>
+        <span><b>{{ g.titel }}</b><span>{{ g.kort or g.tekst }}</span></span><span class="vg-pil" aria-hidden="true">→</span>
+      </a></li>
+      {% endif %}{% endfor %}
+    </ul>
+  </div>
+</div>
 
-  {% if v.note %}<section>
-    <div class="wrap">
-      <p class="muted">{{ v.note | escape | mail_links | safe }}</p>
+<div class="vf-band" id="forskning">
+  <div class="wrap">
+    <p class="eyebrow">Viden med kilder</p>
+    <h2>{{ v.forskning_overskrift }}</h2>
+    <p class="vf-intro">{{ v.forskning_intro }}</p>
+    <ul class="vf-liste">
+      {% for t in v.temaer %}{% if t.klar %}<li><a href="/viden/{{ t.id }}/">
+        <b>{{ t.titel }}</b><span>{{ t.kort }}</span>
+        <span class="vf-meta"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg>{{ (t | tema_kilder) | length }} kilder{% if t.opdateret %} · Opdateret {{ t.opdateret | dato }}{% endif %}</span>
+      </a></li>
+      {% else %}{% if t.titel %}<li class="vf-snart"><b>{{ t.titel }}</b><span>{{ t.kort }}</span><span class="vf-meta">Kommer snart</span></li>{% endif %}
+      {% endif %}{% endfor %}
+      {% for g in v.guides %}{% if g.sektion == "forskning" %}<li><a href="{{ g.link }}">
+        <b>{{ g.titel }}</b><span>{{ g.kort or g.tekst }}</span>
+        <span class="vf-meta"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Tidslinje · Opdateres løbende</span>
+      </a></li>
+      {% endif %}{% endfor %}
+    </ul>
+    {% for g in v.guides %}{% if g.sektion == "laesning" %}<p class="vf-ekstra"><a href="{{ g.link }}">{{ g.titel }}</a> – {{ g.kort or g.tekst }}</p>{% endif %}{% endfor %}
+  </div>
+</div>
+
+<div class="vm-band">
+  <div class="wrap">
+    <div class="vm-boks">
+      <div>
+        <h2>Sådan arbejder vi med viden</h2>
+        <p>{{ v.metode_tekst }}</p>
+        <p><a href="{{ v.kildetyper_link }}">Læs om vores metode og kildetyperne</a> · <a href="/viden/aendringslog/">Ændringslog</a></p>
+        <p class="muted">Senest opdateret {{ byggedato | dato }}.</p>
+      </div>
+      <div class="vm-knapper">
+        <a class="btn" href="/viden/bidrag/">Foreslå en kilde eller ret en fejl</a>
+        <a class="btn ghost" href="/viden/print/"><svg><use href="#i-down"/></svg>Hent hele samlingen som PDF</a>
+      </div>
     </div>
-  </section>{% endif %}
+  </div>
+</div>

@@ -1,0 +1,87 @@
+---
+layout: base.njk
+pagination:
+  data: viden.temaer
+  size: 1
+  alias: t
+  before: function(d) { return d.filter((x) => x.klar); }
+permalink: "/viden/{{ t.id }}/"
+eleventyComputed:
+  title: "{{ t.titel }}"
+  description: "{{ t.kort }}"
+---
+{%- set kilder = t | tema_kilder -%}
+{%- set typeklasse = {
+  "Fagfællebedømt forskning": "forsk", "Ph.d.-afhandling": "forsk", "Forskningsrapport": "rapport",
+  "Officiel undersøgelse": "officiel", "Officiel vejledning": "officiel", "Aftale eller anbefaling": "officiel",
+  "Igangværende undersøgelse": "andet", "Journalistik": "andet"
+} -%}
+<div class="vt">
+  <div class="wrap vt-smal">
+    <nav class="vt-krumme" aria-label="Brødkrumme"><a href="/viden/">Viden</a> <span aria-hidden="true">›</span> <a href="/viden/#forskning">Forskning</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ t.titel }}</span></nav>
+    <h1>{{ t.titel }}</h1>
+    <p class="vt-kort">{{ t.kort }}</p>
+    <div class="vt-piller">
+      {% if t.opdateret %}<span class="vt-pille">Sidst opdateret {{ t.opdateret | dato }}</span>{% endif %}
+      {% if t.status == "gennemgaaet" %}<span class="vt-pille ok">Fagligt gennemgået{% if t.reviewer %} af {{ t.reviewer }}{% endif %}{% if t.review_dato %}, {{ t.review_dato }}{% endif %}</span>
+      {% elif t.status == "opdateret" %}<span class="vt-pille ok">Opdateret efter fagligt review{% if t.reviewer %} af {{ t.reviewer }}{% endif %}</span>
+      {% else %}<span class="vt-pille udkast">Udkast · afventer faglig gennemgang</span>{% endif %}
+      <a class="vt-pille link" href="/viden/saadan-arbejder-vi/">Sådan arbejder vi med viden</a>
+    </div>
+    {% if not t.status or t.status == "udkast" %}<p class="vt-udkast">Indholdet er samlet af RCA med hjælp fra AI og venter på review fra fagpersoner. Brug det som en indgang, og tjek altid kilderne.</p>{% endif %}
+
+    {% if t.stoette %}<p class="vt-stoette" role="note"><b>Vær opmærksom:</b> {{ t.stoette | replace("70 201 201", "<b>70 201 201</b>") | safe }}</p>{% endif %}
+
+    {% if t.pointer %}<div class="vt-kortfortalt">
+      <h2>Kort fortalt</h2>
+      <ul>
+        {% for p in t.pointer %}<li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+    </div>{% endif %}
+
+    {% if t.intro %}<p class="vt-intro">{{ t.intro }}</p>{% endif %}
+
+    {% if t.guide_link %}<div class="vt-guide"><span>{{ t.guide_tekst }}</span><a class="btn terra" href="{{ t.guide_link }}">Gå til guiden</a></div>{% endif %}
+
+    <h2 class="vt-kilder-h">Kilderne</h2>
+    <p class="vt-kilder-intro">{{ kilder | length }} kilder.{% if t.grupper | length > 1 %} Vælg en gruppe for at se færre.{% endif %} Hver kilde er mærket med sin <a href="/viden/saadan-arbejder-vi/">kildetype</a>.</p>
+    {% if t.grupper | length > 1 %}<div class="vt-filter" role="group" aria-label="Vis kilder" hidden>
+      <button type="button" aria-pressed="true" data-gruppe="alle">Alle ({{ kilder | length }})</button>
+      {% for g in t.grupper %}<button type="button" aria-pressed="false" data-gruppe="g{{ loop.index }}">{{ g.titel }} ({{ g.kilder | length }})</button>
+      {% endfor %}
+    </div>{% endif %}
+
+    {% for g in t.grupper %}
+    <div class="vt-gruppe" data-gruppe="g{{ loop.index }}">
+      <h3>{{ g.titel }}</h3>
+      {% for k in g.kilder %}<article class="vt-kilde">
+        <div class="vt-maerker">{% if k.kildetype %}<span class="vt-type {{ typeklasse[k.kildetype] or 'andet' }}">{{ k.kildetype }}</span>{% endif %}{% if k.metode %}<span class="vt-metode">{{ k.metode }}</span>{% endif %}</div>
+        <h4>{% if k.link %}<a href="{{ k.link }}" target="_blank" rel="noopener">{{ k.titel }}</a>{% else %}{{ k.titel }}{% endif %}</h4>
+        <p class="vt-meta">{{ k.forfattere }}{% if k.aar %} · {{ k.aar }}{% endif %}{% if k.udgiver %} · {{ k.udgiver }}{% endif %}</p>
+        <p>{{ k.resume }}</p>
+        {% if k.link %}<a class="vt-gaa" href="{{ k.link }}" target="_blank" rel="noopener">Gå til kilden<span class="sr-only"> (åbner i nyt vindue)</span></a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div class="vt-bidrag">
+      <span>Mangler der noget, eller er der en fejl?</span>
+      <a class="btn" href="/viden/bidrag/?side={{ page.url | urlencode }}&amp;titel={{ ('Tema: ' + t.titel) | urlencode }}">Foreslå en kilde eller rettelse</a>
+    </div>
+    <p class="vt-tilbage"><a href="/viden/">← Tilbage til Viden</a></p>
+  </div>
+</div>
+<script>
+(function(){
+  var f=document.querySelector(".vt-filter"); if(!f) return; f.hidden=false;
+  var knapper=f.querySelectorAll("button"), grupper=document.querySelectorAll(".vt-gruppe");
+  f.addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b) return; var v=b.getAttribute("data-gruppe");
+    knapper.forEach(function(x){x.setAttribute("aria-pressed", x===b?"true":"false");});
+    grupper.forEach(function(g){g.hidden = v!=="alle" && g.getAttribute("data-gruppe")!==v;});
+  });
+})();
+</script>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "Article", "@id": site.url + page.url + "#artikel", "about": t.titel, "citation": kilder | kilde_citater} | json | safe }}</script>

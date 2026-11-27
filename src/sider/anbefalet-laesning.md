@@ -41,7 +41,7 @@ Soll er selv adopteret og psykoterapeut og har arbejdet med adopterede og biolog
 *Forskningsbaseret · engelsk*
 Beskriver de faser, adopterede typisk går igennem fra barndom til alderdom, og hvordan spørgsmålene om adoptionen ændrer sig undervejs. Bogen regnes for en af de mest afbalancerede, fordi den både rummer det, man mister, og det, man får.
 
-Se også vores temaer om [psykisk helbred](/viden/#psykisk-helbred) og [identitet og racisme](/viden/#identitet-racisme), hvor forskningen fra fx Lene Myong og Tobias Hübinette er beskrevet.
+Se også vores temaer om [psykisk helbred](/viden/psykisk-helbred/) og [identitet og racisme](/viden/identitet-racisme/), hvor forskningen fra fx Lene Myong og Tobias Hübinette er beskrevet.
 
 ## Tidsskrifter at følge
 

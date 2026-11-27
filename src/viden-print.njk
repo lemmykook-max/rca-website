@@ -115,7 +115,7 @@ eleventyExcludeFromCollections: true
     <p class="eyebrow">Tema</p>
     <h2>{{ t.titel }}</h2>
     {% if t.stoette %}<p class="stoette" role="note"><b>Vær opmærksom:</b> {{ t.stoette }}</p>{% endif %}
-    {{ vidensstatus(t.status, t.reviewer, t.review_dato, "/viden/#" + t.id, "Tema: " + t.titel) }}
+    {{ vidensstatus(t.status, t.reviewer, t.review_dato, "/viden/" + t.id + "/", "Tema: " + t.titel) }}
     <p>{{ t.intro }}</p>
     {% if t.pointer %}<h3>Det vigtigste</h3>
     <ul class="check">
